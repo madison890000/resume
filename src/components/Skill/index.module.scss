@@ -1,0 +1,64 @@
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > span {
+    margin: 8px;
+  }
+
+}
+
+.subTitle {
+  font-size: 12px;
+  margin-left: 2px;
+  font-style: italic;
+}
+
+.level {
+  & > span {
+    display: inline-block;
+    margin: 2px;
+    width: 36px;
+    height: 20px;
+    background: gray;
+  }
+
+}
+
+.levelName {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+.understand {
+  & > span:nth-child(2) {
+    background: transparent;
+  }
+
+  & > span:nth-child(3) {
+    background: transparent;
+  }
+}
+
+.familiar {
+  & > span:nth-child(3) {
+    background: transparent;
+  }
+}
+
+.proficient {
+}
+
+.important {
+  font-weight: bold;
+}
+
+.normal {
+  color: gray;
+  font-weight: bold;
+}
+
+.less {
+  color: gray;
+}

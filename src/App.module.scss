@@ -1,0 +1,31 @@
+.main {
+  font-size: 20px;
+  padding: 20px;
+
+  h5 {
+    margin: 4px 16px;
+  }
+
+  ul {
+    margin: 2px 0;
+  }
+}
+
+.description {
+  width: 90%;
+  margin: 16px;
+}
+
+.descriptionItem {
+  margin-top: 12px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    width: 23%;
+    margin: 2px 1%;
+  }
+}

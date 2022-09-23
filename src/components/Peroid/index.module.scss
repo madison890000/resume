@@ -1,0 +1,38 @@
+.period {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.job {
+  font-weight: bold;
+
+  & > span {
+    margin-right: 8px;
+  }
+}
+
+.companyName {
+  font-weight: normal;
+  color: gray;
+}
+
+.times {
+  & > span {
+    display: inline-block;
+    margin: 0 8px;
+    min-width: 90px;
+    text-align: right;
+    font-style: italic;
+    font-size: 18px;
+  }
+}
+
+.keyword {
+  display: inline-block;
+  margin: 2px 4px;
+  padding: 2px 4px;
+  border: 1px solid gray;
+  font-size: 16px;
+  border-radius: 4px;
+}

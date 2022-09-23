@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react';
+import styles from './App.module.scss';
+import madison from './Madison';
+import Header from './components/Header';
+import Skill from './components/Skill';
+import Period from './components/Peroid';
+import Education from './components/Education';
+import Divider from './components/Divider';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { current: person } = useRef(madison);
+    return (
+        <div className={styles.main}>
+            <Header
+                firstName={person.firstName}
+                lastName={person.lastName}
+                email={person.email}
+                cellphone={person.cellphone}
+            />
+            <Divider title="Description" />
+            <section>
+                <div className={styles.description}>
+                    {person.description?.map(d => (
+                        <div className={styles.descriptionItem}>{d}</div>
+                    ))}
+                </div>
+            </section>
+            <Divider title="Skill" />
+            <section>
+                <div className={styles.skills}>
+                    {person.skills?.map(skill => (
+                        <Skill {...skill} />
+                    ))}
+                </div>
+            </section>
+            <Divider title="Professional Experience" />
+            <section>
+                {person.reversedPeriods?.map(period => (
+                    <Period
+                        {...period}
+                        solutionsOfHowToImplement={[]}
+                        companyName={period?.company?.name}
+                    />
+                ))}
+            </section>
+            <Divider title="Education Experience" />
+            <section>
+                {person.educations?.map(education => (
+                    <Education {...education} />
+                ))}
+            </section>
+        </div>
+    );
 }
 
 export default App;
