@@ -6,6 +6,7 @@ import Skill from './components/Skill';
 import Period from './components/Peroid';
 import Education from './components/Education';
 import Divider from './components/Divider';
+import TimeLine from './components/TimeLine';
 
 function App() {
     const { current: person } = useRef(madison);
@@ -34,6 +35,9 @@ function App() {
                 </div>
             </section>
             <Divider title="Professional Experience" />
+            <section>
+                <TimeLine periods={person.periods} />
+            </section>
             <section>
                 {person.reversedPeriods?.map(period => (
                     <Period

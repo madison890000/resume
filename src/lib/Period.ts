@@ -1,4 +1,5 @@
 import Company from './Company';
+import { v4 } from 'uuid';
 import {
     Achievements,
     JobPosition,
@@ -20,6 +21,7 @@ interface IPeriod {
 }
 
 export default class Period {
+    readonly id: string;
     public start: Date;
     public end: Date;
     public keywords: Keyword[];
@@ -29,7 +31,8 @@ export default class Period {
     public jobPositionLevel: JobPositionLevel;
     public jobPosition: JobPosition;
 
-    constructor({ company,jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
+    constructor({ company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
+        this.id = v4();
         this.company = company;
         this.start = start;
         this.end = end;

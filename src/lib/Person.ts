@@ -60,4 +60,5 @@ export default class Person {
     get reversedPeriods() {
         return [...this.periods].reverse()
     }
+
 }
