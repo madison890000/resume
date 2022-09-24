@@ -14,7 +14,7 @@ a running list.
 ## RoadMap
 
 - [ ] (Dark mode)
-- [ ] (Optimize view experience in Mobile screen)
+- [x] (Optimize view experience in Mobile screen)
 - [ ] (Support themes)
 - [ ] (i18n)
 - [ ] (resume editor)
