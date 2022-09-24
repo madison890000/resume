@@ -7,17 +7,17 @@
 .times {
   & > span {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 var(--block-margin);
     min-width: 90px;
     text-align: right;
     font-style: italic;
-    font-size: 18px;
+    font-size: var(--base-font-size-middle);
   }
 }
 
 .major {
   font-style: italic;
   color: gray;
-  margin-left: 12px;
-  font-size: 16px;
+  margin-left: var(--block-margin);
+  font-size: var(--base-font-size-middle);
 }

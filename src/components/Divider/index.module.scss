@@ -1,9 +1,9 @@
 .divider {
-  margin: 10px 0 0 0;
+  margin: var(--block-margin) 0 0 0;
   width: 100%;
 }
 
 .section {
   margin: 10px 0;
-  border: 2px solid gray;
+  border: var(--base-gap-unit) solid gray;
 }

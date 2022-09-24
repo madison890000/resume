@@ -4,21 +4,21 @@
   justify-content: space-between;
 
   & > span {
-    margin: 8px;
+    margin: var(--inline-block-margin);
   }
 
 }
 
 .subTitle {
-  font-size: 12px;
-  margin-left: 2px;
+  font-size: var(--base-font-size-small);
+  margin-left: var(--base-gap-unit);
   font-style: italic;
 }
 
 .level {
   & > span {
     display: inline-block;
-    margin: 2px;
+    margin: var(--base-gap-unit);
     width: 36px;
     height: 20px;
     background: gray;
@@ -27,8 +27,8 @@
 }
 
 .levelName {
-  font-size: 12px;
-  margin-left: 2px;
+  font-size: var(--base-font-size-small);
+  margin-left: var(--base-gap-unit);
 }
 
 .understand {
