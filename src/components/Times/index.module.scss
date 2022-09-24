@@ -11,4 +11,12 @@
   & > span:nth-child(2) {
     min-width: 10px;
   }
+
+  @media screen and (max-width: 414px ) {
+
+    & > span {
+      min-width: 60px;
+    }
+  }
 }
+

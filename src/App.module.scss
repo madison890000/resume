@@ -9,6 +9,17 @@
   ul {
     margin: calc(var(--base-gap-unit) * 2) 0;
   }
+
+  @media screen and (max-width: 414px) {
+
+    h5 {
+      margin: calc(var(--base-gap-unit) * 2) calc(var(--base-gap-unit) * 2);
+    }
+
+    ul {
+      padding:  0 calc(var(--base-gap-unit) * 12);
+    }
+  }
 }
 
 .description {
@@ -27,5 +38,14 @@
   & > div {
     width: 23%;
     margin: var(--base-gap-unit) 1%;
+  }
+
+
+  @media screen and (max-width: 414px) {
+
+    & > div {
+      width: 48%;
+      height: 40px;
+    }
   }
 }

@@ -30,9 +30,11 @@ const Period = ({
         <>
             <div className={styles.period}>
                 <div>
-                    <div className={styles.job}>
-                        {jobPositionLevel && <span>{jobPositionLevel}</span>}
-                        <span>{jobPosition}</span>
+                    <div className={styles.header}>
+                        <span className={styles.job}>
+                            {jobPositionLevel && <span>{jobPositionLevel}</span>}
+                            <span>{jobPosition}</span>
+                        </span>
                         <span className={styles.companyName}>
                             <span>({companyName})</span>
                         </span>

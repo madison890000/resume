@@ -6,7 +6,6 @@
   & > span {
     margin: var(--inline-block-margin);
   }
-
 }
 
 .subTitle {
@@ -24,6 +23,12 @@
     background: gray;
   }
 
+  @media screen and (max-width: 414px) {
+    & > span {
+      width: 20px;
+      height: 12px;
+    }
+  }
 }
 
 .levelName {
