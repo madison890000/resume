@@ -7,7 +7,10 @@ export enum Degree {
 export type Gender = 'male' | 'female';
 
 
-export type Achievements = string;
+export type Achievement = {
+    text: string;
+    categories: string[];
+};
 export type SolutionsOfHowToImplement = string;
 
 export enum JobPositionLevel {
