@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { Degree } from '../../lib/types';
-import { formatDate } from '../../utils/date';
+import Times from '../Times';
 
 interface EducationProps {
     college: string;
@@ -27,11 +27,7 @@ const Education = ({
                 <span>{major}</span>
                 <span className={styles.major}>({degree})</span>
             </div>
-            <div className={styles.times}>
-                <span>{formatDate(start)}</span>
-                -
-                <span>{formatDate(end)}</span>
-            </div>
+            <Times start={start} end={end} />
         </div>
     );
 }

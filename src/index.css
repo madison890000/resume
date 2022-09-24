@@ -1,13 +1,72 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+:root {
+
+    --base-font-size-large: 20px;
+    --base-font-size-middle: 16px;
+    --base-font-size-small: 12px;
+    --base-gap-unit: 2px;
+    --base-gap-2-unit: 4px;
+    --base-gap-small: 6px;
+    --base-gap: 12px;
+    --base-gap-large: 18px;
+
+
+    --base-padding-small: var(--base-gap-small);
+    --base-padding: var(--base-gap);
+    --base-padding-large: var(--base-gap-large);
+
+    --base-margin: var(--base-gap);
+    --base-border-radius: var(--base-gap-2-unit);
+
+
+    /**
+     * page(layout)
+     */
+    --page-background-color: 'white';
+    --page-padding: var(--base-padding-large);
+    --page-margin: var(--base-margin);
+
+
+    /**
+     * block
+     */
+    --block-padding: var(--base-padding);
+    --block-margin: var(--base-margin);
+
+
+    /**
+     * inline-block
+     */
+    --inline-block-padding: var(--base-padding);
+    --inline-block-margin: var(--base-gap-small);
+
+
+}
+
+@media screen and (max-width: 414px ) {
+
+    :root {
+        --base-font-size-large: 16px;
+        --base-font-size-middle: 14px;
+        --base-font-size-small: 12px;
+        --base-gap-unit: 2px;
+        --base-gap-2-unit: 4px;
+        --base-gap-small: 3px;
+        --base-gap: 6px;
+        --base-gap-large: 12px;
+    }
 }

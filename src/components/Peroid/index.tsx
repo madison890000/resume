@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { JobPosition, JobPositionLevel } from '../../lib/types';
-import { formatDate } from '../../utils/date';
+import Times from '../Times';
 
 interface PeriodProps {
     start: Date;
@@ -30,9 +30,11 @@ const Period = ({
         <>
             <div className={styles.period}>
                 <div>
-                    <div className={styles.job}>
-                        {jobPositionLevel && <span>{jobPositionLevel}</span>}
-                        <span>{jobPosition}</span>
+                    <div className={styles.header}>
+                        <span className={styles.job}>
+                            {jobPositionLevel && <span>{jobPositionLevel}</span>}
+                            <span>{jobPosition}</span>
+                        </span>
                         <span className={styles.companyName}>
                             <span>({companyName})</span>
                         </span>
@@ -44,11 +46,7 @@ const Period = ({
                     </div>
 
                 </div>
-                <div className={styles.times}>
-                    <span>{formatDate(start)}</span>
-                    -
-                    <span>{formatDate(end)}</span>
-                </div>
+                <Times start={start} end={end} />
             </div>
 
             <div>

@@ -4,20 +4,9 @@
   justify-content: space-between;
 }
 
-.times {
-  & > span {
-    display: inline-block;
-    margin: 0 8px;
-    min-width: 90px;
-    text-align: right;
-    font-style: italic;
-    font-size: 18px;
-  }
-}
-
 .major {
   font-style: italic;
   color: gray;
-  margin-left: 12px;
-  font-size: 16px;
+  margin-left: var(--block-margin);
+  font-size: var(--base-font-size-middle);
 }
