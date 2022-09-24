@@ -1,7 +1,7 @@
 import Person from './lib/Person';
 import Education from './lib/Education';
 import {
-    Achievements,
+    Achievement,
     Degree,
     Importance,
     JobPositionLevel,
@@ -21,9 +21,11 @@ const madison = new Person({
     country: 'China',
     gender: 'male',
     description: [
-        'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tooling, and libraries. ',
-        'I Have rich experience in Frontend and Back-end development including Admin and Customer Portal (Web Applications) in Online saling Web\n' +
-        'Application, internet finance Web System, education Application, Data reporting Web Page, etc.'
+        'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
+        'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
+        'Application, Internet finance Web System, education application, Data Reporting Web Page, etc.',
+        'I am both a good team leader and team member. ' +
+        'I am a person who is passionate about life, friendly to people, willing to share, and like to work with colleagues to make the world to be a better place.'
     ]
 })
 
@@ -61,8 +63,11 @@ const periodOne = new Period({
         'participate in the design and development of one economic-data-report project.',
     ],
     achievements: [
-        '[FE] abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
-    ] as Achievements[],
+        {
+            text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
+            categories: ['UI']
+        }
+    ] as Achievement[],
 })
 const yinyuanCompany = new Company({
     name: 'Yinyuan Asia-pacific (Beijing) Technology Co., Ltd ',
@@ -83,9 +88,15 @@ const periodTwo = new Period({
         'take charge of annual feature planning and appraise performance of each team member.'
     ],
     achievements: [
-        'completed the design and development of the company\'s front-end UI component library',
-        'implemented the rendering of list components and displaying data  in both horizontal and vertical .'
-    ] as Achievements[],
+        {
+            text: 'completed the design and development of the company\'s front-end UI component library',
+            categories: ['UI']
+        },
+        {
+            text: '\'implemented the rendering of list components and displaying data  in both horizontal and vertical',
+            categories: ['UI']
+        }
+    ] as Achievement[],
 })
 const baixinCompany = new Company({
     name: 'Citic Baixin Bank Co., Ltd',
@@ -105,8 +116,11 @@ const periodThree = new Period({
         'provide training and guidance on technical to junior engineer',
     ],
     achievements: [
-        'completed the design and development of company\'s front-end UI component library'
-    ] as Achievements[],
+        {
+            text: 'completed the design and development of company\'s front-end UI component library',
+            categories: ['UI']
+        },
+    ] as Achievement[],
 })
 const pccwCompany = new Company({
     name: 'PCCW GLOBAL',
@@ -116,7 +130,7 @@ const periodFour = new Period({
     start: new Date('2019-06-01T00:00:00Z'),
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
-    keywords: ['React', 'NextJs', 'umi'] as Keyword[],
+    keywords: ['React', 'NextJs', 'umi', 'TDD'] as Keyword[],
     jobPosition: 'Front-End Engineer',
     jobPositionLevel: JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
@@ -128,13 +142,27 @@ const periodFour = new Period({
         'provide training and guidance on technical to junior engineer',
     ],
     achievements: [
-        'design and developed our company\'s front-end UI component library',
-        'setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process',
-        'setup the utils library in FE',
-        'using Micro Front-End Service to split code and improve the performance in FE',
-        'define the Best practices in FE project with React and Typescript.'
-
-    ] as Achievements[],
+        {
+            text: 'design and developed our company\'s front-end UI component library',
+            categories: ['UI']
+        },
+        {
+            text: 'setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process',
+            categories: ['CI/CD', 'Engineering']
+        },
+        {
+            text: 'setup the utils library in FE',
+            categories: ['Engineering']
+        },
+        {
+            text: 'using Micro Front-End Service to split code and improve the performance in FE',
+            categories: ['Performance', 'Engineering']
+        },
+        {
+            text: 'define the Best practices in FE project with React and Typescript.',
+            categories: ['Architecture']
+        }
+    ] as Achievement[],
 })
 const teslaCompany = new Company({
     name: 'Tesla',
@@ -156,16 +184,25 @@ const periodFive = new Period({
         'provide training and guidance on technical',
     ],
     achievements: [
-        'completed the design and development of common utils and Hooks in React project',
-        'optimized the front-end code',
-        'improve the code quality'
-    ] as Achievements[],
+        {
+            text: 'completed the design and development of common utils and Hooks in React project',
+            categories: ['Engineering']
+        },
+        {
+            text: 'optimized the front-end code',
+            categories: ['Performance']
+        },
+        {
+            text: 'improve the code quality',
+            categories: ['Quality']
+        },
+    ] as Achievement[],
 })
 madison.addPeriods([periodOne, periodTwo, periodThree, periodFour, periodFive])
 
 const skills = [
     new Skill('JavaScript', SkillLevel.proficient, 7, Importance.important),
-    new Skill('React', SkillLevel.proficient, 4, Importance.important),
+    new Skill('React', SkillLevel.proficient, 5, Importance.important),
     new Skill('TypeScript', SkillLevel.proficient, 3, Importance.important),
     new Skill('React hooks', SkillLevel.proficient, 3, Importance.important),
     new Skill('React-Redux', SkillLevel.proficient, 3, Importance.important),

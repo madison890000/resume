@@ -1,7 +1,7 @@
 import Company from './Company';
 import { v4 } from 'uuid';
 import {
-    Achievements,
+    Achievement,
     JobPosition,
     JobPositionLevel,
     Keyword,
@@ -15,7 +15,7 @@ interface IPeriod {
     company: Company;
     jobPositionLevel: JobPositionLevel;
     jobPosition: JobPosition;
-    achievements: Achievements[];
+    achievements: Achievement[];
     jobSummaries: string[];
     solutionsOfHowToImplement: SolutionsOfHowToImplement[];
 }
@@ -25,7 +25,7 @@ export default class Period {
     public start: Date;
     public end: Date;
     public keywords: Keyword[];
-    public achievements: Achievements[];
+    public achievements: Achievement[];
     public jobSummaries: string[];
     public company: Company;
     public jobPositionLevel: JobPositionLevel;

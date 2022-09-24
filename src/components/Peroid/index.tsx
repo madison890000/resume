@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { JobPosition, JobPositionLevel } from '../../lib/types';
+import { Achievement, JobPosition, JobPositionLevel } from '../../lib/types';
 import Times from '../Times';
 
 interface PeriodProps {
@@ -10,7 +10,7 @@ interface PeriodProps {
     companyName: string;
     jobPositionLevel: JobPositionLevel;
     jobPosition: JobPosition;
-    achievements: string[];
+    achievements: Achievement[];
     jobSummaries: string[];
     solutionsOfHowToImplement: string[];
 }
@@ -50,7 +50,7 @@ const Period = ({
             </div>
 
             <div>
-                <h5>job summaries:</h5>
+                <h5>Job summaries:</h5>
                 <ul>
                     {jobSummaries?.map((summary) => (
                         <li>{summary}</li>
@@ -58,10 +58,18 @@ const Period = ({
                 </ul>
             </div>
             <div>
-                <h5>achievements:</h5>
-                <ul>
+                <h5>Achievements:</h5>
+                <ul className={styles.achievements}>
                     {achievements?.map((achievement) => (
-                        <li>{achievement}</li>
+                        <li>
+
+                            <span>
+                                {achievement?.categories?.map((c) => (
+                                    <span className={styles.category}>{c}</span>
+                                ))}
+                            </span>
+                            {achievement?.text}
+                        </li>
                     ))}
                 </ul>
             </div>
