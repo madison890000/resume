@@ -1,3 +1,5 @@
+import Period from '../lib/Period';
+
 const READABLE_MONTHS = [
     'January',
     'February',
@@ -16,4 +18,21 @@ const translateToReadableMonth = (month: number) => READABLE_MONTHS[month]?.slic
 
 export const formatDate = (time: Date) => {
     return `${translateToReadableMonth(time.getMonth())}, ${time.getFullYear()}`
+}
+
+const getFullMonth = (time: Date) => {
+    return time.getFullYear() * 12 + time.getMonth()
+}
+export const findPeriodByDate = (time: Date, periods: Period[]) =>
+    periods?.find(p => {
+        const notBefore = getFullMonth(p?.start) <= getFullMonth(time)
+        const notAfter = getFullMonth(p?.end) >= getFullMonth(time)
+        return notBefore && notAfter
+    })
+export const getMonthCountInStartAndEnd = (start: Date, end: Date) => {
+    const years = end.getFullYear() - start.getFullYear();
+    if (years) {
+        return 12 - start.getMonth() + (years - 1) * 12 + end.getMonth();
+    }
+    return end.getMonth() - start.getMonth();
 }

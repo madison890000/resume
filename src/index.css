@@ -37,7 +37,7 @@ code {
      * page(layout)
      */
     --page-background-color: 'white';
-    --page-padding: var(--base-padding-large);
+    --page-padding: var(--base-padding);
     --page-margin: var(--base-margin);
 
 
@@ -68,5 +68,8 @@ code {
         --base-gap-small: 3px;
         --base-gap: 6px;
         --base-gap-large: 12px;
+
+        --page-padding: var(--base-gap-large);
+        --page-margin: var(--base-gap-large);
     }
 }
