@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styles from './Name.module.scss';
 import { Importance } from '../../lib/types';
 
-const Name: React.FC<{ level: Importance; children: any }> = ({ level, children }) => {
+const Name: React.FC<PropsWithChildren<{ level: Importance }>> = ({ level, children }) => {
     switch (level) {
         case Importance.important:
             return (
