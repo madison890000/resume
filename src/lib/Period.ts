@@ -30,8 +30,9 @@ export default class Period {
     public company: Company;
     public jobPositionLevel: JobPositionLevel;
     public jobPosition: JobPosition;
+    public solutionsOfHowToImplement: SolutionsOfHowToImplement[];
 
-    constructor({ company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
+    constructor({solutionsOfHowToImplement, company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
         this.id = v4();
         this.company = company;
         this.start = start;
@@ -41,6 +42,7 @@ export default class Period {
         this.keywords = keywords;
         this.jobPositionLevel = jobPositionLevel;
         this.jobPosition = jobPosition;
+        this.solutionsOfHowToImplement = solutionsOfHowToImplement;
     }
 
 }

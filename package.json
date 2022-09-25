@@ -24,6 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "npm run test -- --coverage --watchAll=false",
+    "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -47,8 +49,30 @@
     ]
   },
   "devDependencies": {
+    "@types/react-test-renderer": "^18.0.0",
     "@types/uuid": "^8.3.4",
     "gh-pages": "^4.0.0",
+    "react-test-renderer": "^18.2.0",
     "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/index.tsx",
+      "!src/Madison.ts",
+      "!src/reportWebVitals.ts",
+      "!<rootDir>/src/lib/types.ts",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   }
 }

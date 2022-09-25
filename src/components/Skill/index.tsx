@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { Importance, SkillLevel } from '../../lib/types';
-import classNames from 'classnames';
+import Name from './Name';
+import Level from './Level';
 
 interface SkillProps {
     name: string;
@@ -10,45 +11,6 @@ interface SkillProps {
     importance: Importance;
 }
 
-const LevelUnderstand = () =>
-    <div className={classNames(styles.level, styles.understand)}>
-        <span />
-        <span />
-        <span />
-        <div className={styles.levelName}>Understand</div>
-    </div>
-const LevelFamiliar = () =>
-    <div className={classNames(styles.level, styles.familiar)}>
-        <span />
-        <span />
-        <span />
-        <div className={styles.levelName}>Familiar</div>
-    </div>
-const LevelProficient = () =>
-    <div className={classNames(styles.level, styles.proficient)}>
-        <span />
-        <span />
-        <span />
-        <div className={styles.levelName}>Proficient</div>
-    </div>
-const Name: React.FC<{ level: Importance; children: any }> = ({ level, children }) => {
-    switch (level) {
-        case Importance.important:
-            return (
-                <div className={styles.important}>{children}</div>
-            );
-        case Importance.normal:
-            return (
-                <div className={styles.normal}>{children}</div>
-            );
-        case Importance.less:
-            return (
-                <div className={styles.less}>{children}</div>
-            );
-        default:
-            return null
-    }
-}
 const Skill = ({ level, name, ages, importance }: SkillProps) => {
     return (
         <div className={styles.skill}>
@@ -56,9 +18,9 @@ const Skill = ({ level, name, ages, importance }: SkillProps) => {
                 <Name level={importance}>{name}</Name>
                 <div className={styles.subTitle}>{ages} years</div>
             </div>
-            {level === SkillLevel.familiar && <LevelFamiliar />}
-            {level === SkillLevel.proficient && <LevelProficient />}
-            {level === SkillLevel.understand && <LevelUnderstand />}
+            {level === SkillLevel.familiar && <Level.Familiar />}
+            {level === SkillLevel.proficient && <Level.Proficient />}
+            {level === SkillLevel.understand && <Level.Understand />}
         </div>
     );
 }
