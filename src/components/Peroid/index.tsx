@@ -12,7 +12,6 @@ interface PeriodProps {
     jobPosition: JobPosition;
     achievements: Achievement[];
     jobSummaries: string[];
-    solutionsOfHowToImplement: string[];
 }
 
 const Period = ({
@@ -24,7 +23,6 @@ const Period = ({
                     jobPosition,
                     achievements,
                     jobSummaries,
-                    solutionsOfHowToImplement,
                 }: PeriodProps) => {
     return (
         <>
