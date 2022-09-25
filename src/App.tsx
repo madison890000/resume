@@ -42,7 +42,6 @@ function App() {
                 {person.reversedPeriods?.map(period => (
                     <Period
                         {...period}
-                        solutionsOfHowToImplement={[]}
                         companyName={period?.company?.name}
                     />
                 ))}
