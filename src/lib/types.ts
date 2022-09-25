@@ -18,7 +18,8 @@ export enum JobPositionLevel {
     Senior = 'Senior',
     Middle = '',
     Junior = 'Junior',
-};
+}
+
 export type JobPosition =
     'Software Engineer'
     | 'Front-End Engineer'
