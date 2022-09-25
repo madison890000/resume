@@ -1,11 +1,11 @@
 interface ICompany {
     name: string;
-    location: string;
+    location?: string;
 }
 
 export default class Company {
     public name: string;
-    public location: string;
+    public location?: string;
 
     constructor({ name, location }: ICompany) {
         this.name = name;
