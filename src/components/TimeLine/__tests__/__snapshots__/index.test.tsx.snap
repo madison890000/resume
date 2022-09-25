@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TimeLine  TimeLine one period 1`] = `
+<div
+  className="timelineContainer"
+>
+  <div>
+    <svg
+      height="20"
+      style={
+        Object {
+          "backgroundColor": "E0E0E0",
+        }
+      }
+      width={0}
+    >
+      <g>
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+        <rect
+          fill="#FF6666"
+          height="10"
+          width={-1}
+          x={0}
+          y="5"
+        />
+      </g>
+    </svg>
+  </div>
+  <div
+    style={
+      Object {
+        "height": 48,
+      }
+    }
+  >
+    <span
+      className="jobName"
+      style={
+        Object {
+          "position": "absolute",
+          "transform": "translateX(0px)",
+        }
+      }
+    >
+      Senior
+       
+      Software Engineer
+    </span>
+  </div>
+</div>
+`;
