@@ -24,8 +24,10 @@ const LevelProficient = () =>
         <div className={styles.levelName}>Proficient</div>
     </div>
 
-export default {
-    Understand: LevelUnderstand,
-    Familiar: LevelFamiliar,
-    Proficient: LevelProficient,
-}
+const Level = () => null
+
+Level.Understand = LevelUnderstand;
+Level.Familiar = LevelFamiliar;
+Level.Proficient = LevelProficient;
+
+export default Level
