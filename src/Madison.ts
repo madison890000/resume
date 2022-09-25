@@ -2,6 +2,7 @@ import Person from './lib/Person';
 import Education from './lib/Education';
 import {
     Achievement,
+    CompanyType,
     Degree,
     Importance,
     JobPositionLevel,
@@ -48,6 +49,7 @@ madison.addEducations([bachelorEducation, masterEducation])
 
 const taijiCompany = new Company({
     name: 'Taiji Computer Corporation Limited',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodOne = new Period({
@@ -71,6 +73,7 @@ const periodOne = new Period({
 })
 const yinyuanCompany = new Company({
     name: 'Yinyuan Asia-pacific (Beijing) Technology Co., Ltd ',
+    type: CompanyType.Startup,
     location: 'Beijing, China'
 })
 const periodTwo = new Period({
@@ -100,6 +103,7 @@ const periodTwo = new Period({
 })
 const baixinCompany = new Company({
     name: 'Citic Baixin Bank Co., Ltd',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodThree = new Period({
@@ -124,6 +128,7 @@ const periodThree = new Period({
 })
 const pccwCompany = new Company({
     name: 'PCCW GLOBAL',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFour = new Period({
@@ -166,6 +171,7 @@ const periodFour = new Period({
 })
 const teslaCompany = new Company({
     name: 'Tesla',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFive = new Period({

@@ -53,3 +53,7 @@ export enum Importance {
     normal,
     less,
 }
+export enum CompanyType {
+    Enterprise,
+    Startup,
+}
