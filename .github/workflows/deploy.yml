@@ -21,7 +21,6 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./build
       - name: Read package.json
         uses: tyankatsu0105/read-package-version-actions@v1
         id: package-version
