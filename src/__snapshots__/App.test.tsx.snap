@@ -1275,16 +1275,26 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="companyName"
           >
             <span>
-              (
               Tesla
-              )
+              <span>
+                <span
+                  className="less"
+                >
+                  Enterprise
+                </span>
+              </span>
             </span>
           </span>
           <span>
             <span
-              className="keyword"
+              className="filled"
             >
               React
+            </span>
+            <span
+              className="filled"
+            >
+              Agile
             </span>
           </span>
         </div>
@@ -1333,34 +1343,34 @@ Application, Internet finance Web System, education application, Data Reporting 
         className="achievements"
       >
         <li>
+          completed the design and development of common utils and Hooks in React project
           <span>
             <span
-              className="category"
+              className="normal"
             >
               Engineering
             </span>
           </span>
-          completed the design and development of common utils and Hooks in React project
         </li>
         <li>
+          optimized the front-end code
           <span>
             <span
-              className="category"
+              className="normal"
             >
               Performance
             </span>
           </span>
-          optimized the front-end code
         </li>
         <li>
+          improve the code quality
           <span>
             <span
-              className="category"
+              className="normal"
             >
               Quality
             </span>
           </span>
-          improve the code quality
         </li>
       </ul>
     </div>
@@ -1385,31 +1395,41 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="companyName"
           >
             <span>
-              (
               PCCW GLOBAL
-              )
+              <span>
+                <span
+                  className="less"
+                >
+                  Enterprise
+                </span>
+              </span>
             </span>
           </span>
           <span>
             <span
-              className="keyword"
+              className="filled"
             >
               React
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               NextJs
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               umi
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               TDD
+            </span>
+            <span
+              className="filled"
+            >
+              Agile
             </span>
           </span>
         </div>
@@ -1458,64 +1478,64 @@ Application, Internet finance Web System, education application, Data Reporting 
         className="achievements"
       >
         <li>
+          design and developed our company's front-end UI component library
           <span>
             <span
-              className="category"
+              className="normal"
             >
               UI
             </span>
           </span>
-          design and developed our company's front-end UI component library
         </li>
         <li>
+          setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process
           <span>
             <span
-              className="category"
+              className="normal"
             >
               CI/CD
             </span>
             <span
-              className="category"
+              className="normal"
             >
               Engineering
             </span>
           </span>
-          setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process
         </li>
         <li>
-          <span>
-            <span
-              className="category"
-            >
-              Engineering
-            </span>
-          </span>
           setup the utils library in FE
-        </li>
-        <li>
           <span>
             <span
-              className="category"
+              className="normal"
+            >
+              Engineering
+            </span>
+          </span>
+        </li>
+        <li>
+          using Micro Front-End Service to split code and improve the performance in FE
+          <span>
+            <span
+              className="normal"
             >
               Performance
             </span>
             <span
-              className="category"
+              className="normal"
             >
               Engineering
             </span>
           </span>
-          using Micro Front-End Service to split code and improve the performance in FE
         </li>
         <li>
+          define the Best practices in FE project with React and Typescript.
           <span>
             <span
-              className="category"
+              className="normal"
             >
               Architecture
             </span>
           </span>
-          define the Best practices in FE project with React and Typescript.
         </li>
       </ul>
     </div>
@@ -1537,21 +1557,31 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="companyName"
           >
             <span>
-              (
               Citic Baixin Bank Co., Ltd
-              )
+              <span>
+                <span
+                  className="less"
+                >
+                  Enterprise
+                </span>
+              </span>
             </span>
           </span>
           <span>
             <span
-              className="keyword"
+              className="filled"
             >
               Vue
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               React
+            </span>
+            <span
+              className="filled"
+            >
+              Waterfall
             </span>
           </span>
         </div>
@@ -1594,14 +1624,14 @@ Application, Internet finance Web System, education application, Data Reporting 
         className="achievements"
       >
         <li>
+          completed the design and development of company's front-end UI component library
           <span>
             <span
-              className="category"
+              className="normal"
             >
               UI
             </span>
           </span>
-          completed the design and development of company's front-end UI component library
         </li>
       </ul>
     </div>
@@ -1623,26 +1653,36 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="companyName"
           >
             <span>
-              (
               Yinyuan Asia-pacific (Beijing) Technology Co., Ltd 
-              )
+              <span>
+                <span
+                  className="less"
+                >
+                  Startup
+                </span>
+              </span>
             </span>
           </span>
           <span>
             <span
-              className="keyword"
+              className="filled"
             >
               Java
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               jQuery
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               React
+            </span>
+            <span
+              className="filled"
+            >
+              Waterfall
             </span>
           </span>
         </div>
@@ -1688,24 +1728,24 @@ Application, Internet finance Web System, education application, Data Reporting 
         className="achievements"
       >
         <li>
+          completed the design and development of the company's front-end UI component library
           <span>
             <span
-              className="category"
+              className="normal"
             >
               UI
             </span>
           </span>
-          completed the design and development of the company's front-end UI component library
         </li>
         <li>
+          'implemented the rendering of list components and displaying data  in both horizontal and vertical
           <span>
             <span
-              className="category"
+              className="normal"
             >
               UI
             </span>
           </span>
-          'implemented the rendering of list components and displaying data  in both horizontal and vertical
         </li>
       </ul>
     </div>
@@ -1730,21 +1770,31 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="companyName"
           >
             <span>
-              (
               Taiji Computer Corporation Limited
-              )
+              <span>
+                <span
+                  className="less"
+                >
+                  Enterprise
+                </span>
+              </span>
             </span>
           </span>
           <span>
             <span
-              className="keyword"
+              className="filled"
             >
               Java
             </span>
             <span
-              className="keyword"
+              className="filled"
             >
               jQuery
+            </span>
+            <span
+              className="filled"
+            >
+              Waterfall
             </span>
           </span>
         </div>
@@ -1784,14 +1834,14 @@ Application, Internet finance Web System, education application, Data Reporting 
         className="achievements"
       >
         <li>
+          abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc
           <span>
             <span
-              className="category"
+              className="normal"
             >
               UI
             </span>
           </span>
-          abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc
         </li>
       </ul>
     </div>

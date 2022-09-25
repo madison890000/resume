@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { Achievement, JobPosition, JobPositionLevel } from '../../lib/types';
+import { Achievement, CompanyType, JobPosition, JobPositionLevel } from '../../lib/types';
 import Times from '../Times';
+import Tag from '../Tag';
 
 interface PeriodProps {
     start: Date;
     end: Date;
     keywords: string[];
     companyName: string;
+    companyType?: CompanyType;
     jobPositionLevel: JobPositionLevel;
     jobPosition: JobPosition;
     achievements: Achievement[];
@@ -18,6 +20,7 @@ const Period = ({
                     start,
                     end,
                     companyName,
+                    companyType,
                     keywords,
                     jobPositionLevel,
                     jobPosition,
@@ -34,11 +37,19 @@ const Period = ({
                             <span>{jobPosition}</span>
                         </span>
                         <span className={styles.companyName}>
-                            <span>({companyName})</span>
+                            <span>
+                                {companyName}
+                                <span>
+                                    {companyType === CompanyType.Enterprise &&
+                                    <Tag type="less">Enterprise</Tag>}
+                                    {companyType === CompanyType.Startup &&
+                                    <Tag type="less">Startup</Tag>}
+                                </span>
+                            </span>
                         </span>
                         <span>
                             {keywords?.map(keyword => (
-                                <span className={styles.keyword}>{keyword}</span>
+                                <Tag type="filled">{keyword}</Tag>
                             ))}
                         </span>
                     </div>
@@ -60,13 +71,12 @@ const Period = ({
                 <ul className={styles.achievements}>
                     {achievements?.map((achievement) => (
                         <li>
-
+                            {achievement?.text}
                             <span>
                                 {achievement?.categories?.map((c) => (
-                                    <span className={styles.category}>{c}</span>
+                                    <Tag>{c}</Tag>
                                 ))}
                             </span>
-                            {achievement?.text}
                         </li>
                     ))}
                 </ul>

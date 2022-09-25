@@ -43,6 +43,7 @@ function App() {
                     <Period
                         {...period}
                         companyName={period?.company?.name}
+                        companyType={period?.company?.type}
                     />
                 ))}
             </section>

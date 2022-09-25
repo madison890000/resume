@@ -32,8 +32,15 @@ export type ReactFramework = 'NextJs' | 'Create React App' | 'umi';
 export type Framework = 'React' | 'Vue' | 'Angular' | 'jQuery';
 export type CodeLanguage = 'JAVA' | 'C#' | 'JavaScript';
 export type OtherSkillLabels = 'NodeJs' | 'HTML5' | 'CSS3' | 'Webpack';
+export type WayOfDevelopment = 'Agile' | 'Waterfall';
 
-export type Keyword = Framework & CodeLanguage & OtherSkillLabels & FEUILib & ReactFramework;
+export type Keyword =
+    Framework
+    & CodeLanguage
+    & OtherSkillLabels
+    & FEUILib
+    & ReactFramework
+    & WayOfDevelopment;
 
 export enum SkillLevel {
     understand = 'understand',
@@ -45,4 +52,8 @@ export enum Importance {
     important,
     normal,
     less,
+}
+export enum CompanyType {
+    Enterprise,
+    Startup,
 }

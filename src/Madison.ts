@@ -2,6 +2,7 @@ import Person from './lib/Person';
 import Education from './lib/Education';
 import {
     Achievement,
+    CompanyType,
     Degree,
     Importance,
     JobPositionLevel,
@@ -48,13 +49,14 @@ madison.addEducations([bachelorEducation, masterEducation])
 
 const taijiCompany = new Company({
     name: 'Taiji Computer Corporation Limited',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodOne = new Period({
     start: new Date('2015-07-01T00:00:00Z'),
     end: new Date('2016-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery'] as Keyword[],
+    keywords: ['Java', 'jQuery', 'Waterfall'] as Keyword[],
     jobPosition: 'Software Engineer',
     jobPositionLevel: JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
@@ -71,13 +73,14 @@ const periodOne = new Period({
 })
 const yinyuanCompany = new Company({
     name: 'Yinyuan Asia-pacific (Beijing) Technology Co., Ltd ',
+    type: CompanyType.Startup,
     location: 'Beijing, China'
 })
 const periodTwo = new Period({
     start: new Date('2016-07-01T00:00:00Z'),
     end: new Date('2018-03-01T00:00:00Z'),
     company: yinyuanCompany,
-    keywords: ['Java', 'jQuery', 'React'] as Keyword[],
+    keywords: ['Java', 'jQuery', 'React', 'Waterfall'] as Keyword[],
     jobPosition: 'Software Engineer',
     jobPositionLevel: JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
@@ -100,13 +103,14 @@ const periodTwo = new Period({
 })
 const baixinCompany = new Company({
     name: 'Citic Baixin Bank Co., Ltd',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodThree = new Period({
     start: new Date('2018-04-01T00:00:00Z'),
     end: new Date('2019-06-01T00:00:00Z'),
     company: baixinCompany,
-    keywords: ['Vue', 'React'] as Keyword[],
+    keywords: ['Vue', 'React', 'Waterfall'] as Keyword[],
     jobPosition: 'Front-End Engineer',
     jobPositionLevel: JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
@@ -124,13 +128,14 @@ const periodThree = new Period({
 })
 const pccwCompany = new Company({
     name: 'PCCW GLOBAL',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFour = new Period({
     start: new Date('2019-06-01T00:00:00Z'),
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
-    keywords: ['React', 'NextJs', 'umi', 'TDD'] as Keyword[],
+    keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'] as Keyword[],
     jobPosition: 'Front-End Engineer',
     jobPositionLevel: JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
@@ -166,13 +171,14 @@ const periodFour = new Period({
 })
 const teslaCompany = new Company({
     name: 'Tesla',
+    type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFive = new Period({
     start: new Date('2022-05-23T00:00:00Z'),
     end: new Date(),
     company: teslaCompany,
-    keywords: ['React'] as Keyword[],
+    keywords: ['React', 'Agile'] as Keyword[],
     jobPosition: 'Software Engineer',
     jobPositionLevel: JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],

@@ -31,36 +31,6 @@
   color: gray;
 }
 
-.keyword {
-  display: inline-block;
-  margin: var(--base-gap-2-unit) var(--base-gap-2-unit);
-  padding: var(--base-gap-2-unit) var(--base-gap-2-unit);
-  background: gray;
-  color: white;
-  font-size: var(--base-font-size-middle);
-  border-radius: var(--base-border-radius);
-
-  @media screen and (max-width: 414px) {
-    margin: var(--base-gap-unit) var(--base-gap-unit);
-    padding: var(--base-gap-unit) var(--base-gap-unit);
-  }
-}
-
-.category {
-  display: inline-block;
-  margin: var(--base-gap-unit) var(--base-gap-2-unit);
-  padding: var(--base-gap-unit) var(--base-gap-2-unit);
-  border: 1px solid gray;
-  color: gray;
-  font-size: var(--base-font-size-small);
-  border-radius: var(--base-border-radius);
-
-  @media screen and (max-width: 414px) {
-    margin: var(--base-gap-unit) var(--base-gap-unit);
-    padding: var(--base-gap-unit) var(--base-gap-unit);
-  }
-}
-
 .achievements {
   //border: 1px solid gray;
   font-weight: bold;

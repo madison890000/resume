@@ -23,14 +23,13 @@ Array [
           className="companyName"
         >
           <span>
-            (
             test company name
-            )
+            <span />
           </span>
         </span>
         <span>
           <span
-            className="keyword"
+            className="filled"
           >
             React
           </span>
