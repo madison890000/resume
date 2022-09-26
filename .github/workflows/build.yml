@@ -1,6 +1,5 @@
 name: Build for sonar
 on:
-  push:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:

@@ -17,9 +17,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build page
-        run: npm run deploy
+        run: npm run build
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./
       - name: Read package.json
         uses: tyankatsu0105/read-package-version-actions@v1
         id: package-version
