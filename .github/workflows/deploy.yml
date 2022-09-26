@@ -22,7 +22,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./
       - name: Read package.json
         uses: tyankatsu0105/read-package-version-actions@v1
         id: package-version
