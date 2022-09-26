@@ -1,0 +1,37 @@
+.period {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: bold;
+
+  & > span {
+    margin-right: var(--inline-block-margin);
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 300px;
+
+    & > span {
+      display: block;
+    }
+  }
+}
+
+.job {
+  & > span {
+    margin-right: var(--inline-block-margin);
+  }
+}
+
+.companyName {
+  font-weight: normal;
+  color: gray;
+}
+
+.achievements {
+  //border: 1px solid gray;
+  font-weight: bold;
+}

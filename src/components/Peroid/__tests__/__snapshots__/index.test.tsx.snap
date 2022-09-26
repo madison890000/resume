@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Period 1`] = `
+Array [
+  <div
+    className="period"
+  >
+    <div>
+      <div
+        className="header"
+      >
+        <span
+          className="job"
+        >
+          <span>
+            Senior
+          </span>
+          <span>
+            Software Engineer
+          </span>
+        </span>
+        <span
+          className="companyName"
+        >
+          <span>
+            test company name
+            <span />
+          </span>
+        </span>
+        <span>
+          <span
+            className="filled"
+          >
+            React
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="times"
+    >
+      <span>
+        Jan, 2012
+      </span>
+      <span>
+        -
+      </span>
+      <span>
+        Jan, 2013
+      </span>
+    </div>
+  </div>,
+  <div>
+    <h5>
+      Job summaries:
+    </h5>
+    <ul />
+  </div>,
+  <div>
+    <h5>
+      Achievements:
+    </h5>
+    <ul
+      className="achievements"
+    />
+  </div>,
+]
+`;

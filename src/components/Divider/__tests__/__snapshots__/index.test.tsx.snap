@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Divider 1`] = `
+<div
+  className="divider"
+>
+  <h3>
+    test Divider
+  </h3>
+  <div
+    className="section"
+  />
+</div>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Tag 1`] = `
+<span
+  className="normal"
+>
+  React
+</span>
+`;
+
+exports[`renders Tag filled 1`] = `
+<span
+  className="filled"
+>
+  React
+</span>
+`;
+
+exports[`renders Tag less 1`] = `
+<span
+  className="less"
+>
+  React
+</span>
+`;

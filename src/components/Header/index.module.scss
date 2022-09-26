@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.basicInfo {
+  text-align: right;
+}
+
+.email {
+  font-style: italic;
+  font-size: var(--base-font-size-middle);
+}
+
+.cellphone {
+  font-style: italic;
+  font-size: var(--base-font-size-middle);
+}
