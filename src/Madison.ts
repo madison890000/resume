@@ -48,7 +48,7 @@ const bachelorEducation = new Education({
 madison.addEducations([bachelorEducation, masterEducation])
 
 const taijiCompany = new Company({
-    name: 'Taiji Computer Corporation Limited',
+    name: 'Taiji Computer Corporation. Ltd',
     type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
@@ -72,7 +72,7 @@ const periodOne = new Period({
     ] as Achievement[],
 })
 const yinyuanCompany = new Company({
-    name: 'Yinyuan Asia-pacific (Beijing) Technology Co., Ltd ',
+    name: 'Yinyuan Asia-pacific Technology Co. Ltd ',
     type: CompanyType.Startup,
     location: 'Beijing, China'
 })
@@ -102,7 +102,7 @@ const periodTwo = new Period({
     ] as Achievement[],
 })
 const baixinCompany = new Company({
-    name: 'Citic Baixin Bank Co., Ltd',
+    name: 'Citic Baixin Bank Co. Ltd',
     type: CompanyType.Enterprise,
     location: 'Beijing, China'
 })
@@ -132,7 +132,7 @@ const pccwCompany = new Company({
     location: 'Beijing, China'
 })
 const periodFour = new Period({
-    start: new Date('2019-06-01T00:00:00Z'),
+    start: new Date('2019-09-01T00:00:00Z'),
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
     keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'] as Keyword[],
@@ -176,7 +176,6 @@ const teslaCompany = new Company({
 })
 const periodFive = new Period({
     start: new Date('2022-05-23T00:00:00Z'),
-    end: new Date(),
     company: teslaCompany,
     keywords: ['React', 'Agile'] as Keyword[],
     jobPosition: 'Software Engineer',

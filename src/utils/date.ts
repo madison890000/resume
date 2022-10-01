@@ -26,7 +26,7 @@ const getFullMonth = (time: Date) => {
 export const findPeriodByDate = (time: Date, periods: Period[]) =>
     periods?.find(p => {
         const notBefore = getFullMonth(p?.start) <= getFullMonth(time)
-        const notAfter = getFullMonth(p?.end) >= getFullMonth(time)
+        const notAfter = getFullMonth(p?.end ?? new Date()) >= getFullMonth(time)
         return notBefore && notAfter
     })
 export const getMonthCountInStartAndEnd = (start: Date, end: Date) => {

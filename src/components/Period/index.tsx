@@ -3,10 +3,12 @@ import styles from './index.module.scss';
 import { Achievement, CompanyType, JobPosition, JobPositionLevel } from '../../lib/types';
 import Times from '../Times';
 import Tag from '../Tag';
+import TimeLineItem from '../TimeLines/TimeLineItem';
 
 interface PeriodProps {
     start: Date;
-    end: Date;
+    periodColor: string;
+    end?: Date;
     keywords: string[];
     companyName: string;
     companyType?: CompanyType;
@@ -18,6 +20,7 @@ interface PeriodProps {
 
 const Period = ({
                     start,
+                    periodColor,
                     end,
                     companyName,
                     companyType,
@@ -55,7 +58,11 @@ const Period = ({
                     </div>
 
                 </div>
-                <Times start={start} end={end} />
+                <div className={styles.timeline}>
+                    <TimeLineItem start={start} end={end} periodColor={periodColor} />
+                    <Times start={start} end={end} />
+                </div>
+
             </div>
 
             <div>

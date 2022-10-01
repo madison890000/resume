@@ -3,13 +3,26 @@ import styles from './App.module.scss';
 import madison from './Madison';
 import Header from './components/Header';
 import Skill from './components/Skill';
-import Period from './components/Peroid';
+import Period from './components/Period';
 import Education from './components/Education';
 import Divider from './components/Divider';
-import TimeLine from './components/TimeLine';
+import TimeLines from './components/TimeLines';
+
+const COLORS = [
+    '#FF6666',
+    '#FFFF66',
+    '#66FFFF',
+    '#6666FF',
+    '#B266FF',
+    '#FF66B2',
+]
 
 function App() {
     const { current: person } = useRef(madison);
+    const periodColors: { [key: string]: string } = {};
+    person?.periods?.forEach((p, index) => {
+        periodColors[p.id] = COLORS[index];
+    })
     return (
         <div className={styles.main}>
             <Header
@@ -36,12 +49,13 @@ function App() {
             </section>
             <Divider title="Professional Experience" />
             <section>
-                <TimeLine periods={person.periods} />
+                <TimeLines periods={person.periods} periodColors={periodColors} />
             </section>
             <section>
                 {person.reversedPeriods?.map(period => (
                     <Period
                         {...period}
+                        periodColor={periodColors[period?.id]}
                         companyName={period?.company?.name}
                         companyType={period?.company?.type}
                     />

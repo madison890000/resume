@@ -9,7 +9,7 @@
 
   @media screen and (max-width: 414px) {
     & > span {
-      width: 20px;
+      width: 14px;
       height: 12px;
     }
   }
@@ -20,23 +20,14 @@
   margin-left: var(--base-gap-unit);
 }
 
+.empty {
+  width: 34px !important;
+  height: 18px !important;
+  background: transparent !important;
+  border: 1px solid gray;
 
-.understand {
-  & > span:nth-child(2) {
-    background: transparent;
+  @media screen and (max-width: 414px) {
+    width: 12px !important;
+    height: 10px !important;
   }
-
-  & > span:nth-child(3) {
-    background: transparent;
-  }
-}
-
-.familiar {
-  & > span:nth-child(3) {
-    background: transparent;
-  }
-}
-
-.proficient {
-  color: black;
 }

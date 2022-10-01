@@ -1,9 +1,10 @@
 import React from 'react';
-import TimeLine from '../index';
+import TimeLines from '../index';
 import renderer from 'react-test-renderer';
 import { Achievement, JobPositionLevel, Keyword } from '../../../lib/types';
 import Company from '../../../lib/Company';
 import Period from '../../../lib/Period';
+
 
 describe('renders TimeLine ', () => {
     const testCompanyName = 'test company name'
@@ -30,8 +31,11 @@ describe('renders TimeLine ', () => {
     });
     test('TimeLine one period', () => {
         const TimeLineOne = renderer.create(
-            <TimeLine
+            <TimeLines
                 periods={[testPeriod]}
+                periodColors={{
+                    [testPeriod.id]: '#FF6666',
+                }}
             />
         )
             .toJSON();

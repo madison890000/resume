@@ -12,98 +12,98 @@ exports[`renders TimeLine  TimeLine one period 1`] = `
           "backgroundColor": "E0E0E0",
         }
       }
-      width={0}
+      width={980}
     >
       <g>
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
+          width={74.38461538461539}
           x={0}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={75.38461538461539}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={150.76923076923077}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={226.15384615384616}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={301.53846153846155}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={376.9230769230769}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={452.3076923076923}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={527.6923076923077}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={603.0769230769231}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={678.4615384615385}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={753.8461538461538}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={829.2307692307693}
           y="5"
         />
         <rect
           fill="#FF6666"
           height="10"
-          width={-1}
-          x={0}
+          width={74.38461538461539}
+          x={904.6153846153846}
           y="5"
         />
       </g>
@@ -121,7 +121,7 @@ exports[`renders TimeLine  TimeLine one period 1`] = `
       style={
         Object {
           "position": "absolute",
-          "transform": "translateX(0px)",
+          "transform": "translateX(75.38461538461539px)",
         }
       }
     >
