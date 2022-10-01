@@ -18,11 +18,19 @@ exports[`renders Skill  Skill --->level = familiar 1`] = `
     </div>
   </div>
   <div
-    className="level familiar"
+    className="level"
   >
     <span />
     <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -50,11 +58,19 @@ exports[`renders Skill  Skill --->level = familiar 2`] = `
     </div>
   </div>
   <div
-    className="level familiar"
+    className="level"
   >
     <span />
     <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -82,11 +98,19 @@ exports[`renders Skill  Skill --->level = familiar 3`] = `
     </div>
   </div>
   <div
-    className="level familiar"
+    className="level"
   >
     <span />
     <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -114,11 +138,15 @@ exports[`renders Skill  Skill --->level = proficient 1`] = `
     </div>
   </div>
   <div
-    className="level proficient"
+    className="level"
   >
     <span />
     <span />
     <span />
+    <span />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -146,11 +174,21 @@ exports[`renders Skill  Skill --->level = proficient 2`] = `
     </div>
   </div>
   <div
-    className="level understand"
+    className="level"
   >
     <span />
-    <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -178,11 +216,21 @@ exports[`renders Skill  Skill --->level = proficient 3`] = `
     </div>
   </div>
   <div
-    className="level understand"
+    className="level"
   >
     <span />
-    <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -210,11 +258,21 @@ exports[`renders Skill  Skill --->level = understand 1`] = `
     </div>
   </div>
   <div
-    className="level understand"
+    className="level"
   >
     <span />
-    <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -242,11 +300,21 @@ exports[`renders Skill  Skill --->level = understand 2`] = `
     </div>
   </div>
   <div
-    className="level understand"
+    className="level"
   >
     <span />
-    <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >
@@ -274,11 +342,21 @@ exports[`renders Skill  Skill --->level = understand 3`] = `
     </div>
   </div>
   <div
-    className="level understand"
+    className="level"
   >
     <span />
-    <span />
-    <span />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
+    <span
+      className="empty"
+    />
     <div
       className="levelName"
     >

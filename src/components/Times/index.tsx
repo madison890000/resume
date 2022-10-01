@@ -11,7 +11,7 @@ const Times = ({ start, end }: TimesProps) => (
     <div className={styles.times}>
         <span>{formatDate(start)}</span>
         <span>-</span>
-        <span>{end ? formatDate(end) : 'present'}</span>
+        <span>{end ? formatDate(end) : 'Present'}</span>
     </div>
 )
 

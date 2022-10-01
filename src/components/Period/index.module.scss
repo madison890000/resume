@@ -2,6 +2,21 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media screen and (max-width: 414px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.timeline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media screen and (max-width: 414px) {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
 
 .header {

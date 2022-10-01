@@ -18,13 +18,12 @@
     }
 
     ul {
-      padding: 0 calc(var(--base-gap-unit) * 12);
+      padding: 0 0 0 calc(var(--base-gap-unit) * 12);
     }
   }
 }
 
 .description {
-  width: 90%;
   margin: var(--block-margin);
 }
 

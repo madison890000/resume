@@ -10,7 +10,7 @@ import {
 
 interface IPeriod {
     start: Date;
-    end: Date;
+    end?: Date;
     keywords: Keyword[];
     company: Company;
     jobPositionLevel: JobPositionLevel;
@@ -23,7 +23,7 @@ interface IPeriod {
 export default class Period {
     readonly id: string;
     public start: Date;
-    public end: Date;
+    public end?: Date;
     public keywords: Keyword[];
     public achievements: Achievement[];
     public jobSummaries: string[];

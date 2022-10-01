@@ -1,37 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './index.module.scss';
 import Period from '../../lib/Period';
 import { findPeriodByDate, getMonthCountInStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
+import { isMobilePhone } from '../../utils/device';
 
-
-const COLORS = [
-    '#FF6666',
-    '#FFFF66',
-    '#66FFFF',
-    '#6666FF',
-    '#B266FF',
-    '#FF66B2',
-]
 
 const PAGE_PADDING = 24;
 
-const TimeLine = ({ periods }: { periods: Period[] }) => {
+const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors: { [key: string]: string } }) => {
     const start = periods?.[0]?.start;
     const end = periods?.[periods?.length - 1]?.end;
-    const [width, setWidth] = useState<number>(0);
-    useEffect(() => {
-        const { innerWidth } = window;
-        setWidth(innerWidth - PAGE_PADDING - 40)
-    }, [])
+    const width = isMobilePhone() ? window.innerWidth - 24 : window.innerWidth - PAGE_PADDING - 20;
     const rectGap = 1;
-    const totalRects = getMonthCountInStartAndEnd(start, end) + 1;
+    const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
     const rectFullWidth = width / totalRects;
     const rectWidth = rectFullWidth - rectGap;
-    const periodColors: { [key: string]: string } = {};
-    periods?.forEach((p, index) => {
-        periodColors[p.id] = COLORS[index];
-    })
     let rectArray = new Array(totalRects).fill(0)
         ?.map((_, index) => {
             const year = start.getFullYear() + Math.floor((start.getMonth() + index) / 12);
@@ -81,4 +65,4 @@ const TimeLine = ({ periods }: { periods: Period[] }) => {
     )
 }
 
-export default TimeLine
+export default TimeLines

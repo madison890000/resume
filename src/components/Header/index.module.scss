@@ -12,9 +12,17 @@
 .email {
   font-style: italic;
   font-size: var(--base-font-size-middle);
+
+  @media screen and (max-width: 414px) {
+    font-size: var(--base-font-size-small);
+  }
 }
 
 .cellphone {
   font-style: italic;
   font-size: var(--base-font-size-middle);
+  
+  @media screen and (max-width: 414px) {
+    font-size: var(--base-font-size-small);
+  }
 }
