@@ -3,15 +3,26 @@ import styles from './index.module.scss';
 import Period from '../../lib/Period';
 import { findPeriodByDate, getMonthCountInStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
-import { isMobilePhone } from '../../utils/device';
+import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
 
 const PAGE_PADDING = 24;
-
+export const getWidth = (device: ScreenDevice) => {
+    switch (device) {
+        case ScreenDevice.PC:
+            return window.innerWidth - PAGE_PADDING - 20
+        case ScreenDevice.Mobile:
+            return window.innerWidth - 24
+        case ScreenDevice.A4:
+            return window.innerWidth - 24
+        default:
+            return window.innerWidth - PAGE_PADDING - 20
+    }
+}
 const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors: { [key: string]: string } }) => {
     const start = periods?.[0]?.start;
     const end = periods?.[periods?.length - 1]?.end;
-    const width = isMobilePhone() ? window.innerWidth - 24 : window.innerWidth - PAGE_PADDING - 20;
+    const width = getWidth(getScreenDevice());
     const rectGap = 1;
     const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
     const rectFullWidth = width / totalRects;

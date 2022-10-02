@@ -657,623 +657,623 @@ Application, Internet finance Web System, education application, Data Reporting 
               "backgroundColor": "E0E0E0",
             }
           }
-          width={980}
+          width={1000}
         >
           <g>
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
+              width={10.363636363636363}
               x={0}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={11.136363636363637}
+              width={10.363636363636363}
+              x={11.363636363636363}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={22.272727272727273}
+              width={10.363636363636363}
+              x={22.727272727272727}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={33.40909090909091}
+              width={10.363636363636363}
+              x={34.09090909090909}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={44.54545454545455}
+              width={10.363636363636363}
+              x={45.45454545454545}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={55.68181818181819}
+              width={10.363636363636363}
+              x={56.81818181818181}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={66.81818181818181}
+              width={10.363636363636363}
+              x={68.18181818181819}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={77.95454545454545}
+              width={10.363636363636363}
+              x={79.54545454545455}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={89.0909090909091}
+              width={10.363636363636363}
+              x={90.9090909090909}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={100.22727272727273}
+              width={10.363636363636363}
+              x={102.27272727272727}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={111.36363636363637}
+              width={10.363636363636363}
+              x={113.63636363636363}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={122.5}
+              width={10.363636363636363}
+              x={125}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={10.136363636363637}
-              x={133.63636363636363}
+              width={10.363636363636363}
+              x={136.36363636363637}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={144.77272727272728}
+              width={10.363636363636363}
+              x={147.72727272727272}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={155.9090909090909}
+              width={10.363636363636363}
+              x={159.0909090909091}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={167.04545454545456}
+              width={10.363636363636363}
+              x={170.45454545454544}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={178.1818181818182}
+              width={10.363636363636363}
+              x={181.8181818181818}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={189.3181818181818}
+              width={10.363636363636363}
+              x={193.1818181818182}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={200.45454545454547}
+              width={10.363636363636363}
+              x={204.54545454545453}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={211.5909090909091}
+              width={10.363636363636363}
+              x={215.9090909090909}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={222.72727272727275}
+              width={10.363636363636363}
+              x={227.27272727272725}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={233.86363636363637}
+              width={10.363636363636363}
+              x={238.63636363636363}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={245}
+              width={10.363636363636363}
+              x={250}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={256.1363636363636}
+              width={10.363636363636363}
+              x={261.3636363636364}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={267.27272727272725}
+              width={10.363636363636363}
+              x={272.72727272727275}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={278.40909090909093}
+              width={10.363636363636363}
+              x={284.09090909090907}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={289.54545454545456}
+              width={10.363636363636363}
+              x={295.45454545454544}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={300.6818181818182}
+              width={10.363636363636363}
+              x={306.8181818181818}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={311.8181818181818}
+              width={10.363636363636363}
+              x={318.1818181818182}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={322.95454545454544}
+              width={10.363636363636363}
+              x={329.54545454545456}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={334.0909090909091}
+              width={10.363636363636363}
+              x={340.9090909090909}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={345.22727272727275}
+              width={10.363636363636363}
+              x={352.27272727272725}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={10.136363636363637}
-              x={356.3636363636364}
+              width={10.363636363636363}
+              x={363.6363636363636}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={367.5}
+              width={10.363636363636363}
+              x={375}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={378.6363636363636}
+              width={10.363636363636363}
+              x={386.3636363636364}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={389.7727272727273}
+              width={10.363636363636363}
+              x={397.7272727272727}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={400.90909090909093}
+              width={10.363636363636363}
+              x={409.09090909090907}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={412.04545454545456}
+              width={10.363636363636363}
+              x={420.45454545454544}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={423.1818181818182}
+              width={10.363636363636363}
+              x={431.8181818181818}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={434.3181818181818}
+              width={10.363636363636363}
+              x={443.1818181818182}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={445.4545454545455}
+              width={10.363636363636363}
+              x={454.5454545454545}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={456.5909090909091}
+              width={10.363636363636363}
+              x={465.9090909090909}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={467.72727272727275}
+              width={10.363636363636363}
+              x={477.27272727272725}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={478.8636363636364}
+              width={10.363636363636363}
+              x={488.6363636363636}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={490}
+              width={10.363636363636363}
+              x={500}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={501.1363636363636}
+              width={10.363636363636363}
+              x={511.3636363636364}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={512.2727272727273}
+              width={10.363636363636363}
+              x={522.7272727272727}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={10.136363636363637}
-              x={523.4090909090909}
+              width={10.363636363636363}
+              x={534.0909090909091}
               y="5"
             />
             <rect
               fill=""
               height="10"
-              width={10.136363636363637}
-              x={534.5454545454545}
+              width={10.363636363636363}
+              x={545.4545454545455}
               y="5"
             />
             <rect
               fill=""
               height="10"
-              width={10.136363636363637}
-              x={545.6818181818182}
+              width={10.363636363636363}
+              x={556.8181818181818}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={556.8181818181819}
+              width={10.363636363636363}
+              x={568.1818181818181}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={567.9545454545455}
+              width={10.363636363636363}
+              x={579.5454545454545}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={579.0909090909091}
+              width={10.363636363636363}
+              x={590.9090909090909}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={590.2272727272727}
+              width={10.363636363636363}
+              x={602.2727272727273}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={601.3636363636364}
+              width={10.363636363636363}
+              x={613.6363636363636}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={612.5}
+              width={10.363636363636363}
+              x={625}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={623.6363636363636}
+              width={10.363636363636363}
+              x={636.3636363636364}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={634.7727272727273}
+              width={10.363636363636363}
+              x={647.7272727272727}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={645.9090909090909}
+              width={10.363636363636363}
+              x={659.0909090909091}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={657.0454545454546}
+              width={10.363636363636363}
+              x={670.4545454545454}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={668.1818181818182}
+              width={10.363636363636363}
+              x={681.8181818181818}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={679.3181818181819}
+              width={10.363636363636363}
+              x={693.1818181818181}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={690.4545454545455}
+              width={10.363636363636363}
+              x={704.5454545454545}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={701.5909090909091}
+              width={10.363636363636363}
+              x={715.9090909090909}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={712.7272727272727}
+              width={10.363636363636363}
+              x={727.2727272727273}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={723.8636363636364}
+              width={10.363636363636363}
+              x={738.6363636363636}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={735}
+              width={10.363636363636363}
+              x={750}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={746.1363636363636}
+              width={10.363636363636363}
+              x={761.3636363636364}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={757.2727272727273}
+              width={10.363636363636363}
+              x={772.7272727272727}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={768.4090909090909}
+              width={10.363636363636363}
+              x={784.0909090909091}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={779.5454545454546}
+              width={10.363636363636363}
+              x={795.4545454545454}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={790.6818181818182}
+              width={10.363636363636363}
+              x={806.8181818181818}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={801.8181818181819}
+              width={10.363636363636363}
+              x={818.1818181818181}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={812.9545454545455}
+              width={10.363636363636363}
+              x={829.5454545454545}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={824.0909090909091}
+              width={10.363636363636363}
+              x={840.9090909090909}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={835.2272727272727}
+              width={10.363636363636363}
+              x={852.2727272727273}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={846.3636363636364}
+              width={10.363636363636363}
+              x={863.6363636363636}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={857.5}
+              width={10.363636363636363}
+              x={875}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={868.6363636363636}
+              width={10.363636363636363}
+              x={886.3636363636364}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={879.7727272727273}
+              width={10.363636363636363}
+              x={897.7272727272727}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={890.909090909091}
+              width={10.363636363636363}
+              x={909.090909090909}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={902.0454545454546}
+              width={10.363636363636363}
+              x={920.4545454545454}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={10.136363636363637}
-              x={913.1818181818182}
+              width={10.363636363636363}
+              x={931.8181818181818}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={10.136363636363637}
-              x={924.3181818181819}
+              width={10.363636363636363}
+              x={943.1818181818181}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={10.136363636363637}
-              x={935.4545454545455}
+              width={10.363636363636363}
+              x={954.5454545454545}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={10.136363636363637}
-              x={946.5909090909091}
+              width={10.363636363636363}
+              x={965.9090909090909}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={10.136363636363637}
-              x={957.7272727272727}
+              width={10.363636363636363}
+              x={977.2727272727273}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={10.136363636363637}
-              x={968.8636363636364}
+              width={10.363636363636363}
+              x={988.6363636363636}
               y="5"
             />
           </g>
@@ -1291,7 +1291,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           style={
             Object {
               "position": "absolute",
-              "transform": "translateX(11.136363636363637px)",
+              "transform": "translateX(11.363636363636363px)",
             }
           }
         >
@@ -1304,7 +1304,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           style={
             Object {
               "position": "absolute",
-              "transform": "translateX(144.77272727272728px)",
+              "transform": "translateX(147.72727272727272px)",
             }
           }
         >
@@ -1316,7 +1316,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           style={
             Object {
               "position": "absolute",
-              "transform": "translateX(378.6363636363636px)",
+              "transform": "translateX(386.3636363636364px)",
             }
           }
         >
@@ -1328,7 +1328,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           style={
             Object {
               "position": "absolute",
-              "transform": "translateX(567.9545454545455px)",
+              "transform": "translateX(579.5454545454545px)",
             }
           }
         >
@@ -1341,7 +1341,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           style={
             Object {
               "position": "absolute",
-              "transform": "translateX(924.3181818181819px)",
+              "transform": "translateX(943.1818181818181px)",
             }
           }
         >
@@ -1405,52 +1405,52 @@ Application, Internet finance Web System, education application, Data Reporting 
           height="20"
           style={
             Object {
-              "backgroundColor": "E0E0E0",
+              "backgroundColor": "",
             }
           }
-          width={48}
+          width={36}
         >
           <g>
             <rect
               fill="#B266FF"
               height="10"
-              width={7}
+              width={5}
               x={0}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={7}
-              x={8}
+              width={5}
+              x={6}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={7}
-              x={16}
+              width={5}
+              x={12}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={7}
+              width={5}
+              x={18}
+              y="5"
+            />
+            <rect
+              fill="#B266FF"
+              height="10"
+              width={5}
               x={24}
               y="5"
             />
             <rect
               fill="#B266FF"
               height="10"
-              width={7}
-              x={32}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={7}
-              x={40}
+              width={5}
+              x={30}
               y="5"
             />
           </g>
@@ -1598,241 +1598,241 @@ Application, Internet finance Web System, education application, Data Reporting 
           height="20"
           style={
             Object {
-              "backgroundColor": "E0E0E0",
+              "backgroundColor": "",
             }
           }
-          width={264}
+          width={198}
         >
           <g>
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
               x={0}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={8}
+              width={5}
+              x={6}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={16}
+              width={5}
+              x={12}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={18}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={24}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={32}
+              width={5}
+              x={30}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={40}
+              width={5}
+              x={36}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={42}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={48}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={56}
+              width={5}
+              x={54}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={64}
+              width={5}
+              x={60}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={66}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={72}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={80}
+              width={5}
+              x={78}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={88}
+              width={5}
+              x={84}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={90}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={96}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={104}
+              width={5}
+              x={102}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={112}
+              width={5}
+              x={108}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={114}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={120}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={128}
+              width={5}
+              x={126}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={136}
+              width={5}
+              x={132}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={138}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={144}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={152}
+              width={5}
+              x={150}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={160}
+              width={5}
+              x={156}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={162}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={168}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={176}
+              width={5}
+              x={174}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
-              x={184}
+              width={5}
+              x={180}
               y="5"
             />
             <rect
               fill="#6666FF"
               height="10"
-              width={7}
+              width={5}
+              x={186}
+              y="5"
+            />
+            <rect
+              fill="#6666FF"
+              height="10"
+              width={5}
               x={192}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={200}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={208}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={216}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={224}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={232}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={240}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={248}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={7}
-              x={256}
               y="5"
             />
           </g>
@@ -1997,115 +1997,115 @@ Application, Internet finance Web System, education application, Data Reporting 
           height="20"
           style={
             Object {
-              "backgroundColor": "E0E0E0",
+              "backgroundColor": "",
             }
           }
-          width={120}
+          width={90}
         >
           <g>
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
+              width={5}
               x={0}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={8}
+              width={5}
+              x={6}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={16}
+              width={5}
+              x={12}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
+              width={5}
+              x={18}
+              y="5"
+            />
+            <rect
+              fill="#66FFFF"
+              height="10"
+              width={5}
               x={24}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={32}
+              width={5}
+              x={30}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={40}
+              width={5}
+              x={36}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
+              width={5}
+              x={42}
+              y="5"
+            />
+            <rect
+              fill="#66FFFF"
+              height="10"
+              width={5}
               x={48}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={56}
+              width={5}
+              x={54}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={64}
+              width={5}
+              x={60}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
+              width={5}
+              x={66}
+              y="5"
+            />
+            <rect
+              fill="#66FFFF"
+              height="10"
+              width={5}
               x={72}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={80}
+              width={5}
+              x={78}
               y="5"
             />
             <rect
               fill="#66FFFF"
               height="10"
-              width={7}
-              x={88}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={7}
-              x={96}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={7}
-              x={104}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={7}
-              x={112}
+              width={5}
+              x={84}
               y="5"
             />
           </g>
@@ -2219,157 +2219,157 @@ Application, Internet finance Web System, education application, Data Reporting 
           height="20"
           style={
             Object {
-              "backgroundColor": "E0E0E0",
+              "backgroundColor": "",
             }
           }
-          width={168}
+          width={126}
         >
           <g>
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
               x={0}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={8}
+              width={5}
+              x={6}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={16}
+              width={5}
+              x={12}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
+              x={18}
+              y="5"
+            />
+            <rect
+              fill="#FFFF66"
+              height="10"
+              width={5}
               x={24}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={32}
+              width={5}
+              x={30}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={40}
+              width={5}
+              x={36}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
+              x={42}
+              y="5"
+            />
+            <rect
+              fill="#FFFF66"
+              height="10"
+              width={5}
               x={48}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={56}
+              width={5}
+              x={54}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={64}
+              width={5}
+              x={60}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
+              x={66}
+              y="5"
+            />
+            <rect
+              fill="#FFFF66"
+              height="10"
+              width={5}
               x={72}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={80}
+              width={5}
+              x={78}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={88}
+              width={5}
+              x={84}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
+              x={90}
+              y="5"
+            />
+            <rect
+              fill="#FFFF66"
+              height="10"
+              width={5}
               x={96}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={104}
+              width={5}
+              x={102}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
-              x={112}
+              width={5}
+              x={108}
               y="5"
             />
             <rect
               fill="#FFFF66"
               height="10"
-              width={7}
+              width={5}
+              x={114}
+              y="5"
+            />
+            <rect
+              fill="#FFFF66"
+              height="10"
+              width={5}
               x={120}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={7}
-              x={128}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={7}
-              x={136}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={7}
-              x={144}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={7}
-              x={152}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={7}
-              x={160}
               y="5"
             />
           </g>
@@ -2494,101 +2494,101 @@ Application, Internet finance Web System, education application, Data Reporting 
           height="20"
           style={
             Object {
-              "backgroundColor": "E0E0E0",
+              "backgroundColor": "",
             }
           }
-          width={104}
+          width={78}
         >
           <g>
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
+              width={5}
               x={0}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={8}
+              width={5}
+              x={6}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={16}
+              width={5}
+              x={12}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
+              width={5}
+              x={18}
+              y="5"
+            />
+            <rect
+              fill="#FF6666"
+              height="10"
+              width={5}
               x={24}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={32}
+              width={5}
+              x={30}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={40}
+              width={5}
+              x={36}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
+              width={5}
+              x={42}
+              y="5"
+            />
+            <rect
+              fill="#FF6666"
+              height="10"
+              width={5}
               x={48}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={56}
+              width={5}
+              x={54}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
-              x={64}
+              width={5}
+              x={60}
               y="5"
             />
             <rect
               fill="#FF6666"
               height="10"
-              width={7}
+              width={5}
+              x={66}
+              y="5"
+            />
+            <rect
+              fill="#FF6666"
+              height="10"
+              width={5}
               x={72}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={7}
-              x={80}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={7}
-              x={88}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={7}
-              x={96}
               y="5"
             />
           </g>

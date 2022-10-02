@@ -1,16 +1,27 @@
 import React from 'react';
 import { getMonthCountInStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
-import { isMobilePhone } from '../../utils/device';
+import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
 
 const BASE_RECT_WIDTH = 8;
 
+export const getBaseRectFull = (device: ScreenDevice) => {
+    switch (device) {
+        case ScreenDevice.A4:
+            return 6
+        case ScreenDevice.Mobile:
+            return 4
+        case ScreenDevice.PC:
+            return 8
+        default:
+            return 8
+    }
+}
 const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; periodColor: string }) => {
     const rectGap = 1;
     const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
-    const isMobile = isMobilePhone();
-    const rectFullWidth = isMobile ? BASE_RECT_WIDTH / 2 : BASE_RECT_WIDTH;
+    const rectFullWidth = getBaseRectFull(getScreenDevice());
     const rectWidth = rectFullWidth - rectGap;
     let rectArray = new Array(totalRects).fill(0)
         ?.map((_, index) => ({
@@ -19,7 +30,7 @@ const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; pe
         }));
     return (
         <svg width={rectFullWidth * totalRects} height="20"
-             style={{ backgroundColor: isMobile ? '' : 'E0E0E0' }}>
+             style={{ backgroundColor: getScreenDevice() !== ScreenDevice.PC ? '' : 'E0E0E0' }}>
             <g>
                 {rectArray?.map((e, index) => (
                     <MonthRect

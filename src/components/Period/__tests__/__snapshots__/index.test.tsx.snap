@@ -43,88 +43,88 @@ Array [
         height="20"
         style={
           Object {
-            "backgroundColor": "E0E0E0",
+            "backgroundColor": "",
           }
         }
-        width={104}
+        width={78}
       >
         <g>
           <rect
             height="10"
-            width={7}
+            width={5}
             x={0}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={8}
+            width={5}
+            x={6}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={16}
+            width={5}
+            x={12}
             y="5"
           />
           <rect
             height="10"
-            width={7}
+            width={5}
+            x={18}
+            y="5"
+          />
+          <rect
+            height="10"
+            width={5}
             x={24}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={32}
+            width={5}
+            x={30}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={40}
+            width={5}
+            x={36}
             y="5"
           />
           <rect
             height="10"
-            width={7}
+            width={5}
+            x={42}
+            y="5"
+          />
+          <rect
+            height="10"
+            width={5}
             x={48}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={56}
+            width={5}
+            x={54}
             y="5"
           />
           <rect
             height="10"
-            width={7}
-            x={64}
+            width={5}
+            x={60}
             y="5"
           />
           <rect
             height="10"
-            width={7}
+            width={5}
+            x={66}
+            y="5"
+          />
+          <rect
+            height="10"
+            width={5}
             x={72}
-            y="5"
-          />
-          <rect
-            height="10"
-            width={7}
-            x={80}
-            y="5"
-          />
-          <rect
-            height="10"
-            width={7}
-            x={88}
-            y="5"
-          />
-          <rect
-            height="10"
-            width={7}
-            x={96}
             y="5"
           />
         </g>
