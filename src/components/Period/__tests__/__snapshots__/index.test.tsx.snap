@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Period 1`] = `
-Array [
+<div
+  className="periodContainer"
+>
   <div
     className="period"
   >
@@ -143,13 +145,13 @@ Array [
         </span>
       </div>
     </div>
-  </div>,
+  </div>
   <div>
     <h5>
       Job summaries:
     </h5>
     <ul />
-  </div>,
+  </div>
   <div>
     <h5>
       Achievements:
@@ -157,6 +159,6 @@ Array [
     <ul
       className="achievements"
     />
-  </div>,
-]
+  </div>
+</div>
 `;

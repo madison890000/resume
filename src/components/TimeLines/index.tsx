@@ -3,26 +3,22 @@ import styles from './index.module.scss';
 import Period from '../../lib/Period';
 import { findPeriodByDate, getMonthCountInStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
-import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
+interface TimeLinesProps {
+    width: number;
+    periods: Period[];
+    periodColors: { [key: string]: string };
+    barPosition?: 'top' | 'bottom';
+};
 
-const PAGE_PADDING = 24;
-export const getWidth = (device: ScreenDevice) => {
-    switch (device) {
-        case ScreenDevice.PC:
-            return window.innerWidth - PAGE_PADDING - 20
-        case ScreenDevice.Mobile:
-            return window.innerWidth - 24
-        case ScreenDevice.A4:
-            return window.innerWidth - 24
-        default:
-            return window.innerWidth - PAGE_PADDING - 20
-    }
-}
-const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors: { [key: string]: string } }) => {
+const TimeLines = ({
+                       barPosition = 'top',
+                       width,
+                       periods,
+                       periodColors
+                   }: TimeLinesProps) => {
     const start = periods?.[0]?.start;
     const end = periods?.[periods?.length - 1]?.end;
-    const width = getWidth(getScreenDevice());
     const rectGap = 1;
     const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
     const rectFullWidth = width / totalRects;
@@ -39,21 +35,30 @@ const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors:
             }
         })
     return (
-        <div className={styles.timelineContainer}>
-            <div>
-                <svg width={width} height="20" style={{ backgroundColor: 'E0E0E0' }}>
-                    <g>
-                        {rectArray?.map((e, index) => (
-                            <MonthRect
-                                width={rectWidth}
-                                gap={rectGap}
-                                color={e?.color}
-                                index={e?.index}
-                            />
-                        ))}
-                    </g>
-                </svg>
-            </div>
+        <div
+            className={styles.timelineContainer}
+            style={{
+                width: `${width}px`
+            }}
+        >
+            {
+                barPosition === 'top' && (
+                    <div>
+                        <svg width={width} height="20" style={{ backgroundColor: 'E0E0E0' }}>
+                            <g>
+                                {rectArray?.map((e, index) => (
+                                    <MonthRect
+                                        width={rectWidth}
+                                        gap={rectGap}
+                                        color={e?.color}
+                                        index={e?.index}
+                                    />
+                                ))}
+                            </g>
+                        </svg>
+                    </div>
+                )
+            }
             <div style={{
                 height: 48
             }}>
@@ -72,6 +77,24 @@ const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors:
                     )
                 })}
             </div>
+            {
+                barPosition === 'bottom' && (
+                    <div>
+                        <svg width={width} height="20" style={{ backgroundColor: 'E0E0E0' }}>
+                            <g>
+                                {rectArray?.map((e, index) => (
+                                    <MonthRect
+                                        width={rectWidth}
+                                        gap={rectGap}
+                                        color={e?.color}
+                                        index={e?.index}
+                                    />
+                                ))}
+                            </g>
+                        </svg>
+                    </div>
+                )
+            }
         </div>
     )
 }

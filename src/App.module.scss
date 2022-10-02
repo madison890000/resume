@@ -1,6 +1,7 @@
 .main {
   font-size: var(--base-font-size-large);
   padding: var(--page-padding);
+  width: calc(100vw - 2 * var(--page-padding));
 
   h5 {
     margin: calc(var(--base-gap-unit) * 2) calc(var(--base-gap-unit) * 8);

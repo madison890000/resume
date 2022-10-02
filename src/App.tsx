@@ -6,6 +6,7 @@ import Skill from './components/Skill';
 import Period from './components/Period';
 import Education from './components/Education';
 import Divider from './components/Divider';
+import { getPageContentWidth, getScreenDevice, ScreenDevice } from './utils/device';
 import TimeLines from './components/TimeLines';
 
 const COLORS = [
@@ -47,9 +48,28 @@ function App() {
                     ))}
                 </div>
             </section>
-            <Divider title="Professional Experience" />
+            <Divider
+                title="Professional Experience"
+                extra={
+                    getScreenDevice() === ScreenDevice.PC ?
+                        <TimeLines
+                            width={getPageContentWidth() - 300}
+                            periods={person.periods}
+                            periodColors={periodColors}
+                            barPosition="bottom"
+                        />
+                        : null
+                }
+            />
             <section>
-                <TimeLines periods={person.periods} periodColors={periodColors} />
+                {
+                    getScreenDevice() !== ScreenDevice.PC ? <TimeLines
+                        width={getPageContentWidth()}
+                        periods={person.periods}
+                        periodColors={periodColors}
+                        barPosition="top"
+                    /> : null
+                }
             </section>
             <section>
                 {person.reversedPeriods?.map(period => (

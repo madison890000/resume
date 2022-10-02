@@ -1,4 +1,4 @@
-import { getScreenDevice, ScreenDevice } from '../device';
+import { getPageContentWidth, getScreenDevice, ScreenDevice } from '../device';
 
 let windowSpy: any;
 
@@ -33,3 +33,15 @@ describe('utils -----> device ', () => {
             .toBe(ScreenDevice.PC)
     });
 })
+
+describe('getPageContentWidth ', () => {
+    test('getPageContentWidth correctly', () => {
+        windowSpy.mockImplementation(() => ({
+            innerWidth: 1800,
+            outerWidth: 1800,
+        }));
+        expect(getPageContentWidth())
+            .toEqual(1800 - 24);
+    })
+
+});

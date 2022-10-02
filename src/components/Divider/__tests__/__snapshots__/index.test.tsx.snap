@@ -4,9 +4,16 @@ exports[`renders Divider 1`] = `
 <div
   className="divider"
 >
-  <h3>
-    test Divider
-  </h3>
+  <div
+    className="title"
+  >
+    <div>
+      <h3>
+        test Divider
+      </h3>
+    </div>
+    <div />
+  </div>
   <div
     className="section"
   />

@@ -9,13 +9,13 @@ const BASE_RECT_WIDTH = 8;
 export const getBaseRectFull = (device: ScreenDevice) => {
     switch (device) {
         case ScreenDevice.A4:
-            return 6
+            return BASE_RECT_WIDTH - 2
         case ScreenDevice.Mobile:
-            return 4
+            return BASE_RECT_WIDTH - 4
         case ScreenDevice.PC:
-            return 8
+            return BASE_RECT_WIDTH
         default:
-            return 8
+            return BASE_RECT_WIDTH
     }
 }
 const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; periodColor: string }) => {

@@ -1,8 +1,10 @@
 .level {
+  min-width: 150px;
+
   & > span {
     display: inline-block;
     margin: var(--base-gap-unit);
-    width: 30px;
+    width: 26px;
     height: 20px;
     background: gray;
 
@@ -11,6 +13,7 @@
       height: 16px;
       background: black;
     }
+
     @media screen and (max-width: 414px) {
       width: 12px;
       height: 8px;
@@ -20,6 +23,8 @@
   @media screen and (max-width: 414px) {
     min-width: 80px;
   }
+
+
 }
 
 .levelName {
@@ -28,7 +33,7 @@
 }
 
 .empty {
-  width: 28px !important;
+  width: 24px !important;
   height: 18px !important;
   background: transparent !important;
   border: 1px solid gray;

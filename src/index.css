@@ -54,7 +54,6 @@ code {
     --inline-block-padding: var(--base-padding);
     --inline-block-margin: var(--base-gap-small);
 
-
 }
 
 @media screen and (max-width: 414px ) {
@@ -73,6 +72,7 @@ code {
         --page-margin: var(--base-gap-large);
     }
 }
+
 @media screen and (max-width: 1150px ) {
 
     :root {
@@ -91,9 +91,3 @@ code {
 }
 
 
-/**
- * seems not working very well TODO need to make it working
- */
-@page {
-    size: 297mm 420mm; /* or size: 1123px 1588px; */
-}

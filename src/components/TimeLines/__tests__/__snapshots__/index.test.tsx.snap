@@ -3,6 +3,11 @@
 exports[`renders TimeLine  TimeLine one period 1`] = `
 <div
   className="timelineContainer"
+  style={
+    Object {
+      "width": "1000px",
+    }
+  }
 >
   <div>
     <svg
