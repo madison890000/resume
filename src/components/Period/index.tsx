@@ -31,7 +31,7 @@ const Period = ({
                     jobSummaries,
                 }: PeriodProps) => {
     return (
-        <>
+        <div className={styles.periodContainer}>
             <div className={styles.period}>
                 <div>
                     <div className={styles.header}>
@@ -88,7 +88,7 @@ const Period = ({
                     ))}
                 </ul>
             </div>
-        </>
+        </div>
     );
 }
 

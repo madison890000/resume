@@ -34,9 +34,16 @@ exports[`renders App 1`] = `
   <div
     className="divider"
   >
-    <h3>
-      Description
-    </h3>
+    <div
+      className="title"
+    >
+      <div>
+        <h3>
+          Description
+        </h3>
+      </div>
+      <div />
+    </div>
     <div
       className="section"
     />
@@ -62,13 +69,21 @@ Application, Internet finance Web System, education application, Data Reporting 
         I am both a good team leader and team member. I am a person who is passionate about life, friendly to people, willing to share, and like to work with colleagues to make the world to be a better place.
       </div>
     </div>
+    <div />
   </section>
   <div
     className="divider"
   >
-    <h3>
-      Skill
-    </h3>
+    <div
+      className="title"
+    >
+      <div>
+        <h3>
+          Skill
+        </h3>
+      </div>
+      <div />
+    </div>
     <div
       className="section"
     />
@@ -638,9 +653,16 @@ Application, Internet finance Web System, education application, Data Reporting 
   <div
     className="divider"
   >
-    <h3>
-      Professional Experience
-    </h3>
+    <div
+      className="title"
+    >
+      <div>
+        <h3>
+          Professional Experience
+        </h3>
+      </div>
+      <div />
+    </div>
     <div
       className="section"
     />
@@ -648,6 +670,11 @@ Application, Internet finance Web System, education application, Data Reporting 
   <section>
     <div
       className="timelineContainer"
+      style={
+        Object {
+          "width": "1000px",
+        }
+      }
     >
       <div>
         <svg
@@ -1354,1299 +1381,1326 @@ Application, Internet finance Web System, education application, Data Reporting 
   </section>
   <section>
     <div
-      className="period"
+      className="periodContainer"
     >
-      <div>
-        <div
-          className="header"
-        >
-          <span
-            className="job"
+      <div
+        className="period"
+      >
+        <div>
+          <div
+            className="header"
           >
-            <span>
-              Senior
-            </span>
-            <span>
-              Software Engineer
-            </span>
-          </span>
-          <span
-            className="companyName"
-          >
-            <span>
-              Tesla
+            <span
+              className="job"
+            >
               <span>
-                <span
-                  className="less"
-                >
-                  Enterprise
+                Senior
+              </span>
+              <span>
+                Software Engineer
+              </span>
+            </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Tesla
+                <span>
+                  <span
+                    className="less"
+                  >
+                    Enterprise
+                  </span>
                 </span>
               </span>
             </span>
-          </span>
-          <span>
-            <span
-              className="filled"
-            >
-              React
+            <span>
+              <span
+                className="filled"
+              >
+                React
+              </span>
+              <span
+                className="filled"
+              >
+                Agile
+              </span>
             </span>
-            <span
-              className="filled"
-            >
-              Agile
-            </span>
-          </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="timeline"
-      >
-        <svg
-          height="20"
-          style={
-            Object {
-              "backgroundColor": "",
-            }
-          }
-          width={36}
-        >
-          <g>
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={0}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={6}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={12}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={18}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={24}
-              y="5"
-            />
-            <rect
-              fill="#B266FF"
-              height="10"
-              width={5}
-              x={30}
-              y="5"
-            />
-          </g>
-        </svg>
         <div
-          className="times"
+          className="timeline"
         >
-          <span>
-            May, 2022
-          </span>
-          <span>
-            -
-          </span>
-          <span>
-            Present
-          </span>
+          <svg
+            height="20"
+            style={
+              Object {
+                "backgroundColor": "",
+              }
+            }
+            width={36}
+          >
+            <g>
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={0}
+                y="5"
+              />
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={6}
+                y="5"
+              />
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={12}
+                y="5"
+              />
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={18}
+                y="5"
+              />
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={24}
+                y="5"
+              />
+              <rect
+                fill="#B266FF"
+                height="10"
+                width={5}
+                x={30}
+                y="5"
+              />
+            </g>
+          </svg>
+          <div
+            className="times"
+          >
+            <span>
+              May, 2022
+            </span>
+            <span>
+              -
+            </span>
+            <span>
+              Present
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h5>
-        Job summaries:
-      </h5>
-      <ul>
-        <li>
-          make the architecture design in Front-End project
-        </li>
-        <li>
-          improve the code quality and performance in FE
-        </li>
-        <li>
-          improve the FE team efficiency
-        </li>
-        <li>
-          communicate with product manager and UI designer to understand project requirements every 2 week (one sprint),
-        </li>
-        <li>
-          provide training and guidance on technical
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>
-        Achievements:
-      </h5>
-      <ul
-        className="achievements"
-      >
-        <li>
-          completed the design and development of common utils and Hooks in React project
-          <span>
-            <span
-              className="normal"
-            >
-              Engineering
+      <div>
+        <h5>
+          Job summaries:
+        </h5>
+        <ul>
+          <li>
+            make the architecture design in Front-End project
+          </li>
+          <li>
+            improve the code quality and performance in FE
+          </li>
+          <li>
+            improve the FE team efficiency
+          </li>
+          <li>
+            communicate with product manager and UI designer to understand project requirements every 2 week (one sprint),
+          </li>
+          <li>
+            provide training and guidance on technical
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          Achievements:
+        </h5>
+        <ul
+          className="achievements"
+        >
+          <li>
+            completed the design and development of common utils and Hooks in React project
+            <span>
+              <span
+                className="normal"
+              >
+                Engineering
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          optimized the front-end code
-          <span>
-            <span
-              className="normal"
-            >
-              Performance
+          </li>
+          <li>
+            optimized the front-end code
+            <span>
+              <span
+                className="normal"
+              >
+                Performance
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          improve the code quality
-          <span>
-            <span
-              className="normal"
-            >
-              Quality
+          </li>
+          <li>
+            improve the code quality
+            <span>
+              <span
+                className="normal"
+              >
+                Quality
+              </span>
             </span>
-          </span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div
-      className="period"
+      className="periodContainer"
     >
-      <div>
-        <div
-          className="header"
-        >
-          <span
-            className="job"
+      <div
+        className="period"
+      >
+        <div>
+          <div
+            className="header"
           >
-            <span>
-              Senior
-            </span>
-            <span>
-              Front-End Engineer
-            </span>
-          </span>
-          <span
-            className="companyName"
-          >
-            <span>
-              PCCW GLOBAL
+            <span
+              className="job"
+            >
               <span>
-                <span
-                  className="less"
-                >
-                  Enterprise
+                Senior
+              </span>
+              <span>
+                Front-End Engineer
+              </span>
+            </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                PCCW GLOBAL
+                <span>
+                  <span
+                    className="less"
+                  >
+                    Enterprise
+                  </span>
                 </span>
               </span>
             </span>
-          </span>
-          <span>
-            <span
-              className="filled"
-            >
-              React
+            <span>
+              <span
+                className="filled"
+              >
+                React
+              </span>
+              <span
+                className="filled"
+              >
+                NextJs
+              </span>
+              <span
+                className="filled"
+              >
+                umi
+              </span>
+              <span
+                className="filled"
+              >
+                TDD
+              </span>
+              <span
+                className="filled"
+              >
+                Agile
+              </span>
             </span>
-            <span
-              className="filled"
-            >
-              NextJs
-            </span>
-            <span
-              className="filled"
-            >
-              umi
-            </span>
-            <span
-              className="filled"
-            >
-              TDD
-            </span>
-            <span
-              className="filled"
-            >
-              Agile
-            </span>
-          </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="timeline"
-      >
-        <svg
-          height="20"
-          style={
-            Object {
-              "backgroundColor": "",
-            }
-          }
-          width={198}
-        >
-          <g>
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={0}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={6}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={12}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={18}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={24}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={30}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={36}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={42}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={48}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={54}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={60}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={66}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={72}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={78}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={84}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={90}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={96}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={102}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={108}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={114}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={120}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={126}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={132}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={138}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={144}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={150}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={156}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={162}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={168}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={174}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={180}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={186}
-              y="5"
-            />
-            <rect
-              fill="#6666FF"
-              height="10"
-              width={5}
-              x={192}
-              y="5"
-            />
-          </g>
-        </svg>
         <div
-          className="times"
+          className="timeline"
         >
-          <span>
-            Sep, 2019
-          </span>
-          <span>
-            -
-          </span>
-          <span>
-            May, 2022
-          </span>
+          <svg
+            height="20"
+            style={
+              Object {
+                "backgroundColor": "",
+              }
+            }
+            width={198}
+          >
+            <g>
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={0}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={6}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={12}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={18}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={24}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={30}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={36}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={42}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={48}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={54}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={60}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={66}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={72}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={78}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={84}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={90}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={96}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={102}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={108}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={114}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={120}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={126}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={132}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={138}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={144}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={150}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={156}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={162}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={168}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={174}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={180}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={186}
+                y="5"
+              />
+              <rect
+                fill="#6666FF"
+                height="10"
+                width={5}
+                x={192}
+                y="5"
+              />
+            </g>
+          </svg>
+          <div
+            className="times"
+          >
+            <span>
+              Sep, 2019
+            </span>
+            <span>
+              -
+            </span>
+            <span>
+              May, 2022
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h5>
-        Job summaries:
-      </h5>
-      <ul>
-        <li>
-          make the architecture design in Front-End project
-        </li>
-        <li>
-          communicate with product manager and UI designer to understand project requirements every week (one sprint),
-        </li>
-        <li>
-          conduct functional research and validation based on business requirements, evaluate requirements implementation feasibility and propose solutions.
-        </li>
-        <li>
-          responsible for task assignment and project requirement explanation to 5 external team members
-        </li>
-        <li>
-          provide training and guidance on technical to junior engineer
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>
-        Achievements:
-      </h5>
-      <ul
-        className="achievements"
-      >
-        <li>
-          design and developed our company's front-end UI component library
-          <span>
-            <span
-              className="normal"
-            >
-              UI
+      <div>
+        <h5>
+          Job summaries:
+        </h5>
+        <ul>
+          <li>
+            make the architecture design in Front-End project
+          </li>
+          <li>
+            communicate with product manager and UI designer to understand project requirements every week (one sprint),
+          </li>
+          <li>
+            conduct functional research and validation based on business requirements, evaluate requirements implementation feasibility and propose solutions.
+          </li>
+          <li>
+            responsible for task assignment and project requirement explanation to 5 external team members
+          </li>
+          <li>
+            provide training and guidance on technical to junior engineer
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          Achievements:
+        </h5>
+        <ul
+          className="achievements"
+        >
+          <li>
+            design and developed our company's front-end UI component library
+            <span>
+              <span
+                className="normal"
+              >
+                UI
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process
-          <span>
-            <span
-              className="normal"
-            >
-              CI/CD
+          </li>
+          <li>
+            setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process
+            <span>
+              <span
+                className="normal"
+              >
+                CI/CD
+              </span>
+              <span
+                className="normal"
+              >
+                Engineering
+              </span>
             </span>
-            <span
-              className="normal"
-            >
-              Engineering
+          </li>
+          <li>
+            setup the utils library in FE
+            <span>
+              <span
+                className="normal"
+              >
+                Engineering
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          setup the utils library in FE
-          <span>
-            <span
-              className="normal"
-            >
-              Engineering
+          </li>
+          <li>
+            using Micro Front-End Service to split code and improve the performance in FE
+            <span>
+              <span
+                className="normal"
+              >
+                Performance
+              </span>
+              <span
+                className="normal"
+              >
+                Engineering
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          using Micro Front-End Service to split code and improve the performance in FE
-          <span>
-            <span
-              className="normal"
-            >
-              Performance
+          </li>
+          <li>
+            define the Best practices in FE project with React and Typescript.
+            <span>
+              <span
+                className="normal"
+              >
+                Architecture
+              </span>
             </span>
-            <span
-              className="normal"
-            >
-              Engineering
-            </span>
-          </span>
-        </li>
-        <li>
-          define the Best practices in FE project with React and Typescript.
-          <span>
-            <span
-              className="normal"
-            >
-              Architecture
-            </span>
-          </span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div
-      className="period"
+      className="periodContainer"
     >
-      <div>
-        <div
-          className="header"
-        >
-          <span
-            className="job"
+      <div
+        className="period"
+      >
+        <div>
+          <div
+            className="header"
           >
-            <span>
-              Front-End Engineer
-            </span>
-          </span>
-          <span
-            className="companyName"
-          >
-            <span>
-              Citic Baixin Bank Co. Ltd
+            <span
+              className="job"
+            >
               <span>
-                <span
-                  className="less"
-                >
-                  Enterprise
+                Front-End Engineer
+              </span>
+            </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Citic Baixin Bank Co. Ltd
+                <span>
+                  <span
+                    className="less"
+                  >
+                    Enterprise
+                  </span>
                 </span>
               </span>
             </span>
-          </span>
-          <span>
-            <span
-              className="filled"
-            >
-              Vue
+            <span>
+              <span
+                className="filled"
+              >
+                Vue
+              </span>
+              <span
+                className="filled"
+              >
+                React
+              </span>
+              <span
+                className="filled"
+              >
+                Waterfall
+              </span>
             </span>
-            <span
-              className="filled"
-            >
-              React
-            </span>
-            <span
-              className="filled"
-            >
-              Waterfall
-            </span>
-          </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="timeline"
-      >
-        <svg
-          height="20"
-          style={
-            Object {
-              "backgroundColor": "",
-            }
-          }
-          width={90}
-        >
-          <g>
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={0}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={6}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={12}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={18}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={24}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={30}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={36}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={42}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={48}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={54}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={60}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={66}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={72}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={78}
-              y="5"
-            />
-            <rect
-              fill="#66FFFF"
-              height="10"
-              width={5}
-              x={84}
-              y="5"
-            />
-          </g>
-        </svg>
         <div
-          className="times"
+          className="timeline"
         >
-          <span>
-            Apr, 2018
-          </span>
-          <span>
-            -
-          </span>
-          <span>
-            Jun, 2019
-          </span>
+          <svg
+            height="20"
+            style={
+              Object {
+                "backgroundColor": "",
+              }
+            }
+            width={90}
+          >
+            <g>
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={0}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={6}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={12}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={18}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={24}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={30}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={36}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={42}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={48}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={54}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={60}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={66}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={72}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={78}
+                y="5"
+              />
+              <rect
+                fill="#66FFFF"
+                height="10"
+                width={5}
+                x={84}
+                y="5"
+              />
+            </g>
+          </svg>
+          <div
+            className="times"
+          >
+            <span>
+              Apr, 2018
+            </span>
+            <span>
+              -
+            </span>
+            <span>
+              Jun, 2019
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h5>
-        Job summaries:
-      </h5>
-      <ul>
-        <li>
-          communicate with product manager and UI designer partner through meeting to understand project requirements
-        </li>
-        <li>
-          responsible for task assignment and project requirement explanation to 5 team members
-        </li>
-        <li>
-          provide training and guidance on technical to junior engineer
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>
-        Achievements:
-      </h5>
-      <ul
-        className="achievements"
-      >
-        <li>
-          completed the design and development of company's front-end UI component library
-          <span>
-            <span
-              className="normal"
-            >
-              UI
+      <div>
+        <h5>
+          Job summaries:
+        </h5>
+        <ul>
+          <li>
+            communicate with product manager and UI designer partner through meeting to understand project requirements
+          </li>
+          <li>
+            responsible for task assignment and project requirement explanation to 5 team members
+          </li>
+          <li>
+            provide training and guidance on technical to junior engineer
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          Achievements:
+        </h5>
+        <ul
+          className="achievements"
+        >
+          <li>
+            completed the design and development of company's front-end UI component library
+            <span>
+              <span
+                className="normal"
+              >
+                UI
+              </span>
             </span>
-          </span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div
-      className="period"
+      className="periodContainer"
     >
-      <div>
-        <div
-          className="header"
-        >
-          <span
-            className="job"
+      <div
+        className="period"
+      >
+        <div>
+          <div
+            className="header"
           >
-            <span>
-              Software Engineer
-            </span>
-          </span>
-          <span
-            className="companyName"
-          >
-            <span>
-              Yinyuan Asia-pacific Technology Co. Ltd 
+            <span
+              className="job"
+            >
               <span>
-                <span
-                  className="less"
-                >
-                  Startup
+                Software Engineer
+              </span>
+            </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Yinyuan Asia-pacific Technology Co. Ltd 
+                <span>
+                  <span
+                    className="less"
+                  >
+                    Startup
+                  </span>
                 </span>
               </span>
             </span>
-          </span>
-          <span>
-            <span
-              className="filled"
-            >
-              Java
+            <span>
+              <span
+                className="filled"
+              >
+                Java
+              </span>
+              <span
+                className="filled"
+              >
+                jQuery
+              </span>
+              <span
+                className="filled"
+              >
+                React
+              </span>
+              <span
+                className="filled"
+              >
+                Waterfall
+              </span>
             </span>
-            <span
-              className="filled"
-            >
-              jQuery
-            </span>
-            <span
-              className="filled"
-            >
-              React
-            </span>
-            <span
-              className="filled"
-            >
-              Waterfall
-            </span>
-          </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="timeline"
-      >
-        <svg
-          height="20"
-          style={
-            Object {
-              "backgroundColor": "",
-            }
-          }
-          width={126}
-        >
-          <g>
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={0}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={6}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={12}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={18}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={24}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={30}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={36}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={42}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={48}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={54}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={60}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={66}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={72}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={78}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={84}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={90}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={96}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={102}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={108}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={114}
-              y="5"
-            />
-            <rect
-              fill="#FFFF66"
-              height="10"
-              width={5}
-              x={120}
-              y="5"
-            />
-          </g>
-        </svg>
         <div
-          className="times"
+          className="timeline"
         >
-          <span>
-            Jul, 2016
-          </span>
-          <span>
-            -
-          </span>
-          <span>
-            Mar, 2018
-          </span>
+          <svg
+            height="20"
+            style={
+              Object {
+                "backgroundColor": "",
+              }
+            }
+            width={126}
+          >
+            <g>
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={0}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={6}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={12}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={18}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={24}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={30}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={36}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={42}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={48}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={54}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={60}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={66}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={72}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={78}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={84}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={90}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={96}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={102}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={108}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={114}
+                y="5"
+              />
+              <rect
+                fill="#FFFF66"
+                height="10"
+                width={5}
+                x={120}
+                y="5"
+              />
+            </g>
+          </svg>
+          <div
+            className="times"
+          >
+            <span>
+              Jul, 2016
+            </span>
+            <span>
+              -
+            </span>
+            <span>
+              Mar, 2018
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h5>
-        Job summaries:
-      </h5>
-      <ul>
-        <li>
-          participate in the design and development of all projects 
-        </li>
-        <li>
-          responsible for the release quality of all system. 
-        </li>
-        <li>
-          responsible for team's recruitment, technical training(ES6), etc. 
-        </li>
-        <li>
-          take charge of annual feature planning and appraise performance of each team member.
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>
-        Achievements:
-      </h5>
-      <ul
-        className="achievements"
-      >
-        <li>
-          completed the design and development of the company's front-end UI component library
-          <span>
-            <span
-              className="normal"
-            >
-              UI
+      <div>
+        <h5>
+          Job summaries:
+        </h5>
+        <ul>
+          <li>
+            participate in the design and development of all projects 
+          </li>
+          <li>
+            responsible for the release quality of all system. 
+          </li>
+          <li>
+            responsible for team's recruitment, technical training(ES6), etc. 
+          </li>
+          <li>
+            take charge of annual feature planning and appraise performance of each team member.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          Achievements:
+        </h5>
+        <ul
+          className="achievements"
+        >
+          <li>
+            completed the design and development of the company's front-end UI component library
+            <span>
+              <span
+                className="normal"
+              >
+                UI
+              </span>
             </span>
-          </span>
-        </li>
-        <li>
-          'implemented the rendering of list components and displaying data  in both horizontal and vertical
-          <span>
-            <span
-              className="normal"
-            >
-              UI
+          </li>
+          <li>
+            'implemented the rendering of list components and displaying data  in both horizontal and vertical
+            <span>
+              <span
+                className="normal"
+              >
+                UI
+              </span>
             </span>
-          </span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div
-      className="period"
+      className="periodContainer"
     >
-      <div>
-        <div
-          className="header"
-        >
-          <span
-            className="job"
+      <div
+        className="period"
+      >
+        <div>
+          <div
+            className="header"
           >
-            <span>
-              Junior
-            </span>
-            <span>
-              Software Engineer
-            </span>
-          </span>
-          <span
-            className="companyName"
-          >
-            <span>
-              Taiji Computer Corporation. Ltd
+            <span
+              className="job"
+            >
               <span>
-                <span
-                  className="less"
-                >
-                  Enterprise
+                Junior
+              </span>
+              <span>
+                Software Engineer
+              </span>
+            </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Taiji Computer Corporation. Ltd
+                <span>
+                  <span
+                    className="less"
+                  >
+                    Enterprise
+                  </span>
                 </span>
               </span>
             </span>
-          </span>
-          <span>
-            <span
-              className="filled"
-            >
-              Java
+            <span>
+              <span
+                className="filled"
+              >
+                Java
+              </span>
+              <span
+                className="filled"
+              >
+                jQuery
+              </span>
+              <span
+                className="filled"
+              >
+                Waterfall
+              </span>
             </span>
-            <span
-              className="filled"
-            >
-              jQuery
-            </span>
-            <span
-              className="filled"
-            >
-              Waterfall
-            </span>
-          </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="timeline"
-      >
-        <svg
-          height="20"
-          style={
-            Object {
-              "backgroundColor": "",
-            }
-          }
-          width={78}
-        >
-          <g>
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={0}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={6}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={12}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={18}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={24}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={30}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={36}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={42}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={48}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={54}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={60}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={66}
-              y="5"
-            />
-            <rect
-              fill="#FF6666"
-              height="10"
-              width={5}
-              x={72}
-              y="5"
-            />
-          </g>
-        </svg>
         <div
-          className="times"
+          className="timeline"
         >
-          <span>
-            Jul, 2015
-          </span>
-          <span>
-            -
-          </span>
-          <span>
-            Jul, 2016
-          </span>
+          <svg
+            height="20"
+            style={
+              Object {
+                "backgroundColor": "",
+              }
+            }
+            width={78}
+          >
+            <g>
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={0}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={6}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={12}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={18}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={24}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={30}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={36}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={42}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={48}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={54}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={60}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={66}
+                y="5"
+              />
+              <rect
+                fill="#FF6666"
+                height="10"
+                width={5}
+                x={72}
+                y="5"
+              />
+            </g>
+          </svg>
+          <div
+            className="times"
+          >
+            <span>
+              Jul, 2015
+            </span>
+            <span>
+              -
+            </span>
+            <span>
+              Jul, 2016
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h5>
-        Job summaries:
-      </h5>
-      <ul>
-        <li>
-          use Java to develop system on schedule
-        </li>
-        <li>
-          participate in the design and development of one economic-data-report project.
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>
-        Achievements:
-      </h5>
-      <ul
-        className="achievements"
-      >
-        <li>
-          abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc
-          <span>
-            <span
-              className="normal"
-            >
-              UI
+      <div>
+        <h5>
+          Job summaries:
+        </h5>
+        <ul>
+          <li>
+            use Java to develop system on schedule
+          </li>
+          <li>
+            participate in the design and development of one economic-data-report project.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          Achievements:
+        </h5>
+        <ul
+          className="achievements"
+        >
+          <li>
+            abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc
+            <span>
+              <span
+                className="normal"
+              >
+                UI
+              </span>
             </span>
-          </span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <div
     className="divider"
   >
-    <h3>
-      Education Experience
-    </h3>
+    <div
+      className="title"
+    >
+      <div>
+        <h3>
+          Education Experience
+        </h3>
+      </div>
+      <div />
+    </div>
     <div
       className="section"
     />

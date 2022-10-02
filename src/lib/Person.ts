@@ -2,6 +2,7 @@ import Education from './Education';
 import Period from './Period';
 import { Gender } from './types';
 import Skill from './Skill';
+import Capability from './Capability';
 
 
 interface IPerson {
@@ -30,6 +31,7 @@ export default class Person {
     public periods: Period[];
     public skills: Skill[];
     public description: string[];
+    public capability!: Capability;
 
     constructor({ firstName,description, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
         this.educations = [];
@@ -55,6 +57,9 @@ export default class Person {
 
     addSkills(skills: Skill[]) {
         this.skills = this.skills.concat(skills);
+    }
+    addCapability(capabilities: Capability) {
+        this.capability = capabilities;
     }
 
     get reversedPeriods() {

@@ -16,3 +16,9 @@ export const getScreenDevice = () => {
     }
     return ScreenDevice.PC
 }
+
+const PAGE_PADDING = 12;
+
+export const getPageContentWidth = () => {
+    return Math.min(window.outerWidth, window.innerWidth) - PAGE_PADDING * 2
+}

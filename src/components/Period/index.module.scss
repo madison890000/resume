@@ -1,3 +1,10 @@
+.periodContainer {
+  background: rgb(0, 0, 0, 0.05);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: var(--base-border-radius);
+}
+
 .period {
   display: flex;
   align-items: flex-start;
@@ -12,6 +19,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: row-reverse;
   @media screen and (max-width: 414px) {
     width: 100%;
     justify-content: space-between;

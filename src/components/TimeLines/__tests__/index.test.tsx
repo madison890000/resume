@@ -1,10 +1,9 @@
 import React from 'react';
-import TimeLines, { getWidth } from '../index';
+import TimeLines from '../index';
 import renderer from 'react-test-renderer';
 import { Achievement, JobPositionLevel, Keyword } from '../../../lib/types';
 import Company from '../../../lib/Company';
 import Period from '../../../lib/Period';
-import { ScreenDevice } from '../../../utils/device';
 
 let windowSpy: any;
 
@@ -45,24 +44,11 @@ describe('renders TimeLine ', () => {
                 periodColors={{
                     [testPeriod.id]: '#FF6666',
                 }}
+                width={1000}
             />
         )
             .toJSON();
         expect(TimeLineOne)
             .toMatchSnapshot();
     })
-});
-describe(' TimeLine -> getWidth ', () => {
-    test('TimeLine show correct width', () => {
-        windowSpy.mockImplementation(() => ({
-            innerWidth: 1800,
-        }));
-        expect(getWidth(ScreenDevice.PC))
-            .toEqual(1800 - 24 - 20);
-        expect(getWidth(ScreenDevice.Mobile))
-            .toEqual(1800 - 24);
-        expect(getWidth(ScreenDevice.A4))
-            .toEqual(1800 - 24);
-    })
-
 });

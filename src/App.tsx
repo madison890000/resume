@@ -6,7 +6,9 @@ import Skill from './components/Skill';
 import Period from './components/Period';
 import Education from './components/Education';
 import Divider from './components/Divider';
+import { getPageContentWidth, getScreenDevice, ScreenDevice } from './utils/device';
 import TimeLines from './components/TimeLines';
+import Capability from './components/Capability';
 
 const COLORS = [
     '#FF6666',
@@ -31,12 +33,18 @@ function App() {
                 email={person.email}
                 cellphone={person.cellphone}
             />
-            <Divider title="Description" />
+            <Divider title="Profile" />
             <section>
-                <div className={styles.description}>
-                    {person.description?.map(d => (
-                        <div className={styles.descriptionItem}>{d}</div>
-                    ))}
+                <div className={styles.profile}>
+                    <div className={styles.description}>
+                        {person.description?.map(d => (
+                            <div className={styles.descriptionItem}>{d}</div>
+                        ))}
+                    </div>
+                    <div className={styles.capability}>
+                        <Capability capabilities={person.capability} />
+                    </div>
+
                 </div>
             </section>
             <Divider title="Skill" />
@@ -47,9 +55,28 @@ function App() {
                     ))}
                 </div>
             </section>
-            <Divider title="Professional Experience" />
+            <Divider
+                title="Professional Experience"
+                extra={
+                    getScreenDevice() === ScreenDevice.PC ?
+                        <TimeLines
+                            width={getPageContentWidth() - 300}
+                            periods={person.periods}
+                            periodColors={periodColors}
+                            barPosition="bottom"
+                        />
+                        : null
+                }
+            />
             <section>
-                <TimeLines periods={person.periods} periodColors={periodColors} />
+                {
+                    getScreenDevice() !== ScreenDevice.PC ? <TimeLines
+                        width={getPageContentWidth()}
+                        periods={person.periods}
+                        periodColors={periodColors}
+                        barPosition="top"
+                    /> : null
+                }
             </section>
             <section>
                 {person.reversedPeriods?.map(period => (

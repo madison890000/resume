@@ -12,6 +12,7 @@ import {
 import Period from './lib/Period';
 import Company from './lib/Company';
 import Skill from './lib/Skill';
+import Capability from './lib/Capability';
 
 const madison = new Person({
     firstName: 'Madison',
@@ -224,4 +225,14 @@ const skills = [
     new Skill('Git', SkillLevel.proficient, 6, Importance.important),
 ]
 madison.addSkills(skills)
+
+const capabilities = new Capability({
+    coding: 8.8,
+    leaning: 9,
+    algorithm: 6,
+    communicate: 8,
+    engineer: 7,
+    passion: 9,
+})
+madison.addCapability(capabilities)
 export default madison

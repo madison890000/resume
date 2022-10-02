@@ -1,6 +1,7 @@
 .main {
   font-size: var(--base-font-size-large);
   padding: var(--page-padding);
+  width: calc(100vw - 2 * var(--page-padding));
 
   h5 {
     margin: calc(var(--base-gap-unit) * 2) calc(var(--base-gap-unit) * 8);
@@ -20,6 +21,23 @@
     ul {
       padding: 0 0 0 calc(var(--base-gap-unit) * 12);
     }
+  }
+}
+
+.profile {
+  display: flex;
+  @media screen and (max-width: 414px) {
+    display: block;
+  }
+}
+
+.capability {
+  min-width: 350px;
+  @media screen and (max-width: 1150px ) {
+    min-width: 340px;
+  }
+  @media screen and (max-width: 414px) {
+    min-width: 100px;
   }
 }
 
