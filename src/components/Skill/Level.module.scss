@@ -5,18 +5,21 @@
     width: 30px;
     height: 20px;
     background: gray;
-    @media screen and (max-width: 414px) {
-      width: 14px;
-      height: 12px;
-    }
+
     @media screen and (max-width: 1150px) {
       width: 24px;
       height: 16px;
       background: black;
     }
+    @media screen and (max-width: 414px) {
+      width: 12px;
+      height: 8px;
+    }
   }
 
-
+  @media screen and (max-width: 414px) {
+    min-width: 80px;
+  }
 }
 
 .levelName {
@@ -30,13 +33,14 @@
   background: transparent !important;
   border: 1px solid gray;
 
-  @media screen and (max-width: 414px) {
-    width: 12px !important;
-    height: 10px !important;
-  }
+
   @media screen and (max-width: 1150px) {
     width: 22px !important;
     height: 14px !important;
     border: 1px solid black;
+  }
+  @media screen and (max-width: 414px) {
+    width: 10px !important;
+    height: 6px !important;
   }
 }
