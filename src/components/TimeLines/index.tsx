@@ -7,8 +7,8 @@ import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
 
 const PAGE_PADDING = 24;
-const getWidth = () => {
-    switch (getScreenDevice()) {
+export const getWidth = (device: ScreenDevice) => {
+    switch (device) {
         case ScreenDevice.PC:
             return window.innerWidth - PAGE_PADDING - 20
         case ScreenDevice.Mobile:
@@ -22,7 +22,7 @@ const getWidth = () => {
 const TimeLines = ({ periods, periodColors }: { periods: Period[]; periodColors: { [key: string]: string } }) => {
     const start = periods?.[0]?.start;
     const end = periods?.[periods?.length - 1]?.end;
-    const width = getWidth();
+    const width = getWidth(getScreenDevice());
     const rectGap = 1;
     const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
     const rectFullWidth = width / totalRects;

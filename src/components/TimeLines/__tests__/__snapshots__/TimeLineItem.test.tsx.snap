@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TimeLineItem with  end 1`] = `
+<svg
+  height="20"
+  style={
+    Object {
+      "backgroundColor": "",
+    }
+  }
+  width={36}
+>
+  <g>
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={0}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={6}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={12}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={18}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={24}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={30}
+      y="5"
+    />
+  </g>
+</svg>
+`;
+
+exports[`renders TimeLineItem with no end 1`] = `
+<svg
+  height="20"
+  style={
+    Object {
+      "backgroundColor": "",
+    }
+  }
+  width={36}
+>
+  <g>
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={0}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={6}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={12}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={18}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={24}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={30}
+      y="5"
+    />
+  </g>
+</svg>
+`;

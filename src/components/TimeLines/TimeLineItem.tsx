@@ -6,8 +6,8 @@ import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
 const BASE_RECT_WIDTH = 8;
 
-const getBaseRectFull = () => {
-    switch (getScreenDevice()) {
+export const getBaseRectFull = (device: ScreenDevice) => {
+    switch (device) {
         case ScreenDevice.A4:
             return 6
         case ScreenDevice.Mobile:
@@ -21,7 +21,7 @@ const getBaseRectFull = () => {
 const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; periodColor: string }) => {
     const rectGap = 1;
     const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
-    const rectFullWidth = getBaseRectFull();
+    const rectFullWidth = getBaseRectFull(getScreenDevice());
     const rectWidth = rectFullWidth - rectGap;
     let rectArray = new Array(totalRects).fill(0)
         ?.map((_, index) => ({
