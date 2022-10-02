@@ -24,6 +24,23 @@
   }
 }
 
+.profile {
+  display: flex;
+  @media screen and (max-width: 414px) {
+    display: block;
+  }
+}
+
+.capability {
+  min-width: 350px;
+  @media screen and (max-width: 1150px ) {
+    min-width: 340px;
+  }
+  @media screen and (max-width: 414px) {
+    min-width: 100px;
+  }
+}
+
 .description {
   margin: var(--block-margin);
 }
