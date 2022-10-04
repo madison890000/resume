@@ -234,5 +234,7 @@ const capabilities = new Capability({
     engineer: 7,
     passion: 9,
 })
+
 madison.addCapability(capabilities)
+
 export default madison
