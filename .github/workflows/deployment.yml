@@ -29,6 +29,8 @@ jobs:
         run: git config --global user.email 'robot.resume@gmail.com'
       - name: ignore build
         run: git checkout .
+      - name: checkout branch
+        run: git checkout develop
       - name: update version number
         run: npm version patch -m "[RELEASE] %s"
       - name: push tag
