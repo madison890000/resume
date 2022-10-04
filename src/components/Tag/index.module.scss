@@ -2,8 +2,7 @@
   display: inline-block;
   margin: var(--base-gap-2-unit) var(--base-gap-2-unit);
   padding: var(--base-gap-2-unit) var(--base-gap-2-unit);
-  background: gray;
-  color: white;
+  background: var(--tag-color);
   font-size: var(--base-font-size-middle);
   border-radius: var(--base-border-radius);
 
@@ -17,8 +16,8 @@
   display: inline-block;
   margin: var(--base-gap-unit) var(--base-gap-2-unit);
   padding: var(--base-gap-unit) var(--base-gap-2-unit);
-  border: 1px solid gray;
-  color: gray;
+  border: 1px solid var(--tag-color);
+  color: var(--tag-color);
   font-size: var(--base-font-size-small);
   border-radius: var(--base-border-radius);
 
@@ -32,7 +31,7 @@
   display: inline-block;
   margin: var(--base-gap-unit) var(--base-gap-unit);
   padding: var(--base-gap-unit) var(--base-gap-unit);
-  color: gray;
+  color: var(--tag-color);
   font-size: var(--base-font-size-small);
   border-radius: var(--base-border-radius);
   font-style: italic;

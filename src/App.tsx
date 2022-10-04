@@ -13,9 +13,9 @@ import Capability from './components/Capability';
 const COLORS = [
     '#FF6666',
     '#FFFF66',
-    '#66FFFF',
+    'var(--color-sage-green)',
     '#6666FF',
-    '#B266FF',
+    'var(--color-glaucous)',
     '#FF66B2',
 ]
 
