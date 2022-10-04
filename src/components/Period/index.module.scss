@@ -1,5 +1,5 @@
 .periodContainer {
-  background: rgb(0, 0, 0, 0.05);
+  background: var(--period-background-color);
   padding: 10px;
   margin: 10px 0;
   border-radius: var(--base-border-radius);
@@ -51,7 +51,7 @@
 
 .companyName {
   font-weight: normal;
-  color: gray;
+  color: var(--period-sub-title-color);
 }
 
 .achievements {

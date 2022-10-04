@@ -32,7 +32,24 @@ code {
     --base-margin: var(--base-gap);
     --base-border-radius: var(--base-gap-2-unit);
 
-
+    /**
+     *  colors
+     */
+    --color-ash-gray: #B2BEB5;
+    --color-blue-gray: #7393B3;
+    --color-charcoal: #36454F;
+    --color-dark-gray: #A9A9A9;
+    --color-glaucous: #6082B6;
+    --color-gray: #808080;
+    --color-gunmetal-gray: #818589;
+    --color-light-gray: #D3D3D3;
+    --color-pewter: #899499;
+    --color-platinum: #E5E4E2;
+    --color-sage-green: #8A9A5B;
+    --color-silver: #C0C0C0;
+    --color-slate-gray: #708090;
+    --color-smoke: #848884;
+    --color-steel-gray: #71797E;
     /**
      * page(layout)
      */
@@ -54,6 +71,60 @@ code {
     --inline-block-padding: var(--base-padding);
     --inline-block-margin: var(--base-gap-small);
 
+
+    color: var(--color-charcoal);
+    background-color: white;
+    /**
+     * tag
+     */
+    --tag-color: var(--color-light-gray);
+    /**
+     * skill
+     */
+    --skill-name-color: var(--color-gray);
+    --skill-level-fill: var(--color-gray);
+    /**
+     * education
+     */
+    --education-degree-color: var(--color-gray);
+    /**
+     * divider
+     */
+    --divider-border-color: var(--color-gray);
+    /**
+     * period
+     */
+    --period-sub-title-color: var(--color-gray);
+    --period-background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: white;
+        background-color: black;
+        /**
+         * tag
+         */
+        --tag-color: var(--color-gray);
+        /**
+         * skill
+         */
+        --skill-name-color: var(--color-gray);
+        --skill-level-fill: var(--color-platinum);
+        /**
+         * education
+         */
+        --education-degree-color: var(--color-gray);
+        /**
+         * divider
+         */
+        --divider-border-color: var(--color-platinum);
+        /**
+         * divider
+         */
+        --period-sub-title-color: var(--color-gray);
+        --period-background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 @media screen and (max-width: 414px ) {

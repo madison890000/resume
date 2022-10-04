@@ -6,12 +6,12 @@
     margin: var(--base-gap-unit);
     width: 26px;
     height: 20px;
-    background: gray;
+    background: var(--skill-level-fill);
 
     @media screen and (max-width: 1150px) {
       width: 24px;
       height: 16px;
-      background: black;
+      background: var(--skill-level-fill);
     }
 
     @media screen and (max-width: 414px) {
@@ -36,13 +36,13 @@
   width: 24px !important;
   height: 18px !important;
   background: transparent !important;
-  border: 1px solid gray;
+  border: 1px solid var(--skill-level-fill);
 
 
   @media screen and (max-width: 1150px) {
     width: 22px !important;
     height: 14px !important;
-    border: 1px solid black;
+    border: 1px solid var(--skill-level-fill);
   }
   @media screen and (max-width: 414px) {
     width: 10px !important;
