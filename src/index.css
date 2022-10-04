@@ -71,13 +71,14 @@ code {
     --inline-block-padding: var(--base-padding);
     --inline-block-margin: var(--base-gap-small);
 
-
     color: var(--color-charcoal);
     background-color: white;
     /**
      * tag
      */
-    --tag-color: var(--color-light-gray);
+    --tag-fill: var(--color-gray);
+    --tag-color: white;
+
     /**
      * skill
      */
@@ -105,6 +106,7 @@ code {
         /**
          * tag
          */
+        --tag-fill: white;
         --tag-color: var(--color-gray);
         /**
          * skill

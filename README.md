@@ -13,7 +13,7 @@ a running list.
 
 ## RoadMap
 
-- [ ] (Dark mode)
+- [x] (Dark mode)
 - [x] (Optimize view experience in Mobile screen)
 - [ ] (Support themes)
 - [ ] (i18n)
