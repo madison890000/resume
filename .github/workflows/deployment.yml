@@ -23,7 +23,13 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
+      - name: set git commit user.name
+        run: git config --global user.name 'github robot'
+      - name: set git commit user.email
+        run: git config --global user.email 'robot.resume@gmail.com'
+      - name: ignore build
+        run: git checkout .
       - name: update version number
         run: npm version patch -m "[RELEASE] %s"
       - name: push tag
-        run: git push
+        run: git push --tag
