@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Name  Name ---> Name --->level = important 1`] = `
+exports[`renders Name  Name --->level = important 1`] = `
 <div
   className="important"
 >

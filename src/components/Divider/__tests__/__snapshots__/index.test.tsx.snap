@@ -19,3 +19,25 @@ exports[`renders Divider 1`] = `
   />
 </div>
 `;
+
+exports[`renders Divider with extra 1`] = `
+<div
+  className="divider"
+>
+  <div
+    className="title"
+  >
+    <div>
+      <h3>
+        test Divider
+      </h3>
+    </div>
+    <div>
+      test extra
+    </div>
+  </div>
+  <div
+    className="section"
+  />
+</div>
+`;
