@@ -1,14 +1,8 @@
 import React, { useRef } from 'react';
 import styles from './App.module.scss';
 import madison from './Madison';
-import Header from './components/Header';
-import Skill from './components/Skill';
-import Period from './components/Period';
-import Education from './components/Education';
-import Divider from './components/Divider';
+import { Capability, Divider, Education, Header, Period, Skill, TimeLines } from './components';
 import { getScreenDevice, ScreenDevice } from './utils/device';
-import TimeLines from './components/TimeLines';
-import Capability from './components/Capability';
 import useTimelineWidth from './hooks/useTimelineWidth';
 
 const COLORS = [
