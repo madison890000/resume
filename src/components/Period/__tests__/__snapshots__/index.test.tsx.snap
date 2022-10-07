@@ -52,78 +52,91 @@ exports[`renders Period 1`] = `
       >
         <g>
           <rect
+            fill="red"
             height="10"
             width={5}
             x={0}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={6}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={12}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={18}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={24}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={30}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={36}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={42}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={48}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={54}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={60}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={66}
             y="5"
           />
           <rect
+            fill="red"
             height="10"
             width={5}
             x={72}

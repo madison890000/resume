@@ -8,3 +8,10 @@ test('renders Divider', () => {
     expect(DividerDom)
         .toMatchSnapshot();
 });
+
+test('renders Divider with extra', () => {
+    const DividerDom = renderer.create(<Divider title="test Divider" extra={<>test extra</>} />)
+        .toJSON();
+    expect(DividerDom)
+        .toMatchSnapshot();
+});

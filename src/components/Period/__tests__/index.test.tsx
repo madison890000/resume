@@ -22,6 +22,7 @@ test('renders Period', () => {
             achievements={achievements}
             jobSummaries={jobSummaries}
             companyName={testCompanyName}
+            periodColor={'red'}
         />
     )
         .toJSON();
