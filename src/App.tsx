@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './App.module.scss';
 import madison from './Madison';
 import Header from './components/Header';
@@ -6,9 +6,10 @@ import Skill from './components/Skill';
 import Period from './components/Period';
 import Education from './components/Education';
 import Divider from './components/Divider';
-import { getPageContentWidth, getScreenDevice, ScreenDevice } from './utils/device';
+import { getScreenDevice, ScreenDevice } from './utils/device';
 import TimeLines from './components/TimeLines';
 import Capability from './components/Capability';
+import useTimelineWidth from './hooks/useTimelineWidth';
 
 const COLORS = [
     'var(--color-red)',
@@ -20,19 +21,13 @@ const COLORS = [
 ]
 
 function App() {
+    const { timelineWidth = 1000 } = useTimelineWidth();
     const { current: person } = useRef(madison);
     const periodColors: { [key: string]: string } = {};
     person?.periods?.forEach((p, index) => {
         periodColors[p.id] = COLORS[index];
     })
-    const [timeLineWidth, setTimeLineWidth] = useState(getPageContentWidth());
-    useEffect(() => {
-        const resizeObserver = new ResizeObserver(() => {
-            setTimeLineWidth(getPageContentWidth())
-        })
-        resizeObserver.observe(document.body);
-        return () => resizeObserver.disconnect()
-    }, [])
+
     return (
         <div className={styles.main}>
             <Header
@@ -68,7 +63,7 @@ function App() {
                 extra={
                     getScreenDevice() === ScreenDevice.PC ?
                         <TimeLines
-                            width={timeLineWidth - 300}
+                            width={timelineWidth - 300}
                             periods={person.periods}
                             periodColors={periodColors}
                             barPosition="bottom"
@@ -79,7 +74,7 @@ function App() {
             <section>
                 {
                     getScreenDevice() !== ScreenDevice.PC ? <TimeLines
-                        width={timeLineWidth - 20}
+                        width={timelineWidth - 20}
                         periods={person.periods}
                         periodColors={periodColors}
                         barPosition="top"
