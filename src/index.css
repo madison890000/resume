@@ -50,6 +50,12 @@ code {
     --color-slate-gray: #708090;
     --color-smoke: #848884;
     --color-steel-gray: #71797E;
+
+    --color-red:#FF7070;
+    --color-yellow:#FFF69E;
+    --color-dark-yellow:#C2AA59;
+    --color-green:#93C47D;
+    --color-dark-red:#800000;
     /**
      * page(layout)
      */
@@ -96,7 +102,7 @@ code {
      * period
      */
     --period-sub-title-color: var(--color-gray);
-    --period-background-color: rgba(0, 0, 0, 0.1);
+    --period-background-color: rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
