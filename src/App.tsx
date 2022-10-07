@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './App.module.scss';
 import madison from './Madison';
 import Header from './components/Header';
@@ -11,11 +11,11 @@ import TimeLines from './components/TimeLines';
 import Capability from './components/Capability';
 
 const COLORS = [
-    '#FF6666',
-    '#FFFF66',
-    'var(--color-sage-green)',
-    '#6666FF',
-    'var(--color-glaucous)',
+    'var(--color-red)',
+    'var(--color-yellow)',
+    'var(--color-dark-yellow)',
+    'var(--color-dark-red)',
+    'var(--color-green)',
     '#FF66B2',
 ]
 
@@ -25,6 +25,14 @@ function App() {
     person?.periods?.forEach((p, index) => {
         periodColors[p.id] = COLORS[index];
     })
+    const [timeLineWidth, setTimeLineWidth] = useState(getPageContentWidth());
+    useEffect(() => {
+        const resizeObserver = new ResizeObserver(() => {
+            setTimeLineWidth(getPageContentWidth())
+        })
+        resizeObserver.observe(document.body);
+        return () => resizeObserver.disconnect()
+    }, [])
     return (
         <div className={styles.main}>
             <Header
@@ -47,7 +55,7 @@ function App() {
 
                 </div>
             </section>
-            <Divider title="Skill" />
+            <Divider title="Skills" />
             <section>
                 <div className={styles.skills}>
                     {person.skills?.map(skill => (
@@ -56,11 +64,11 @@ function App() {
                 </div>
             </section>
             <Divider
-                title="Professional Experience"
+                title="Professional Experiences"
                 extra={
                     getScreenDevice() === ScreenDevice.PC ?
                         <TimeLines
-                            width={getPageContentWidth() - 300}
+                            width={timeLineWidth - 300}
                             periods={person.periods}
                             periodColors={periodColors}
                             barPosition="bottom"
@@ -71,7 +79,7 @@ function App() {
             <section>
                 {
                     getScreenDevice() !== ScreenDevice.PC ? <TimeLines
-                        width={getPageContentWidth()}
+                        width={timeLineWidth - 20}
                         periods={person.periods}
                         periodColors={periodColors}
                         barPosition="top"
@@ -88,7 +96,7 @@ function App() {
                     />
                 ))}
             </section>
-            <Divider title="Education Experience" />
+            <Divider title="Education Experiences" />
             <section>
                 {person.educations?.map(education => (
                     <Education {...education} />
