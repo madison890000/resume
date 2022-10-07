@@ -1,3 +1,13 @@
+interface ICapability {
+    coding: number;
+    leaning: number;
+    algorithm: number;
+    communicate: number;
+    engineer: number;
+    passion: number;
+}
+
+
 export default class Capability {
     public coding: number;
     public leaning: number;
@@ -13,7 +23,7 @@ export default class Capability {
                     communicate,
                     engineer,
                     passion
-                }: any) {
+                }: ICapability) {
         this.coding = coding;
         this.leaning = leaning;
         this.algorithm = algorithm;
