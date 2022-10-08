@@ -161,13 +161,15 @@ exports[`renders Period 1`] = `
   </div>
   <div>
     <h5>
-      Job summaries:
+      Job summaries
+      :
     </h5>
     <ul />
   </div>
   <div>
     <h5>
-      Achievements:
+      Achievements
+      :
     </h5>
     <ul
       className="achievements"

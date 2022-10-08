@@ -111,7 +111,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             7
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -144,7 +145,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             5
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -177,7 +179,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             3
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -210,7 +213,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             3
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -243,7 +247,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             3
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -276,7 +281,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             6
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -309,7 +315,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             6
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -342,7 +349,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             1
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -375,7 +383,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             1
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -412,7 +421,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             2
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -449,7 +459,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             1.5
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -482,7 +493,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             3
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -519,7 +531,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             0.5
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -558,7 +571,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             0.5
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -597,7 +611,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             2
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -634,7 +649,8 @@ Application, Internet finance Web System, education application, Data Reporting 
             className="subTitle"
           >
             6
-             years
+             
+            years
           </div>
         </div>
         <div
@@ -664,7 +680,7 @@ Application, Internet finance Web System, education application, Data Reporting 
     >
       <div>
         <h3>
-          Professional Experiences
+          section.divider.professionalExperiences
         </h3>
       </div>
       <div />
@@ -1508,7 +1524,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Job summaries:
+          Job summaries
+          :
         </h5>
         <ul>
           <li>
@@ -1530,7 +1547,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Achievements:
+          Achievements
+          :
         </h5>
         <ul
           className="achievements"
@@ -1894,7 +1912,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Job summaries:
+          Job summaries
+          :
         </h5>
         <ul>
           <li>
@@ -1916,7 +1935,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Achievements:
+          Achievements
+          :
         </h5>
         <ul
           className="achievements"
@@ -2171,7 +2191,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Job summaries:
+          Job summaries
+          :
         </h5>
         <ul>
           <li>
@@ -2187,7 +2208,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Achievements:
+          Achievements
+          :
         </h5>
         <ul
           className="achievements"
@@ -2439,7 +2461,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Job summaries:
+          Job summaries
+          :
         </h5>
         <ul>
           <li>
@@ -2458,7 +2481,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Achievements:
+          Achievements
+          :
         </h5>
         <ul
           className="achievements"
@@ -2662,7 +2686,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Job summaries:
+          Job summaries
+          :
         </h5>
         <ul>
           <li>
@@ -2675,7 +2700,8 @@ Application, Internet finance Web System, education application, Data Reporting 
       </div>
       <div>
         <h5>
-          Achievements:
+          Achievements
+          :
         </h5>
         <ul
           className="achievements"

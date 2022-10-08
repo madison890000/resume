@@ -4,6 +4,7 @@ import { Achievement, CompanyType, JobPosition, JobPositionLevel } from '../../l
 import Times from '../Times';
 import Tag from '../Tag';
 import TimeLineItem from '../TimeLines/TimeLineItem';
+import { defineMessages, useIntl } from 'react-intl';
 
 interface PeriodProps {
     start: Date;
@@ -18,6 +19,16 @@ interface PeriodProps {
     jobSummaries: string[];
 }
 
+const messages = defineMessages({
+    jobSummaries: {
+        id: 'component.period.jobSummaries',
+        defaultMessage: 'Job summaries',
+    },
+    achievements: {
+        id: 'component.period.achievements',
+        defaultMessage: 'Achievements',
+    },
+});
 const Period = ({
                     start,
                     periodColor,
@@ -30,6 +41,7 @@ const Period = ({
                     achievements,
                     jobSummaries,
                 }: PeriodProps) => {
+    const intl = useIntl();
     return (
         <div className={styles.periodContainer}>
             <div className={styles.period}>
@@ -66,7 +78,7 @@ const Period = ({
             </div>
 
             <div>
-                <h5>Job summaries:</h5>
+                <h5>{intl.formatMessage(messages.jobSummaries)}:</h5>
                 <ul>
                     {jobSummaries?.map((summary) => (
                         <li>{summary}</li>
@@ -74,7 +86,7 @@ const Period = ({
                 </ul>
             </div>
             <div>
-                <h5>Achievements:</h5>
+                <h5>{intl.formatMessage(messages.achievements)}:</h5>
                 <ul className={styles.achievements}>
                     {achievements?.map((achievement) => (
                         <li>

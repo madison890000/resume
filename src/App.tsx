@@ -4,6 +4,25 @@ import madison from './Madison';
 import { Capability, Divider, Education, Header, Period, Skill, TimeLines } from './components';
 import { getScreenDevice, ScreenDevice } from './utils/device';
 import useTimelineWidth from './hooks/useTimelineWidth';
+import { defineMessages, useIntl } from 'react-intl';
+
+const messages = defineMessages({
+    profile: {
+        id: 'section.divider.profile',
+        defaultMessage: 'Profile',
+    },
+    skills: {
+        id: 'section.divider.skills',
+        defaultMessage: 'Skills',
+    },
+    professionalExperiences: {
+        id: 'section.divider.professionalExperiences',
+    },
+    educationExperiences: {
+        id: 'section.divider.educationExperiences',
+        defaultMessage: 'Education Experiences'
+    },
+});
 
 const COLORS = [
     'var(--color-red)',
@@ -15,13 +34,13 @@ const COLORS = [
 ]
 
 function App() {
+    const intl = useIntl();
     const { timelineWidth = 1000 } = useTimelineWidth();
     const { current: person } = useRef(madison);
     const periodColors: { [key: string]: string } = {};
     person?.periods?.forEach((p, index) => {
         periodColors[p.id] = COLORS[index];
     })
-
     return (
         <div className={styles.main}>
             <Header
@@ -30,7 +49,7 @@ function App() {
                 email={person.email}
                 cellphone={person.cellphone}
             />
-            <Divider title="Profile" />
+            <Divider title={intl.formatMessage(messages.profile)} />
             <section>
                 <div className={styles.profile}>
                     <div className={styles.description}>
@@ -44,7 +63,7 @@ function App() {
 
                 </div>
             </section>
-            <Divider title="Skills" />
+            <Divider title={intl.formatMessage(messages.skills)} />
             <section>
                 <div className={styles.skills}>
                     {person.skills?.map(skill => (
@@ -53,7 +72,7 @@ function App() {
                 </div>
             </section>
             <Divider
-                title="Professional Experiences"
+                title={intl.formatMessage(messages.professionalExperiences)}
                 extra={
                     getScreenDevice() === ScreenDevice.PC ?
                         <TimeLines
@@ -85,7 +104,7 @@ function App() {
                     />
                 ))}
             </section>
-            <Divider title="Education Experiences" />
+            <Divider title={intl.formatMessage(messages.educationExperiences)} />
             <section>
                 {person.educations?.map(education => (
                     <Education {...education} />
