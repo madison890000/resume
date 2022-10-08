@@ -16,7 +16,7 @@ a running list.
 - [x] (Dark mode)
 - [x] (Optimize view experience in Mobile screen)
 - [ ] (Support themes)
-- [ ] (i18n)
+- [x] (i18n)
 - [ ] (resume editor)
 - [ ] (PDF download)
 - [ ] (Import from LinkedIn)
