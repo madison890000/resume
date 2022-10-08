@@ -61,7 +61,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts",
+      "!src/i18n/",
       "!src/index.tsx",
+      "!src/setupTests.ts",
       "!src/Madison.ts",
       "!src/reportWebVitals.ts",
       "!<rootDir>/src/lib/types.ts",
