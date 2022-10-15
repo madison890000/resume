@@ -27,6 +27,7 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
             <Button
                 ref={anchorRef}
                 id="composition-button"
+                data-testid="select-language-btn"
                 aria-controls={open ? 'composition-menu' : undefined}
                 aria-expanded={open ? 'true' : undefined}
                 aria-haspopup="true"
@@ -54,6 +55,7 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
                             <MenuList
                                 autoFocusItem={open}
                                 id="composition-menu"
+                                data-testid="select-language-menu-pop"
                                 aria-labelledby="composition-button"
                             >
                                 {options?.map((l: any) => (
