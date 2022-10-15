@@ -34,6 +34,7 @@ const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; pe
             <g>
                 {rectArray?.map((e, index) => (
                     <MonthRect
+                        key={index}
                         width={rectWidth}
                         gap={rectGap}
                         color={e?.color}

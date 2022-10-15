@@ -67,7 +67,7 @@ function App() {
             <section>
                 <div className={styles.skills}>
                     {person.skills?.map(skill => (
-                        <Skill {...skill} />
+                        <Skill {...skill} key={skill.id}/>
                     ))}
                 </div>
             </section>

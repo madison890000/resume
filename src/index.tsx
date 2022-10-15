@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { IntlProvider } from 'react-intl';
 import { generatedTranslations } from './i18n/translations';
-import { APP_LOCALES } from './i18n/languages';
+import Menus from './modules/Menus';
+import LocaleContext, { LocaleContextContainer } from './contexts/LocaleContext';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -13,37 +14,25 @@ const root = ReactDOM.createRoot(
 
 
 const I18nProvider = () => {
-    const [locale, setLocale] = useState(navigator.language ?? 'en-US');
-    const languages = Object.entries(APP_LOCALES)
-        .map(([lKey, lValue]) => {
-            return {
-                label: lValue,
-                value: lKey,
-            }
-        })
+    const { locale } = useContext(LocaleContext);
     return (
         <IntlProvider
             locale={locale}
             key={locale}
             messages={generatedTranslations()[locale]}
         >
-            <select
-                onChange={(e) => {
-                    setLocale(e?.target?.value)
-                }}
-                value={locale}
-                className="change-language">
-                {languages?.map((l) => (
-                    <option key={l.value} value={l.value}>{l?.label}</option>
-                ))}
-            </select>
+            <Menus />
             <App />
         </IntlProvider>
+
+
     )
 }
 root.render(
     <React.StrictMode>
-        <I18nProvider />
+        <LocaleContextContainer>
+            <I18nProvider />
+        </LocaleContextContainer>
     </React.StrictMode>
 );
 

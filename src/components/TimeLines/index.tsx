@@ -48,6 +48,7 @@ const TimeLines = ({
                             <g>
                                 {rectArray?.map((e, index) => (
                                     <MonthRect
+                                        key={e.index}
                                         width={rectWidth}
                                         gap={rectGap}
                                         color={e?.color}
@@ -66,6 +67,7 @@ const TimeLines = ({
                     const translateX = (getMonthCountInStartAndEnd(start, p?.start) + 1) * rectFullWidth;
                     return (
                         <span
+                            key={p.id}
                             style={{
                                 position: 'absolute',
                                 transform: `translateX(${translateX}px)`
@@ -84,6 +86,7 @@ const TimeLines = ({
                             <g>
                                 {rectArray?.map((e, index) => (
                                     <MonthRect
+                                        key={e.index}
                                         width={rectWidth}
                                         gap={rectGap}
                                         color={e?.color}
