@@ -33,6 +33,7 @@ exports[`renders Menus 1`] = `
     <button
       aria-haspopup="true"
       className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      data-testid="select-language-btn"
       disabled={false}
       id="composition-button"
       onBlur={[Function]}
