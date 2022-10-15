@@ -1,6 +1,6 @@
 import ReactEcharts from 'echarts-for-react';
 
-const lineStyle = {
+const LINE_STYLE = {
     width: 4,
     opacity: 0.5
 };
@@ -63,7 +63,7 @@ const getOptions = (capabilities: any) => ({
         {
             name: 'Madison',
             type: 'radar',
-            lineStyle: lineStyle,
+            lineStyle: LINE_STYLE,
             data: [
                 [
                     capabilities.coding,

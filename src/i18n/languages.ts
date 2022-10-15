@@ -16,3 +16,11 @@ export const APP_LOCALES = {
   'zh-TW': '中文繁体',
   'zh-HANT': '中文',
 };
+
+export const LANGUAGE_OPTIONS = Object.entries(APP_LOCALES)
+    .map(([lKey, lValue]) => {
+      return {
+        label: lValue,
+        value: lKey,
+      }
+    });

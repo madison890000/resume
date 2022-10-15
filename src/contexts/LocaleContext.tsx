@@ -1,5 +1,5 @@
-import React, { Dispatch, PropsWithChildren, SetStateAction, useMemo, useState } from 'react';
-import { APP_LOCALES } from '../i18n/languages';
+import React, { Dispatch, PropsWithChildren, SetStateAction, useState } from 'react';
+import { LANGUAGE_OPTIONS } from '../i18n/languages';
 
 interface ILocaleContext {
     locale: string;
@@ -9,24 +9,14 @@ interface ILocaleContext {
 
 export const LocaleContext = React.createContext({} as ILocaleContext);
 
-
 export const LocaleContextContainer = ({ children }: PropsWithChildren) => {
     const [locale, updateLocale] = useState<string>('en-US');
-    const languages = useMemo(() => {
-        return Object.entries(APP_LOCALES)
-            .map(([lKey, lValue]) => {
-                return {
-                    label: lValue,
-                    value: lKey,
-                }
-            })
-    }, []);
     return (
         <LocaleContext.Provider
             value={{
                 locale,
                 updateLocale,
-                languages,
+                languages: LANGUAGE_OPTIONS,
             }}
         >
             {children}
