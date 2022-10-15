@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { IntlProvider } from 'react-intl';
 import { generatedTranslations } from './i18n/translations';
-import Menus from './Menus';
+import Menus from './modules/Menus';
 import LocaleContext, { LocaleContextContainer } from './contexts/LocaleContext';
 
 const root = ReactDOM.createRoot(

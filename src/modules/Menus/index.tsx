@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useContext } from 'react';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
-import SelectLanguage from './modules/SelectLanguage';
-import LocaleContext from './contexts/LocaleContext';
+import LocaleContext from '../../contexts/LocaleContext';
+import SelectLanguage from '../SelectLanguage';
 
 const Menus = () => {
     const { locale, updateLocale, languages } = useContext(LocaleContext);
