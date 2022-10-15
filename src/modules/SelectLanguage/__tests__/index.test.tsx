@@ -13,7 +13,7 @@ test('renders SelectLanguage', () => {
 
 
 test('open SelectLanguage', async () => {
-    const SelectLanguageDom = render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
+    render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
     const selectBtn = screen.getByTestId('select-language-btn');
     const notShowMenuPops = await screen.queryByTestId('select-language-menu-pop');
     expect(notShowMenuPops)
@@ -24,10 +24,10 @@ test('open SelectLanguage', async () => {
         .toBeVisible();
 })
 test('SelectLanguage contain English 中文 中文繁体 中文简体', async () => {
-    const SelectLanguageDom = render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
-    const selectBtn = await screen.getByTestId('select-language-btn');
+    render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
+    const selectBtn = screen.getByTestId('select-language-btn');
     fireEvent.click(selectBtn)
-    const menuPops = await screen.getByTestId('select-language-menu-pop');
+    const menuPops = screen.getByTestId('select-language-menu-pop');
     expect(menuPops)
         .toBeVisible();
     expect(menuPops.innerHTML)
@@ -40,20 +40,20 @@ test('SelectLanguage contain English 中文 中文繁体 中文简体', async ()
         .toContain('English');
 })
 test('open SelectLanguage snapshot', async () => {
-    const SelectLanguageDom = render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
-    const selectBtn = await screen.getByTestId('select-language-btn');
+    render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
+    const selectBtn = screen.getByTestId('select-language-btn');
     fireEvent.click(selectBtn)
-    const menuPops = await screen.getByTestId('select-language-menu-pop');
+    const menuPops = screen.getByTestId('select-language-menu-pop');
     expect(menuPops)
         .toBeVisible();
     expect(document.body)
         .toMatchSnapshot();
 })
 test('close SelectLanguage snapshot', async () => {
-    const SelectLanguageDom = render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
-    const selectBtn = await screen.getByTestId('select-language-btn');
+    render(<SelectLanguage options={LANGUAGE_OPTIONS} />);
+    const selectBtn = screen.getByTestId('select-language-btn');
     fireEvent.click(selectBtn)
-    const menuPops = await screen.queryByTestId('select-language-menu-pop');
+    const menuPops = screen.queryByTestId('select-language-menu-pop');
     expect(menuPops)
         .toBeVisible();
     fireEvent.click(selectBtn);
