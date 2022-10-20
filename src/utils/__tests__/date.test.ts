@@ -1,4 +1,4 @@
-import { findPeriodByDate, formatDate, getMonthCountInStartAndEnd } from '../date'
+import { findPeriodByDate, formatDate, getMonthCountFromStartAndEnd } from '../date'
 import Period from '../../Model/Period';
 import DataModel from '../../Model/types';
 import Company from '../../Model/Company';
@@ -19,11 +19,11 @@ describe('utils -----> date ', () => {
     });
 
     test('getMonthCountInStartAndEnd : show return correct month count', () => {
-        expect(getMonthCountInStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2022-09-11T00:00:00')))
+        expect(getMonthCountFromStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2022-09-11T00:00:00')))
             .toBe(0)
-        expect(getMonthCountInStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2022-10-11T00:00:00')))
+        expect(getMonthCountFromStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2022-10-11T00:00:00')))
             .toBe(1)
-        expect(getMonthCountInStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2023-10-01T00:00:00')))
+        expect(getMonthCountFromStartAndEnd(new Date('2022-09-01T00:00:00'), new Date('2023-10-01T00:00:00')))
             .toBe(13)
     });
 

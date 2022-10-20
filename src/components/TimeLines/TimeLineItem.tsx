@@ -1,5 +1,5 @@
 import React from 'react';
-import { getMonthCountInStartAndEnd } from '../../utils/date';
+import { getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 import { getScreenDevice, ScreenDevice } from '../../utils/device';
 
@@ -20,7 +20,7 @@ export const getBaseRectFull = (device: ScreenDevice) => {
 }
 const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; periodColor: string }) => {
     const rectGap = 1;
-    const totalRects = getMonthCountInStartAndEnd(start, end ?? new Date()) + 1;
+    const totalRects = getMonthCountFromStartAndEnd(start, end ?? new Date()) + 1;
     const rectFullWidth = getBaseRectFull(getScreenDevice());
     const rectWidth = rectFullWidth - rectGap;
     let rectArray = new Array(totalRects).fill(0)
