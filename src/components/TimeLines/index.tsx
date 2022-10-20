@@ -33,7 +33,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
             totalRects,
             rects
         };
-    }, [periods]);
+    }, [periods, periodColors]);
 
     const { rectFullWidth, rectWidth } = useMemo(() => {
         const rectFullWidth = width / totalRects;
