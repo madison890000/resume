@@ -1,0 +1,18 @@
+import Tag from '../Tag';
+import React from 'react';
+import DataModel from '../../Model/types';
+
+interface CompanyTypeProps {
+    companyType: DataModel.CompanyType;
+}
+
+const CompanyType = ({ companyType }: CompanyTypeProps) => (
+    <span>
+        {companyType === DataModel.CompanyType.Enterprise &&
+        <Tag type="less">Enterprise</Tag>}
+        {companyType === DataModel.CompanyType.Startup &&
+        <Tag type="less">Startup</Tag>}
+    </span>
+)
+
+export default CompanyType

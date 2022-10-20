@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './index.module.scss';
 import DataModel from '../../Model/types';
 import Times from '../Times';
-import Tag from '../Tag';
+import Achievement from './Achievement';
 import TimeLineItem from '../TimeLines/TimeLineItem';
 import { defineMessages, useIntl } from 'react-intl';
+import Header from './Header';
 
 interface PeriodProps {
     start: Date;
@@ -46,28 +47,13 @@ const Period = ({
         <div className={styles.periodContainer}>
             <div className={styles.period}>
                 <div>
-                    <div className={styles.header}>
-                        <span className={styles.job}>
-                            {jobPositionLevel && <span>{jobPositionLevel}</span>}
-                            <span>{jobPosition}</span>
-                        </span>
-                        <span className={styles.companyName}>
-                            <span>
-                                {companyName}
-                                <span>
-                                    {companyType === DataModel.CompanyType.Enterprise &&
-                                    <Tag type="less">Enterprise</Tag>}
-                                    {companyType === DataModel.CompanyType.Startup &&
-                                    <Tag type="less">Startup</Tag>}
-                                </span>
-                            </span>
-                        </span>
-                        <span>
-                            {keywords?.map(keyword => (
-                                <Tag type="filled">{keyword}</Tag>
-                            ))}
-                        </span>
-                    </div>
+                    <Header
+                        jobPosition={jobPosition}
+                        companyName={companyName}
+                        companyType={companyType}
+                        keywords={keywords}
+                        jobPositionLevel={jobPositionLevel}
+                    />
 
                 </div>
                 <div className={styles.timeline}>
@@ -89,14 +75,10 @@ const Period = ({
                 <h5>{intl.formatMessage(messages.achievements)}:</h5>
                 <ul className={styles.achievements}>
                     {achievements?.map((achievement) => (
-                        <li>
-                            {achievement?.text}
-                            <span>
-                                {achievement?.categories?.map((c) => (
-                                    <Tag>{c}</Tag>
-                                ))}
-                            </span>
-                        </li>
+                        <Achievement
+                            title={achievement?.text}
+                            categories={achievement?.categories}
+                        />
                     ))}
                 </ul>
             </div>
