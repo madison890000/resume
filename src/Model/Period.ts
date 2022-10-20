@@ -1,6 +1,6 @@
 import Company from './Company';
-import { v4 } from 'uuid';
 import DataModel from './types';
+import Base from './Base';
 
 interface IPeriod {
     start: Date;
@@ -14,8 +14,7 @@ interface IPeriod {
     solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 }
 
-export default class Period {
-    readonly id: string;
+export default class Period extends Base {
     public start: Date;
     public end?: Date;
     public keywords: DataModel.Keyword[];
@@ -26,8 +25,18 @@ export default class Period {
     public jobPosition: DataModel.JobPosition;
     public solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 
-    constructor({solutionsOfHowToImplement, company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
-        this.id = v4();
+    constructor({
+                    solutionsOfHowToImplement,
+                    company,
+                    jobSummaries,
+                    jobPosition,
+                    jobPositionLevel,
+                    achievements,
+                    keywords,
+                    start,
+                    end
+                }: IPeriod) {
+        super();
         this.company = company;
         this.start = start;
         this.end = end;

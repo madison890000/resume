@@ -3,6 +3,7 @@ import Education from './Education';
 import Period from './Period';
 import Skill from './Skill';
 import Capability from './Capability';
+import Base from './Base';
 
 
 interface IPerson {
@@ -19,7 +20,7 @@ interface IPerson {
 }
 
 
-export default class Person {
+export default class Person extends Base {
     public firstName: string;
     public lastName: string;
     public email: string;
@@ -33,7 +34,17 @@ export default class Person {
     public description: string[];
     public capability!: Capability;
 
-    constructor({ firstName,description, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
+    constructor({
+                    firstName,
+                    description,
+                    birthDay,
+                    lastName,
+                    email,
+                    cellphone,
+                    country,
+                    gender
+                }: IPerson) {
+        super();
         this.educations = [];
         this.periods = [];
         this.firstName = firstName;
