@@ -1,5 +1,5 @@
 import Company from '../Company'
-import { CompanyType } from '../types';
+import DataModel from '../types';
 
 describe('Company class', () => {
     test('company should have name', () => {
@@ -14,9 +14,9 @@ describe('Company class', () => {
         const testCompanyName = 'test company name'
         const testCompany = new Company({
             name: testCompanyName,
-            type: CompanyType.Enterprise,
+            type: DataModel.CompanyType.Enterprise,
         })
         expect(testCompany.type)
-            .toEqual(CompanyType.Enterprise)
+            .toEqual(DataModel.CompanyType.Enterprise)
     })
 })

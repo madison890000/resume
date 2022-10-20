@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CompanyType is Enterprise 1`] = `
+<span>
+  <span
+    className="less"
+  >
+    Enterprise
+  </span>
+</span>
+`;
+
+exports[`renders CompanyType is Startup 1`] = `
+<span>
+  <span
+    className="less"
+  >
+    Startup
+  </span>
+</span>
+`;

@@ -26,7 +26,6 @@ exports[`renders Period 1`] = `
         >
           <span>
             test company name
-            <span />
           </span>
         </span>
         <span>

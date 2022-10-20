@@ -1,5 +1,5 @@
 import Period from '../Period'
-import { Achievement, JobPositionLevel, Keyword } from '../types';
+import DataModel from '../types';
 import Company from '../Company';
 
 describe('Period class', () => {
@@ -10,10 +10,10 @@ describe('Period class', () => {
         })
         const start = new Date('2012-01-01');
         const end = new Date('2013-01-01');
-        const keywords = ['React'] as Keyword[];
-        const jobPositionLevel = JobPositionLevel.Senior;
+        const keywords = ['React'] as DataModel.Keyword[];
+        const jobPositionLevel = DataModel.JobPositionLevel.Senior;
         const jobPosition = 'Software Engineer';
-        const achievements = [] as Achievement[];
+        const achievements = [] as DataModel.Achievement[];
         const jobSummaries = [] as string[];
         const testPeriod = new Period({
             solutionsOfHowToImplement: [],
