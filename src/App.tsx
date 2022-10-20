@@ -98,6 +98,7 @@ function App() {
                 {person.reversedPeriods?.map(period => (
                     <Period
                         {...period}
+                        key={period.id}
                         periodColor={periodColors[period?.id]}
                         companyName={period?.company?.name}
                         companyType={period?.company?.type}
@@ -107,7 +108,7 @@ function App() {
             <Divider title={intl.formatMessage(messages.educationExperiences)} />
             <section>
                 {person.educations?.map(education => (
-                    <Education {...education} />
+                    <Education {...education} key={education.id} />
                 ))}
             </section>
         </div>
