@@ -1,7 +1,7 @@
 import { findPeriodByDate, formatDate, getMonthCountInStartAndEnd } from '../date'
-import Period from '../../lib/Period';
-import { Achievement, JobPositionLevel, Keyword } from '../../lib/types';
-import Company from '../../lib/Company';
+import Period from '../../Model/Period';
+import DataModel from '../../Model/types';
+import Company from '../../Model/Company';
 
 describe('utils -----> date ', () => {
 
@@ -36,9 +36,9 @@ describe('utils -----> date ', () => {
             start: new Date('2015-07-01T00:00:00Z'),
             end: new Date('2016-07-01T00:00:00Z'),
             company: testCompany,
-            keywords: ['Java', 'jQuery'] as Keyword[],
+            keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
             jobPosition: 'Software Engineer',
-            jobPositionLevel: JobPositionLevel.Junior,
+            jobPositionLevel: DataModel.JobPositionLevel.Junior,
             solutionsOfHowToImplement: [],
             jobSummaries: [
                 'use Java to develop system on schedule',
@@ -49,7 +49,7 @@ describe('utils -----> date ', () => {
                     text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
                     categories: ['UI']
                 }
-            ] as Achievement[],
+            ] as DataModel.Achievement[],
         })
         expect(findPeriodByDate(new Date('2022-09-01T00:00:00'), [testPeriod]))
             .toBe(undefined)

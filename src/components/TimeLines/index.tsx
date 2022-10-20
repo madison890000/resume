@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import Period from '../../lib/Period';
+import Period from '../../Model/Period';
 import { findPeriodByDate, getMonthCountInStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 

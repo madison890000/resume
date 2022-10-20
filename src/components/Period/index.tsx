@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { Achievement, CompanyType, JobPosition, JobPositionLevel } from '../../lib/types';
+import DataModel from '../../Model/types';
 import Times from '../Times';
 import Tag from '../Tag';
 import TimeLineItem from '../TimeLines/TimeLineItem';
@@ -12,10 +12,10 @@ interface PeriodProps {
     end?: Date;
     keywords: string[];
     companyName: string;
-    companyType?: CompanyType;
-    jobPositionLevel: JobPositionLevel;
-    jobPosition: JobPosition;
-    achievements: Achievement[];
+    companyType?: DataModel.CompanyType;
+    jobPositionLevel: DataModel.JobPositionLevel;
+    jobPosition: DataModel.JobPosition;
+    achievements: DataModel.Achievement[];
     jobSummaries: string[];
 }
 
@@ -55,9 +55,9 @@ const Period = ({
                             <span>
                                 {companyName}
                                 <span>
-                                    {companyType === CompanyType.Enterprise &&
+                                    {companyType === DataModel.CompanyType.Enterprise &&
                                     <Tag type="less">Enterprise</Tag>}
-                                    {companyType === CompanyType.Startup &&
+                                    {companyType === DataModel.CompanyType.Startup &&
                                     <Tag type="less">Startup</Tag>}
                                 </span>
                             </span>

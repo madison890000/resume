@@ -1,16 +1,16 @@
 import React from 'react';
 import Period from '../index';
 import renderer from 'react-test-renderer';
-import { Achievement, JobPositionLevel, Keyword } from '../../../lib/types';
+import DataModel from '../../../Model/types';
 
 test('renders Period', () => {
     const testCompanyName = 'test company name'
     const start = new Date('2012-01-01');
     const end = new Date('2013-01-01');
-    const keywords = ['React'] as Keyword[];
-    const jobPositionLevel = JobPositionLevel.Senior;
+    const keywords = ['React'] as DataModel.Keyword[];
+    const jobPositionLevel = DataModel.JobPositionLevel.Senior;
     const jobPosition = 'Software Engineer';
-    const achievements = [] as Achievement[];
+    const achievements = [] as DataModel.Achievement[];
     const jobSummaries = [] as string[];
     const PeriodDom = renderer.create(
         <Period

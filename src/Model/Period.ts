@@ -1,36 +1,30 @@
 import Company from './Company';
 import { v4 } from 'uuid';
-import {
-    Achievement,
-    JobPosition,
-    JobPositionLevel,
-    Keyword,
-    SolutionsOfHowToImplement
-} from './types';
+import DataModel from './types';
 
 interface IPeriod {
     start: Date;
     end?: Date;
-    keywords: Keyword[];
+    keywords: DataModel.Keyword[];
     company: Company;
-    jobPositionLevel: JobPositionLevel;
-    jobPosition: JobPosition;
-    achievements: Achievement[];
+    jobPositionLevel: DataModel.JobPositionLevel;
+    jobPosition: DataModel.JobPosition;
+    achievements: DataModel.Achievement[];
     jobSummaries: string[];
-    solutionsOfHowToImplement: SolutionsOfHowToImplement[];
+    solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 }
 
 export default class Period {
     readonly id: string;
     public start: Date;
     public end?: Date;
-    public keywords: Keyword[];
-    public achievements: Achievement[];
+    public keywords: DataModel.Keyword[];
+    public achievements: DataModel.Achievement[];
     public jobSummaries: string[];
     public company: Company;
-    public jobPositionLevel: JobPositionLevel;
-    public jobPosition: JobPosition;
-    public solutionsOfHowToImplement: SolutionsOfHowToImplement[];
+    public jobPositionLevel: DataModel.JobPositionLevel;
+    public jobPosition: DataModel.JobPosition;
+    public solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 
     constructor({solutionsOfHowToImplement, company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
         this.id = v4();

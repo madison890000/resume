@@ -1,18 +1,10 @@
-import Person from './lib/Person';
-import Education from './lib/Education';
-import {
-    Achievement,
-    CompanyType,
-    Degree,
-    Importance,
-    JobPositionLevel,
-    Keyword,
-    SkillLevel
-} from './lib/types';
-import Period from './lib/Period';
-import Company from './lib/Company';
-import Skill from './lib/Skill';
-import Capability from './lib/Capability';
+import Person from './Model/Person';
+import Education from './Model/Education';
+import DataModel from './Model/types';
+import Period from './Model/Period';
+import Company from './Model/Company';
+import Skill from './Model/Skill';
+import Capability from './Model/Capability';
 
 const madison = new Person({
     firstName: 'Madison',
@@ -34,14 +26,14 @@ const madison = new Person({
 const masterEducation = new Education({
     major: 'Geographical Information System',
     college: 'China Agricultural University',
-    degree: Degree.Master,
+    degree: DataModel.Degree.Master,
     start: new Date('2012-09-01T00:00:00Z'),
     end: new Date('2015-07-01T00:00:00Z')
 })
 const bachelorEducation = new Education({
     major: 'Resources and Environment',
     college: 'China Agricultural University',
-    degree: Degree.Bachelor,
+    degree: DataModel.Degree.Bachelor,
     start: new Date('2008-09-01T00:00:00Z'),
     end: new Date('2012-07-01T00:00:00Z')
 })
@@ -50,16 +42,16 @@ madison.addEducations([bachelorEducation, masterEducation])
 
 const taijiCompany = new Company({
     name: 'Taiji Computer Corporation. Ltd',
-    type: CompanyType.Enterprise,
+    type: DataModel.CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodOne = new Period({
     start: new Date('2015-07-01T00:00:00Z'),
     end: new Date('2016-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery', 'Waterfall'] as Keyword[],
+    keywords: ['Java', 'jQuery', 'Waterfall'] as DataModel.Keyword[],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: JobPositionLevel.Junior,
+    jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'use Java to develop system on schedule',
@@ -70,20 +62,20 @@ const periodOne = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 const yinyuanCompany = new Company({
     name: 'Yinyuan Asia-pacific Technology Co. Ltd ',
-    type: CompanyType.Startup,
+    type: DataModel.CompanyType.Startup,
     location: 'Beijing, China'
 })
 const periodTwo = new Period({
     start: new Date('2016-07-01T00:00:00Z'),
     end: new Date('2018-03-01T00:00:00Z'),
     company: yinyuanCompany,
-    keywords: ['Java', 'jQuery', 'React', 'Waterfall'] as Keyword[],
+    keywords: ['Java', 'jQuery', 'React', 'Waterfall'] as DataModel.Keyword[],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: JobPositionLevel.Middle,
+    jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'participate in the design and development of all projects ',
@@ -100,20 +92,20 @@ const periodTwo = new Period({
             text: '\'implemented the rendering of list components and displaying data  in both horizontal and vertical',
             categories: ['UI']
         }
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 const baixinCompany = new Company({
     name: 'Citic Baixin Bank Co. Ltd',
-    type: CompanyType.Enterprise,
+    type: DataModel.CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodThree = new Period({
     start: new Date('2018-04-01T00:00:00Z'),
     end: new Date('2019-06-01T00:00:00Z'),
     company: baixinCompany,
-    keywords: ['Vue', 'React', 'Waterfall'] as Keyword[],
+    keywords: ['Vue', 'React', 'Waterfall'] as DataModel.Keyword[],
     jobPosition: 'Front-End Engineer',
-    jobPositionLevel: JobPositionLevel.Middle,
+    jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'communicate with product manager and UI designer partner through meeting to understand project requirements',
@@ -125,20 +117,20 @@ const periodThree = new Period({
             text: 'completed the design and development of company\'s front-end UI component library',
             categories: ['UI']
         },
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 const pccwCompany = new Company({
     name: 'PCCW GLOBAL',
-    type: CompanyType.Enterprise,
+    type: DataModel.CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFour = new Period({
     start: new Date('2019-09-01T00:00:00Z'),
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
-    keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'] as Keyword[],
+    keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'] as DataModel.Keyword[],
     jobPosition: 'Front-End Engineer',
-    jobPositionLevel: JobPositionLevel.Senior,
+    jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'make the architecture design in Front-End project',
@@ -168,19 +160,19 @@ const periodFour = new Period({
             text: 'define the Best practices in FE project with React and Typescript.',
             categories: ['Architecture']
         }
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 const teslaCompany = new Company({
     name: 'Tesla',
-    type: CompanyType.Enterprise,
+    type: DataModel.CompanyType.Enterprise,
     location: 'Beijing, China'
 })
 const periodFive = new Period({
     start: new Date('2022-05-23T00:00:00Z'),
     company: teslaCompany,
-    keywords: ['React', 'Agile'] as Keyword[],
+    keywords: ['React', 'Agile'] as DataModel.Keyword[],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: JobPositionLevel.Senior,
+    jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'make the architecture design in Front-End project',
@@ -202,27 +194,27 @@ const periodFive = new Period({
             text: 'improve the code quality',
             categories: ['Quality']
         },
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 madison.addPeriods([periodOne, periodTwo, periodThree, periodFour, periodFive])
 
 const skills = [
-    new Skill('JavaScript', SkillLevel.proficient, 7, Importance.important),
-    new Skill('React', SkillLevel.proficient, 5, Importance.important),
-    new Skill('TypeScript', SkillLevel.proficient, 3, Importance.important),
-    new Skill('React hooks', SkillLevel.proficient, 3, Importance.important),
-    new Skill('React-Redux', SkillLevel.proficient, 3, Importance.important),
-    new Skill('HTML', SkillLevel.proficient, 6, Importance.important),
-    new Skill('CSS', SkillLevel.proficient, 6, Importance.important),
-    new Skill('MobX', SkillLevel.proficient, 1, Importance.normal),
-    new Skill('Electron', SkillLevel.familiar, 1, Importance.normal),
-    new Skill('Node', SkillLevel.familiar, 2, Importance.normal),
-    new Skill('Vue', SkillLevel.proficient, 1.5, Importance.normal),
-    new Skill('Java', SkillLevel.familiar, 3, Importance.normal),
-    new Skill('Docker', SkillLevel.understand, 0.5, Importance.less),
-    new Skill('C#', SkillLevel.understand, 0.5, Importance.less),
-    new Skill('Database', SkillLevel.familiar, 2, Importance.normal),
-    new Skill('Git', SkillLevel.proficient, 6, Importance.important),
+    new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.important),
+    new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.important),
+    new Skill('TypeScript', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
+    new Skill('React hooks', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
+    new Skill('React-Redux', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
+    new Skill('HTML', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important),
+    new Skill('CSS', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important),
+    new Skill('MobX', DataModel.SkillLevel.proficient, 1, DataModel.Importance.normal),
+    new Skill('Electron', DataModel.SkillLevel.familiar, 1, DataModel.Importance.normal),
+    new Skill('Node', DataModel.SkillLevel.familiar, 2, DataModel.Importance.normal),
+    new Skill('Vue', DataModel.SkillLevel.proficient, 1.5, DataModel.Importance.normal),
+    new Skill('Java', DataModel.SkillLevel.familiar, 3, DataModel.Importance.normal),
+    new Skill('Docker', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.less),
+    new Skill('C#', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.less),
+    new Skill('Database', DataModel.SkillLevel.familiar, 2, DataModel.Importance.normal),
+    new Skill('Git', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important),
 ]
 madison.addSkills(skills)
 

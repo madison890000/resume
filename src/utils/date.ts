@@ -1,4 +1,4 @@
-import Period from '../lib/Period';
+import Period from '../Model/Period';
 
 const READABLE_MONTHS = [
     'January',

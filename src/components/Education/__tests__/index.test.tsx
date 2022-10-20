@@ -1,7 +1,7 @@
 import React from 'react';
 import Education from '../index';
 import renderer from 'react-test-renderer';
-import { Degree } from '../../../lib/types';
+import DataModel from '../../../Model/types';
 
 test('renders Education Bachelor', () => {
     const start = new Date('2012-01-01');
@@ -11,7 +11,7 @@ test('renders Education Bachelor', () => {
             start={start}
             end={end}
             college="test college"
-            degree={Degree.Bachelor}
+            degree={DataModel.Degree.Bachelor}
             major="test major"
         />
     )
@@ -27,7 +27,7 @@ test('renders Education Master', () => {
             start={start}
             end={end}
             college="test college"
-            degree={Degree.Master}
+            degree={DataModel.Degree.Master}
             major="test major"
         />
     )
@@ -43,7 +43,7 @@ test('renders Education PhD', () => {
             start={start}
             end={end}
             college="test college"
-            degree={Degree.PhD}
+            degree={DataModel.Degree.PhD}
             major="test major"
         />
     )

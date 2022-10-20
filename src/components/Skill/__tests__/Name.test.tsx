@@ -1,14 +1,14 @@
 import React from 'react';
 import Name from '../Name';
 import renderer from 'react-test-renderer';
-import { Importance } from '../../../lib/types';
+import DataModel from '../../../Model/types';
 
 describe('renders Name ', () => {
 
     test('Name --->level = important', () => {
         const nameImportant = renderer.create(
             <Name
-                level={Importance.important}
+                level={DataModel.Importance.important}
             >understand normal Skill</Name>
         )
             .toJSON();
@@ -19,7 +19,7 @@ describe('renders Name ', () => {
     test('Name --->level = normal', () => {
         const nameNormal = renderer.create(
             <Name
-                level={Importance.normal}
+                level={DataModel.Importance.normal}
             >understand normal Skill</Name>
         )
             .toJSON();
@@ -30,7 +30,7 @@ describe('renders Name ', () => {
     test('Name --->level = less', () => {
         const nameLess = renderer.create(
             <Name
-                level={Importance.less}
+                level={DataModel.Importance.less}
             >understand normal Skill</Name>
         )
             .toJSON();

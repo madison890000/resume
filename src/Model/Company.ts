@@ -1,14 +1,14 @@
-import { CompanyType } from './types';
+import DataModel from './types';
 
 interface ICompany {
     name: string;
     location?: string;
-    type?: CompanyType;
+    type?: DataModel.CompanyType;
 }
 
 export default class Company {
     public name: string;
-    public type?: CompanyType;
+    public type?: DataModel.CompanyType;
     public location?: string;
 
     constructor({ name, location, type }: ICompany) {

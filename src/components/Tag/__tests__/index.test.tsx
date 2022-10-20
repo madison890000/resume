@@ -26,3 +26,12 @@ test('renders Tag less', () => {
     expect(TagDom)
         .toMatchSnapshot();
 });
+
+test('renders Tag default', () => {
+    const TagDom = renderer.create(
+        <Tag>React</Tag>
+    )
+        .toJSON();
+    expect(TagDom)
+        .toMatchSnapshot();
+});

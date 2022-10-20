@@ -1,10 +1,10 @@
-import { Degree } from './types';
+import DataModel from './types';
 
 
 interface IEducation {
     college: string;
     major: string;
-    degree: Degree;
+    degree: DataModel.Degree;
     start: Date;
     end: Date;
 }
@@ -12,7 +12,7 @@ interface IEducation {
 export default class Education {
     public college: string;
     public major: string;
-    public degree: Degree;
+    public degree: DataModel.Degree;
     public start: Date;
     public end: Date;
 
