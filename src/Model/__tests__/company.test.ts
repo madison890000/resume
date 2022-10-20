@@ -1,22 +1,14 @@
-import Company from '../Company'
-import DataModel from '../types';
+import Base from '../Base'
 
-describe('Company class', () => {
-    test('company should have name', () => {
-        const testCompanyName = 'test company name'
-        const testCompany = new Company({
-            name: testCompanyName,
-        })
-        expect(testCompany.name)
-            .toEqual(testCompanyName)
-    })
-    test('company could have company type', () => {
-        const testCompanyName = 'test company name'
-        const testCompany = new Company({
-            name: testCompanyName,
-            type: DataModel.CompanyType.Enterprise,
-        })
-        expect(testCompany.type)
-            .toEqual(DataModel.CompanyType.Enterprise)
+describe('Base class', () => {
+    test('Base should have id', () => {
+        const testBase = new Base()
+        expect(typeof testBase.id)
+            .toBe('string');
+    });
+    test('Base should have id', () => {
+        const testBase = new Base();
+        expect(testBase.id.length)
+            .toEqual(36);
     })
 })
