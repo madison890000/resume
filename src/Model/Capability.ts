@@ -1,3 +1,5 @@
+import Base from './Base';
+
 interface ICapability {
     coding: number;
     leaning: number;
@@ -8,7 +10,7 @@ interface ICapability {
 }
 
 
-export default class Capability {
+export default class Capability extends Base {
     public coding: number;
     public leaning: number;
     public algorithm: number;
@@ -24,6 +26,7 @@ export default class Capability {
                     engineer,
                     passion
                 }: ICapability) {
+        super();
         this.coding = coding;
         this.leaning = leaning;
         this.algorithm = algorithm;
