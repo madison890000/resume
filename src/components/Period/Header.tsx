@@ -30,6 +30,6 @@ const Header = ({ keywords, companyType, companyName, jobPosition, jobPositionLe
             ))}
         </span>
     </div>
-)
+);
 
-export default Header
+export default Header;

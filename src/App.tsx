@@ -9,29 +9,22 @@ import { defineMessages, useIntl } from 'react-intl';
 const messages = defineMessages({
     profile: {
         id: 'section.divider.profile',
-        defaultMessage: 'Profile',
+        defaultMessage: 'Profile'
     },
     skills: {
         id: 'section.divider.skills',
-        defaultMessage: 'Skills',
+        defaultMessage: 'Skills'
     },
     professionalExperiences: {
-        id: 'section.divider.professionalExperiences',
+        id: 'section.divider.professionalExperiences'
     },
     educationExperiences: {
         id: 'section.divider.educationExperiences',
         defaultMessage: 'Education Experiences'
-    },
+    }
 });
 
-const COLORS = [
-    'var(--color-red)',
-    'var(--color-yellow)',
-    'var(--color-dark-yellow)',
-    'var(--color-dark-red)',
-    'var(--color-green)',
-    '#FF66B2',
-]
+const COLORS = ['var(--color-red)', 'var(--color-yellow)', 'var(--color-dark-yellow)', 'var(--color-dark-red)', 'var(--color-green)', '#FF66B2'];
 
 function App() {
     const intl = useIntl();
@@ -40,15 +33,10 @@ function App() {
     const periodColors: { [key: string]: string } = {};
     person?.periods?.forEach((p, index) => {
         periodColors[p.id] = COLORS[index];
-    })
+    });
     return (
         <div className={styles.main}>
-            <Header
-                firstName={person.firstName}
-                lastName={person.lastName}
-                email={person.email}
-                cellphone={person.cellphone}
-            />
+            <Header firstName={person.firstName} lastName={person.lastName} email={person.email} cellphone={person.cellphone} />
             <Divider title={intl.formatMessage(messages.profile)} />
             <section>
                 <div className={styles.profile}>
@@ -60,49 +48,24 @@ function App() {
                     <div className={styles.capability}>
                         <Capability capabilities={person.capability} />
                     </div>
-
                 </div>
             </section>
             <Divider title={intl.formatMessage(messages.skills)} />
             <section>
                 <div className={styles.skills}>
                     {person.skills?.map(skill => (
-                        <Skill {...skill} key={skill.id}/>
+                        <Skill {...skill} key={skill.id} />
                     ))}
                 </div>
             </section>
             <Divider
                 title={intl.formatMessage(messages.professionalExperiences)}
-                extra={
-                    getScreenDevice() === ScreenDevice.PC ?
-                        <TimeLines
-                            width={timelineWidth - 300}
-                            periods={person.periods}
-                            periodColors={periodColors}
-                            barPosition="bottom"
-                        />
-                        : null
-                }
+                extra={getScreenDevice() === ScreenDevice.PC ? <TimeLines width={timelineWidth - 300} periods={person.periods} periodColors={periodColors} barPosition="bottom" /> : null}
             />
-            <section>
-                {
-                    getScreenDevice() !== ScreenDevice.PC ? <TimeLines
-                        width={timelineWidth - 20}
-                        periods={person.periods}
-                        periodColors={periodColors}
-                        barPosition="top"
-                    /> : null
-                }
-            </section>
+            <section>{getScreenDevice() !== ScreenDevice.PC ? <TimeLines width={timelineWidth - 20} periods={person.periods} periodColors={periodColors} barPosition="top" /> : null}</section>
             <section>
                 {person.reversedPeriods?.map(period => (
-                    <Period
-                        {...period}
-                        key={period.id}
-                        periodColor={periodColors[period?.id]}
-                        companyName={period?.company?.name}
-                        companyType={period?.company?.type}
-                    />
+                    <Period {...period} key={period.id} periodColor={periodColors[period?.id]} companyName={period?.company?.name} companyType={period?.company?.type} />
                 ))}
             </section>
             <Divider title={intl.formatMessage(messages.educationExperiences)} />

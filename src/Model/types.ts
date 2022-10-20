@@ -2,11 +2,10 @@ namespace DataModel {
     export enum Degree {
         Bachelor = 'Bachelor',
         Master = 'Master',
-        PhD = 'PhD',
+        PhD = 'PhD'
     }
 
     export type Gender = 'male' | 'female';
-
 
     export type Achievement = {
         text: string;
@@ -18,14 +17,10 @@ namespace DataModel {
         Staff = 'Staff',
         Senior = 'Senior',
         Middle = '',
-        Junior = 'Junior',
+        Junior = 'Junior'
     }
 
-    export type JobPosition =
-        'Software Engineer'
-        | 'Front-End Engineer'
-        | 'Back-End Engineer'
-        | 'Full-Stack Engineer';
+    export type JobPosition = 'Software Engineer' | 'Front-End Engineer' | 'Back-End Engineer' | 'Full-Stack Engineer';
 
     export type JobResponsibility = string;
     export type FEUILib = 'Material UI' | 'antd';
@@ -35,30 +30,23 @@ namespace DataModel {
     export type OtherSkillLabels = 'NodeJs' | 'HTML5' | 'CSS3' | 'Webpack';
     export type WayOfDevelopment = 'Agile' | 'Waterfall';
 
-    export type Keyword =
-        Framework
-        & CodeLanguage
-        & OtherSkillLabels
-        & FEUILib
-        & ReactFramework
-        & WayOfDevelopment;
+    export type Keyword = Framework & CodeLanguage & OtherSkillLabels & FEUILib & ReactFramework & WayOfDevelopment;
 
     export enum SkillLevel {
         understand = 'understand',
         familiar = 'familiar',
-        proficient = 'proficient',
+        proficient = 'proficient'
     }
 
     export enum Importance {
         important,
         normal,
-        less,
+        less
     }
 
     export enum CompanyType {
         Enterprise,
-        Startup,
+        Startup
     }
-
 }
-export default DataModel
+export default DataModel;

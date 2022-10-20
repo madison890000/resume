@@ -3,22 +3,20 @@ import styles from './Level.module.scss';
 import classNames from 'classnames';
 import { defineMessages, useIntl } from 'react-intl';
 
-
 namespace Level {
-
     const messages = defineMessages({
         understand: {
             id: 'component.skill.level.understand',
-            defaultMessage: 'Understand',
+            defaultMessage: 'Understand'
         },
         familiar: {
             id: 'component.skill.level.familiar',
-            defaultMessage: 'Familiar',
+            defaultMessage: 'Familiar'
         },
         proficient: {
             id: 'component.skill.level.proficient',
-            defaultMessage: 'Proficient',
-        },
+            defaultMessage: 'Proficient'
+        }
     });
     export const Understand = () => {
         const intl = useIntl();
@@ -31,9 +29,8 @@ namespace Level {
                 <span className={styles.empty} />
                 <div className={styles.levelName}>{intl.formatMessage(messages.understand)}</div>
             </div>
-        )
-    }
-
+        );
+    };
 
     export const Familiar = () => {
         const intl = useIntl();
@@ -46,9 +43,8 @@ namespace Level {
                 <span className={styles.empty} />
                 <div className={styles.levelName}>{intl.formatMessage(messages.familiar)}</div>
             </div>
-        )
-    }
-
+        );
+    };
 
     export const Proficient = () => {
         const intl = useIntl();
@@ -61,9 +57,7 @@ namespace Level {
                 <span className={styles.empty} />
                 <div className={styles.levelName}>{intl.formatMessage(messages.proficient)}</div>
             </div>
-        )
-    }
-
-
+        );
+    };
 }
-export default Level
+export default Level;

@@ -10,11 +10,11 @@ const Achievement = ({ title, categories }: AchievementProps) => (
     <li>
         {title}
         <span>
-            {categories?.map((c) => (
+            {categories?.map(c => (
                 <Tag>{c}</Tag>
             ))}
         </span>
     </li>
-)
+);
 
-export default Achievement
+export default Achievement;

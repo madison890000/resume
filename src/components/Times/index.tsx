@@ -13,6 +13,6 @@ const Times = ({ start, end }: TimesProps) => (
         <span>-</span>
         <span>{end ? formatDate(end) : 'Present'}</span>
     </div>
-)
+);
 
-export default Times
+export default Times;

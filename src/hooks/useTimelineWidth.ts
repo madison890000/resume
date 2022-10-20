@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react';
 import { getPageContentWidth } from '../utils/device';
 
-
-const useTimelineWidth = ()=>{
+const useTimelineWidth = () => {
     const [timelineWidth, setTimelineWidth] = useState<number>();
     useEffect(() => {
         const resizeObserver = new ResizeObserver(() => {
-            setTimelineWidth(getPageContentWidth())
-        })
+            setTimelineWidth(getPageContentWidth());
+        });
         resizeObserver.observe(document.body);
-        return () => resizeObserver.disconnect()
+        return () => resizeObserver.disconnect();
     }, []);
     return {
-        timelineWidth:timelineWidth,
-    }
-}
+        timelineWidth: timelineWidth
+    };
+};
 
-export default useTimelineWidth
+export default useTimelineWidth;

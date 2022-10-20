@@ -40,14 +40,7 @@ const getOptions = (capabilities: any) => ({
         },
         splitLine: {
             lineStyle: {
-                color: [
-                    'rgba(238, 197, 102, 0.1)',
-                    'rgba(238, 197, 102, 0.2)',
-                    'rgba(238, 197, 102, 0.4)',
-                    'rgba(238, 197, 102, 0.6)',
-                    'rgba(238, 197, 102, 0.8)',
-                    'rgba(238, 197, 102, 1)'
-                ].reverse()
+                color: ['rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)', 'rgba(238, 197, 102, 0.4)', 'rgba(238, 197, 102, 0.6)', 'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'].reverse()
             }
         },
         splitArea: {
@@ -64,16 +57,7 @@ const getOptions = (capabilities: any) => ({
             name: 'Madison',
             type: 'radar',
             lineStyle: LINE_STYLE,
-            data: [
-                [
-                    capabilities.coding,
-                    capabilities.leaning,
-                    capabilities.algorithm,
-                    capabilities.communicate,
-                    capabilities.engineer,
-                    capabilities.passion,
-                ]
-            ],
+            data: [[capabilities.coding, capabilities.leaning, capabilities.algorithm, capabilities.communicate, capabilities.engineer, capabilities.passion]],
             symbol: 'none',
             itemStyle: {
                 color: '#F9713C'
@@ -81,7 +65,7 @@ const getOptions = (capabilities: any) => ({
             areaStyle: {
                 opacity: 0.1
             }
-        },
+        }
     ]
 });
 const Capability = ({ capabilities }: any) => {
@@ -95,7 +79,7 @@ const Capability = ({ capabilities }: any) => {
                 height: '280px'
             }}
         />
-    )
-}
+    );
+};
 
-export default Capability
+export default Capability;

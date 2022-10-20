@@ -7,17 +7,11 @@ export default class Skill extends Base {
     public importance: DataModel.Importance;
     public ages: number;
 
-    constructor(
-        name: string,
-        level: DataModel.SkillLevel,
-        ages: number,
-        importance: DataModel.Importance
-    ) {
+    constructor(name: string, level: DataModel.SkillLevel, ages: number, importance: DataModel.Importance) {
         super();
         this.name = name;
         this.level = level;
         this.ages = ages;
         this.importance = importance;
     }
-
 }

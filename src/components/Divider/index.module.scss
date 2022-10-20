@@ -1,19 +1,19 @@
 .divider {
-  margin: var(--block-margin) 0 0 0;
-  width: 100%;
+    margin: var(--block-margin) 0 0 0;
+    width: 100%;
 }
 
 .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-  h3 {
-    margin: 12px 0;
-  }
+    h3 {
+        margin: 12px 0;
+    }
 }
 
 .section {
-  margin: 10px 0;
-  border: var(--base-gap-unit) solid var(--divider-border-color);
+    margin: 10px 0;
+    border: var(--base-gap-unit) solid var(--divider-border-color);
 }

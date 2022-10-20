@@ -15,10 +15,10 @@ afterEach(() => {
     windowSpy.mockRestore();
 });
 describe('renders TimeLine ', () => {
-    const testCompanyName = 'test company name'
+    const testCompanyName = 'test company name';
     const testCompany = new Company({
-        name: testCompanyName,
-    })
+        name: testCompanyName
+    });
     const start = new Date('2012-01-01');
     const end = new Date('2013-01-01');
     const keywords = ['React'] as DataModel.Keyword[];
@@ -38,17 +38,17 @@ describe('renders TimeLine ', () => {
         keywords
     });
     test('TimeLine one period', () => {
-        const TimeLineOne = renderer.create(
-            <TimeLines
-                periods={[testPeriod]}
-                periodColors={{
-                    [testPeriod.id]: '#FF6666',
-                }}
-                width={1000}
-            />
-        )
+        const TimeLineOne = renderer
+            .create(
+                <TimeLines
+                    periods={[testPeriod]}
+                    periodColors={{
+                        [testPeriod.id]: '#FF6666'
+                    }}
+                    width={1000}
+                />
+            )
             .toJSON();
-        expect(TimeLineOne)
-            .toMatchSnapshot();
-    })
+        expect(TimeLineOne).toMatchSnapshot();
+    });
 });

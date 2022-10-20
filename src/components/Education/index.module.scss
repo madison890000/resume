@@ -1,16 +1,16 @@
 .education {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  @media screen and (max-width: 414px) {
-    font-size: var(--base-font-size-middle);
-  }
+    @media screen and (max-width: 414px) {
+        font-size: var(--base-font-size-middle);
+    }
 }
 
 .major {
-  font-style: italic;
-  color: var(--education-degree-color);
-  margin-left: var(--block-margin);
-  font-size: var(--base-font-size-middle);
+    font-style: italic;
+    color: var(--education-degree-color);
+    margin-left: var(--block-margin);
+    font-size: var(--base-font-size-middle);
 }

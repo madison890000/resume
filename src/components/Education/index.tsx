@@ -11,13 +11,7 @@ interface EducationProps {
     end: Date;
 }
 
-const Education = ({
-                       start,
-                       end,
-                       college,
-                       degree,
-                       major,
-                   }: EducationProps) => {
+const Education = ({ start, end, college, degree, major }: EducationProps) => {
     return (
         <div className={styles.education}>
             <div>
@@ -30,6 +24,6 @@ const Education = ({
             <Times start={start} end={end} />
         </div>
     );
-}
+};
 
 export default Education;

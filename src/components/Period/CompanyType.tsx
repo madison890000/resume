@@ -8,11 +8,9 @@ interface CompanyTypeProps {
 
 const CompanyType = ({ companyType }: CompanyTypeProps) => (
     <span>
-        {companyType === DataModel.CompanyType.Enterprise &&
-        <Tag type="less">Enterprise</Tag>}
-        {companyType === DataModel.CompanyType.Startup &&
-        <Tag type="less">Startup</Tag>}
+        {companyType === DataModel.CompanyType.Enterprise && <Tag type="less">Enterprise</Tag>}
+        {companyType === DataModel.CompanyType.Startup && <Tag type="less">Startup</Tag>}
     </span>
-)
+);
 
-export default CompanyType
+export default CompanyType;

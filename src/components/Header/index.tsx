@@ -11,13 +11,19 @@ interface HeaderProps {
 const Header = ({ firstName, lastName, email, cellphone }: HeaderProps) => {
     return (
         <header className={styles.header}>
-            <h1>{firstName} {lastName}</h1>
+            <h1>
+                {firstName} {lastName}
+            </h1>
             <div className={styles.basicInfo}>
-                <div><span className={styles.email}>{email}</span></div>
-                <div><span className={styles.cellphone}>{cellphone}</span></div>
+                <div>
+                    <span className={styles.email}>{email}</span>
+                </div>
+                <div>
+                    <span className={styles.cellphone}>{cellphone}</span>
+                </div>
             </div>
         </header>
     );
-}
+};
 
 export default Header;

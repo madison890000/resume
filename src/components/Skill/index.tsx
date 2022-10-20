@@ -15,8 +15,8 @@ interface SkillProps {
 const messages = defineMessages({
     years: {
         id: 'component.skill.years',
-        defaultMessage: 'years',
-    },
+        defaultMessage: 'years'
+    }
 });
 const Skill = ({ level, name, ages, importance }: SkillProps) => {
     const intl = useIntl();
@@ -24,13 +24,15 @@ const Skill = ({ level, name, ages, importance }: SkillProps) => {
         <div className={styles.skill}>
             <div>
                 <Name level={importance}>{name}</Name>
-                <div className={styles.subTitle}>{ages} {intl.formatMessage(messages.years)}</div>
+                <div className={styles.subTitle}>
+                    {ages} {intl.formatMessage(messages.years)}
+                </div>
             </div>
             {level === DataModel.SkillLevel.familiar && <Level.Familiar />}
             {level === DataModel.SkillLevel.proficient && <Level.Proficient />}
             {level === DataModel.SkillLevel.understand && <Level.Understand />}
         </div>
     );
-}
+};
 
 export default Skill;

@@ -16,12 +16,12 @@ export const LocaleContextContainer = ({ children }: PropsWithChildren) => {
             value={{
                 locale,
                 updateLocale,
-                languages: LANGUAGE_OPTIONS,
+                languages: LANGUAGE_OPTIONS
             }}
         >
             {children}
         </LocaleContext.Provider>
-    )
-}
+    );
+};
 
-export default LocaleContext
+export default LocaleContext;

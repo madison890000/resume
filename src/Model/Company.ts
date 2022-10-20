@@ -12,15 +12,10 @@ export default class Company extends Base {
     public type?: DataModel.CompanyType;
     public location?: string;
 
-    constructor({
-                    name,
-                    location,
-                    type
-                }: ICompany) {
+    constructor({ name, location, type }: ICompany) {
         super();
         this.name = name;
         this.location = location;
         this.type = type;
     }
-
 }

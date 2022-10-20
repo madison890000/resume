@@ -16,13 +16,7 @@ export default class Education extends Base {
     public start: Date;
     public end: Date;
 
-    constructor({
-                    college,
-                    major,
-                    degree,
-                    start,
-                    end
-                }: IEducation) {
+    constructor({ college, major, degree, start, end }: IEducation) {
         super();
         this.major = major;
         this.college = college;
