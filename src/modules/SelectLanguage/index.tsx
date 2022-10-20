@@ -16,10 +16,10 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef<HTMLButtonElement>(null);
     const handleToggle = () => {
-        setOpen((prevOpen) => !prevOpen);
+        setOpen(prevOpen => !prevOpen);
     };
     const handleClose = (e: string) => {
-        onChange?.(e)
+        onChange?.(e);
         setOpen(false);
     };
     return (
@@ -35,33 +35,24 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
             >
                 {options?.find((l: any) => l.value === value)?.label}
             </Button>
-            <Popper
-                open={open}
-                anchorEl={anchorRef.current}
-                role={undefined}
-                placement="bottom-start"
-                transition
-                disablePortal
-            >
+            <Popper open={open} anchorEl={anchorRef.current} role={undefined} placement="bottom-start" transition disablePortal>
                 {({ TransitionProps, placement }) => (
                     <Grow
                         {...TransitionProps}
                         style={{
-                            transformOrigin:
-                                placement === 'bottom-start' ? 'left top' : 'left bottom',
+                            transformOrigin: placement === 'bottom-start' ? 'left top' : 'left bottom'
                         }}
                     >
                         <Paper>
-                            <MenuList
-                                autoFocusItem={open}
-                                id="composition-menu"
-                                data-testid="select-language-menu-pop"
-                                aria-labelledby="composition-button"
-                            >
+                            <MenuList autoFocusItem={open} id="composition-menu" data-testid="select-language-menu-pop" aria-labelledby="composition-button">
                                 {options?.map((l: any) => (
-                                    <MenuItem onClick={() => {
-                                        handleClose(l?.value)
-                                    }}>{l?.label}</MenuItem>
+                                    <MenuItem
+                                        onClick={() => {
+                                            handleClose(l?.value);
+                                        }}
+                                    >
+                                        {l?.label}
+                                    </MenuItem>
                                 ))}
                             </MenuList>
                         </Paper>
@@ -69,7 +60,7 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
                 )}
             </Popper>
         </>
-    )
-}
+    );
+};
 
-export default SelectLanguage
+export default SelectLanguage;

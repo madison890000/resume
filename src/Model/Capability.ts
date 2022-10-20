@@ -9,7 +9,6 @@ interface ICapability {
     passion: number;
 }
 
-
 export default class Capability extends Base {
     public coding: number;
     public leaning: number;
@@ -18,14 +17,7 @@ export default class Capability extends Base {
     public engineer: number;
     public passion: number;
 
-    constructor({
-                    coding,
-                    leaning,
-                    algorithm,
-                    communicate,
-                    engineer,
-                    passion
-                }: ICapability) {
+    constructor({ coding, leaning, algorithm, communicate, engineer, passion }: ICapability) {
         super();
         this.coding = coding;
         this.leaning = leaning;
@@ -34,5 +26,4 @@ export default class Capability extends Base {
         this.engineer = engineer;
         this.passion = passion;
     }
-
 }

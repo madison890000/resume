@@ -10,38 +10,32 @@ afterEach(() => {
     windowSpy.mockRestore();
 });
 describe('utils -----> device ', () => {
-
     test('getScreenDevice: return ScreenDevice.A4', () => {
         windowSpy.mockImplementation(() => ({
-            innerWidth: 1123,
+            innerWidth: 1123
         }));
-        expect(getScreenDevice())
-            .toBe(ScreenDevice.A4)
+        expect(getScreenDevice()).toBe(ScreenDevice.A4);
     });
     test('getScreenDevice: return ScreenDevice.Mobile', () => {
         windowSpy.mockImplementation(() => ({
-            innerWidth: 375,
+            innerWidth: 375
         }));
-        expect(getScreenDevice())
-            .toBe(ScreenDevice.Mobile)
+        expect(getScreenDevice()).toBe(ScreenDevice.Mobile);
     });
     test('getScreenDevice: return ScreenDevice.PC', () => {
         windowSpy.mockImplementation(() => ({
-            innerWidth: 1800,
+            innerWidth: 1800
         }));
-        expect(getScreenDevice())
-            .toBe(ScreenDevice.PC)
+        expect(getScreenDevice()).toBe(ScreenDevice.PC);
     });
-})
+});
 
 describe('getPageContentWidth ', () => {
     test('getPageContentWidth correctly', () => {
         windowSpy.mockImplementation(() => ({
             innerWidth: 1800,
-            outerWidth: 1800,
+            outerWidth: 1800
         }));
-        expect(getPageContentWidth())
-            .toEqual(1800 - 24);
-    })
-
+        expect(getPageContentWidth()).toEqual(1800 - 24);
+    });
 });

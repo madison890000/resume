@@ -23,50 +23,31 @@ interface PeriodProps {
 const messages = defineMessages({
     jobSummaries: {
         id: 'component.period.jobSummaries',
-        defaultMessage: 'Job summaries',
+        defaultMessage: 'Job summaries'
     },
     achievements: {
         id: 'component.period.achievements',
-        defaultMessage: 'Achievements',
-    },
+        defaultMessage: 'Achievements'
+    }
 });
-const Period = ({
-                    start,
-                    periodColor,
-                    end,
-                    companyName,
-                    companyType,
-                    keywords,
-                    jobPositionLevel,
-                    jobPosition,
-                    achievements,
-                    jobSummaries,
-                }: PeriodProps) => {
+const Period = ({ start, periodColor, end, companyName, companyType, keywords, jobPositionLevel, jobPosition, achievements, jobSummaries }: PeriodProps) => {
     const intl = useIntl();
     return (
         <div className={styles.periodContainer}>
             <div className={styles.period}>
                 <div>
-                    <Header
-                        jobPosition={jobPosition}
-                        companyName={companyName}
-                        companyType={companyType}
-                        keywords={keywords}
-                        jobPositionLevel={jobPositionLevel}
-                    />
-
+                    <Header jobPosition={jobPosition} companyName={companyName} companyType={companyType} keywords={keywords} jobPositionLevel={jobPositionLevel} />
                 </div>
                 <div className={styles.timeline}>
                     <TimeLineItem start={start} end={end} periodColor={periodColor} />
                     <Times start={start} end={end} />
                 </div>
-
             </div>
 
             <div>
                 <h5>{intl.formatMessage(messages.jobSummaries)}:</h5>
                 <ul>
-                    {jobSummaries?.map((summary) => (
+                    {jobSummaries?.map(summary => (
                         <li>{summary}</li>
                     ))}
                 </ul>
@@ -74,16 +55,13 @@ const Period = ({
             <div>
                 <h5>{intl.formatMessage(messages.achievements)}:</h5>
                 <ul className={styles.achievements}>
-                    {achievements?.map((achievement) => (
-                        <Achievement
-                            title={achievement?.text}
-                            categories={achievement?.categories}
-                        />
+                    {achievements?.map(achievement => (
+                        <Achievement title={achievement?.text} categories={achievement?.categories} />
                     ))}
                 </ul>
             </div>
         </div>
     );
-}
+};
 
 export default Period;

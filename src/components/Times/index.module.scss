@@ -1,25 +1,24 @@
 .times {
-  min-width: 226px;
+    min-width: 226px;
 
-  & > span {
-    display: inline-block;
-    margin: 0 var(--inline-block-margin);
-    min-width: 90px;
-    text-align: center;
-    font-style: italic;
-    font-size: var(--base-font-size-middle);
-  }
-
-  & > span:nth-child(2) {
-    min-width: 10px;
-  }
-
-  @media screen and (max-width: 414px) {
-    min-width: 90px;
     & > span {
-      min-width: 60px;
-      font-style: normal;
+        display: inline-block;
+        margin: 0 var(--inline-block-margin);
+        min-width: 90px;
+        text-align: center;
+        font-style: italic;
+        font-size: var(--base-font-size-middle);
     }
-  }
-}
 
+    & > span:nth-child(2) {
+        min-width: 10px;
+    }
+
+    @media screen and (max-width: 414px) {
+        min-width: 90px;
+        & > span {
+            min-width: 60px;
+            font-style: normal;
+        }
+    }
+}

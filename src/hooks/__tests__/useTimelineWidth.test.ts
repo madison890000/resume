@@ -2,7 +2,6 @@ import { renderHook } from '@testing-library/react';
 import useTimelineWidth from '../useTimelineWidth';
 import ResizeObserver from '../../__mocks__/ResizeObserver';
 
-
 let originWindow: any;
 
 beforeEach(() => {
@@ -27,8 +26,7 @@ afterEach(() => {
 describe('useTimeLineWidth', () => {
     test('returns correct width', () => {
         window.ResizeObserver = ResizeObserver;
-        const { result } = renderHook(() => useTimelineWidth())
-        expect(result.current.timelineWidth)
-            .toEqual(1776)
-    })
-})
+        const { result } = renderHook(() => useTimelineWidth());
+        expect(result.current.timelineWidth).toEqual(1776);
+    });
+});

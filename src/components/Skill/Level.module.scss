@@ -1,51 +1,48 @@
 .level {
-  min-width: 150px;
+    min-width: 150px;
 
-  & > span {
-    display: inline-block;
-    margin: var(--base-gap-unit);
-    width: 26px;
-    height: 20px;
-    background: var(--skill-level-fill);
+    & > span {
+        display: inline-block;
+        margin: var(--base-gap-unit);
+        width: 26px;
+        height: 20px;
+        background: var(--skill-level-fill);
 
-    @media screen and (max-width: 1150px) {
-      width: 24px;
-      height: 16px;
-      background: var(--skill-level-fill);
+        @media screen and (max-width: 1150px) {
+            width: 24px;
+            height: 16px;
+            background: var(--skill-level-fill);
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 12px;
+            height: 8px;
+        }
     }
 
     @media screen and (max-width: 414px) {
-      width: 12px;
-      height: 8px;
+        min-width: 80px;
     }
-  }
-
-  @media screen and (max-width: 414px) {
-    min-width: 80px;
-  }
-
-
 }
 
 .levelName {
-  font-size: var(--base-font-size-small);
-  margin-left: var(--base-gap-unit);
+    font-size: var(--base-font-size-small);
+    margin-left: var(--base-gap-unit);
 }
 
 .empty {
-  width: 24px !important;
-  height: 18px !important;
-  background: transparent !important;
-  border: 1px solid var(--skill-level-fill);
-
-
-  @media screen and (max-width: 1150px) {
-    width: 22px !important;
-    height: 14px !important;
+    width: 24px !important;
+    height: 18px !important;
+    background: transparent !important;
     border: 1px solid var(--skill-level-fill);
-  }
-  @media screen and (max-width: 414px) {
-    width: 10px !important;
-    height: 6px !important;
-  }
+
+    @media screen and (max-width: 1150px) {
+        width: 22px !important;
+        height: 14px !important;
+        border: 1px solid var(--skill-level-fill);
+    }
+    @media screen and (max-width: 414px) {
+        width: 10px !important;
+        height: 6px !important;
+    }
 }

@@ -25,17 +25,7 @@ export default class Period extends Base {
     public jobPosition: DataModel.JobPosition;
     public solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 
-    constructor({
-                    solutionsOfHowToImplement,
-                    company,
-                    jobSummaries,
-                    jobPosition,
-                    jobPositionLevel,
-                    achievements,
-                    keywords,
-                    start,
-                    end
-                }: IPeriod) {
+    constructor({ solutionsOfHowToImplement, company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
         super();
         this.company = company;
         this.start = start;
@@ -47,5 +37,4 @@ export default class Period extends Base {
         this.jobPosition = jobPosition;
         this.solutionsOfHowToImplement = solutionsOfHowToImplement;
     }
-
 }

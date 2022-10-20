@@ -1,4 +1,4 @@
-import Skill from '../Skill'
+import Skill from '../Skill';
 import DataModel from '../types';
 
 describe('Skill class', () => {
@@ -8,13 +8,9 @@ describe('Skill class', () => {
         const importance = DataModel.Importance.normal;
         const ages = 5;
         const testSkill = new Skill(skillName, skillLevel, ages, importance);
-        expect(testSkill.name)
-            .toEqual(skillName);
-        expect(testSkill.level)
-            .toEqual(skillLevel);
-        expect(testSkill.importance)
-            .toEqual(importance);
-        expect(testSkill.ages)
-            .toEqual(ages);
-    })
-})
+        expect(testSkill.name).toEqual(skillName);
+        expect(testSkill.level).toEqual(skillLevel);
+        expect(testSkill.importance).toEqual(importance);
+        expect(testSkill.ages).toEqual(ages);
+    });
+});

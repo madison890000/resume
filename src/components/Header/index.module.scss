@@ -1,28 +1,27 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
 .basicInfo {
-  text-align: right;
+    text-align: right;
 }
 
 .email {
-  font-style: italic;
-  font-size: var(--base-font-size-middle);
+    font-style: italic;
+    font-size: var(--base-font-size-middle);
 
-  @media screen and (max-width: 414px) {
-    font-size: var(--base-font-size-small);
-  }
+    @media screen and (max-width: 414px) {
+        font-size: var(--base-font-size-small);
+    }
 }
 
 .cellphone {
-  font-style: italic;
-  font-size: var(--base-font-size-middle);
-  
-  @media screen and (max-width: 414px) {
-    font-size: var(--base-font-size-small);
-  }
+    font-style: italic;
+    font-size: var(--base-font-size-middle);
+
+    @media screen and (max-width: 414px) {
+        font-size: var(--base-font-size-small);
+    }
 }

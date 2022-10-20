@@ -21,6 +21,6 @@ const Menus = () => {
             <MenuItem disabled>Import From LinkedIn</MenuItem>
             <MenuItem disabled>Themes</MenuItem>
         </MenuList>
-    )
-}
-export default Menus
+    );
+};
+export default Menus;

@@ -5,7 +5,6 @@ import Skill from './Skill';
 import Capability from './Capability';
 import Base from './Base';
 
-
 interface IPerson {
     firstName: string;
     lastName: string;
@@ -18,7 +17,6 @@ interface IPerson {
     educations?: Education[];
     periods?: Period[];
 }
-
 
 export default class Person extends Base {
     public firstName: string;
@@ -34,16 +32,7 @@ export default class Person extends Base {
     public description: string[];
     public capability!: Capability;
 
-    constructor({
-                    firstName,
-                    description,
-                    birthDay,
-                    lastName,
-                    email,
-                    cellphone,
-                    country,
-                    gender
-                }: IPerson) {
+    constructor({ firstName, description, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
         super();
         this.educations = [];
         this.periods = [];
@@ -74,7 +63,6 @@ export default class Person extends Base {
     }
 
     get reversedPeriods() {
-        return [...this.periods].reverse()
+        return [...this.periods].reverse();
     }
-
 }

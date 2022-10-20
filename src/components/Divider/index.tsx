@@ -6,19 +6,18 @@ interface DividerProps {
     extra?: React.ReactNode;
 }
 
-const Divider = ({
-                     title,
-                     extra
-                 }: DividerProps) => {
+const Divider = ({ title, extra }: DividerProps) => {
     return (
         <div className={styles.divider}>
             <div className={styles.title}>
-                <div><h3>{title}</h3></div>
+                <div>
+                    <h3>{title}</h3>
+                </div>
                 <div>{extra}</div>
             </div>
             <div className={styles.section} />
         </div>
     );
-}
+};
 
 export default Divider;

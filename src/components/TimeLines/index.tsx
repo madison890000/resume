@@ -9,37 +9,30 @@ interface TimeLinesProps {
     periods: Period[];
     periodColors: { [key: string]: string };
     barPosition?: 'top' | 'bottom';
-};
+}
 const RECT_GAP = 1;
-const TimeLines = ({
-                       barPosition = 'top',
-                       width,
-                       periods,
-                       periodColors
-                   }: TimeLinesProps) => {
-
+const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLinesProps) => {
     const { timeLinesStart, totalRects, rects } = useMemo(() => {
         const firstPeriod = periods?.[0];
         const endPeriod = periods?.[periods?.length - 1];
         const timeLinesStart = firstPeriod?.start;
         const timeLinesEnd = endPeriod?.end;
         const totalRects = getMonthCountFromStartAndEnd(timeLinesStart, timeLinesEnd ?? new Date()) + 1;
-        let rects = new Array(totalRects).fill(0)
-            ?.map((_, index) => {
-                const year = timeLinesStart.getFullYear() + Math.floor((timeLinesStart.getMonth() + index) / 12);
-                const month = (timeLinesStart.getMonth() + index) % 12;
-                const period = findPeriodByDate(new Date(Number(year), month, 1), periods)
-                return {
-                    index: index,
-                    period: period,
-                    color: period ? periodColors[period?.id] : '',
-                }
-            })
+        let rects = new Array(totalRects).fill(0)?.map((_, index) => {
+            const year = timeLinesStart.getFullYear() + Math.floor((timeLinesStart.getMonth() + index) / 12);
+            const month = (timeLinesStart.getMonth() + index) % 12;
+            const period = findPeriodByDate(new Date(Number(year), month, 1), periods);
+            return {
+                index: index,
+                period: period,
+                color: period ? periodColors[period?.id] : ''
+            };
+        });
         return {
             timeLinesStart,
             totalRects,
             rects
-        }
+        };
     }, [periods]);
 
     const { rectFullWidth, rectWidth } = useMemo(() => {
@@ -47,8 +40,8 @@ const TimeLines = ({
         const rectWidth = rectFullWidth - RECT_GAP;
         return {
             rectFullWidth,
-            rectWidth,
-        }
+            rectWidth
+        };
     }, [width, totalRects]);
 
     const Chart = (
@@ -56,13 +49,7 @@ const TimeLines = ({
             <svg width={width} height="20" style={{ backgroundColor: 'E0E0E0' }}>
                 <g>
                     {rects?.map((e, index) => (
-                        <MonthRect
-                            key={e.index}
-                            width={rectWidth}
-                            gap={RECT_GAP}
-                            color={e?.color}
-                            index={e?.index}
-                        />
+                        <MonthRect key={e.index} width={rectWidth} gap={RECT_GAP} color={e?.color} index={e?.index} />
                     ))}
                 </g>
             </svg>
@@ -77,10 +64,12 @@ const TimeLines = ({
             }}
         >
             {barPosition === 'top' && Chart}
-            <div style={{
-                height: 48
-            }}>
-                {periods?.map((p) => {
+            <div
+                style={{
+                    height: 48
+                }}
+            >
+                {periods?.map(p => {
                     const translateX = (getMonthCountFromStartAndEnd(timeLinesStart, p?.start) + 1) * rectFullWidth;
                     return (
                         <span
@@ -91,14 +80,14 @@ const TimeLines = ({
                             }}
                             className={styles.jobName}
                         >
-                        {p?.jobPositionLevel} {p?.jobPosition}
-                    </span>
-                    )
+                            {p?.jobPositionLevel} {p?.jobPosition}
+                        </span>
+                    );
                 })}
             </div>
             {barPosition === 'bottom' && Chart}
         </div>
-    )
-}
+    );
+};
 
-export default TimeLines
+export default TimeLines;

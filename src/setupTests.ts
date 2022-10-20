@@ -5,15 +5,15 @@
 import '@testing-library/jest-dom';
 
 jest.mock('react-intl', () => {
-    const reactIntl = jest.requireActual('react-intl')
-    const enUS = jest.requireActual('./i18n/locales/en-US.json')
+    const reactIntl = jest.requireActual('react-intl');
+    const enUS = jest.requireActual('./i18n/locales/en-US.json');
     const intl = reactIntl.createIntl({
         locale: 'en-US',
         messages: enUS
-    })
+    });
 
     return {
         ...reactIntl,
-        useIntl: () => intl,
-    }
-})
+        useIntl: () => intl
+    };
+});

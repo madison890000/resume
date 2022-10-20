@@ -16,18 +16,13 @@ afterEach(() => {
     windowSpy.mockRestore();
 });
 
-
 it('renders App', () => {
     windowSpy.mockImplementation(() => ({
         innerWidth: 1024,
-        outerWidth: 1024,
+        outerWidth: 1024
     }));
-    console.log(window.innerWidth)
-    console.log(window.outerWidth)
-    const AppDom = renderer.create(<App />)
-        .toJSON();
-    expect(AppDom)
-        .toMatchSnapshot();
+    console.log(window.innerWidth);
+    console.log(window.outerWidth);
+    const AppDom = renderer.create(<App />).toJSON();
+    expect(AppDom).toMatchSnapshot();
 });
-
-

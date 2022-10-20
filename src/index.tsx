@@ -8,26 +8,17 @@ import { generatedTranslations } from './i18n/translations';
 import Menus from './modules/Menus';
 import LocaleContext, { LocaleContextContainer } from './contexts/LocaleContext';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-);
-
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 const I18nProvider = () => {
     const { locale } = useContext(LocaleContext);
     return (
-        <IntlProvider
-            locale={locale}
-            key={locale}
-            messages={generatedTranslations()[locale]}
-        >
+        <IntlProvider locale={locale} key={locale} messages={generatedTranslations()[locale]}>
             <Menus />
             <App />
         </IntlProvider>
-
-
-    )
-}
+    );
+};
 root.render(
     <React.StrictMode>
         <LocaleContextContainer>
