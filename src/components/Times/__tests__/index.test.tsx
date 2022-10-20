@@ -10,3 +10,11 @@ test('renders Times', () => {
     expect(TimesDom)
         .toMatchSnapshot();
 });
+
+test('renders Times with no end', () => {
+    const start = new Date('2012-01-01');
+    const TimesDom = renderer.create(<Times start={start} />)
+        .toJSON();
+    expect(TimesDom)
+        .toMatchSnapshot();
+});

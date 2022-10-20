@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { Importance, SkillLevel } from '../../lib/types';
+import DataModel from '../../Model/types';
 import Name from './Name';
 import Level from './Level';
 import { defineMessages, useIntl } from 'react-intl';
 
 interface SkillProps {
     name: string;
-    level: SkillLevel;
+    level: DataModel.SkillLevel;
     ages: number;
-    importance: Importance;
+    importance: DataModel.Importance;
 }
 
 const messages = defineMessages({
@@ -26,9 +26,9 @@ const Skill = ({ level, name, ages, importance }: SkillProps) => {
                 <Name level={importance}>{name}</Name>
                 <div className={styles.subTitle}>{ages} {intl.formatMessage(messages.years)}</div>
             </div>
-            {level === SkillLevel.familiar && <Level.Familiar />}
-            {level === SkillLevel.proficient && <Level.Proficient />}
-            {level === SkillLevel.understand && <Level.Understand />}
+            {level === DataModel.SkillLevel.familiar && <Level.Familiar />}
+            {level === DataModel.SkillLevel.proficient && <Level.Proficient />}
+            {level === DataModel.SkillLevel.understand && <Level.Understand />}
         </div>
     );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { Degree } from '../../lib/types';
+import DataModel from '../../Model/types';
 import Times from '../Times';
 
 interface EducationProps {
     college: string;
-    degree: Degree;
+    degree: DataModel.Degree;
     major: string;
     start: Date;
     end: Date;

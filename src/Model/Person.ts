@@ -1,6 +1,6 @@
+import DataModel from './types';
 import Education from './Education';
 import Period from './Period';
-import { Gender } from './types';
 import Skill from './Skill';
 import Capability from './Capability';
 
@@ -10,7 +10,7 @@ interface IPerson {
     lastName: string;
     email: string;
     birthDay: Date;
-    gender: Gender;
+    gender: DataModel.Gender;
     cellphone: string;
     country: string;
     description: string[];
@@ -23,7 +23,7 @@ export default class Person {
     public firstName: string;
     public lastName: string;
     public email: string;
-    public gender: Gender;
+    public gender: DataModel.Gender;
     public cellphone: string;
     public country: string;
     public birthDay: Date;

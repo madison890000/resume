@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Achievement 1`] = `
+<li>
+  test Achievement
+  <span>
+    <span
+      className="normal"
+    >
+      test category 1
+    </span>
+    <span
+      className="normal"
+    >
+      Engineering
+    </span>
+  </span>
+</li>
+`;

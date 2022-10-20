@@ -15,3 +15,19 @@ exports[`renders Times 1`] = `
   </span>
 </div>
 `;
+
+exports[`renders Times with no end 1`] = `
+<div
+  className="times"
+>
+  <span>
+    Jan, 2012
+  </span>
+  <span>
+    -
+  </span>
+  <span>
+    Present
+  </span>
+</div>
+`;

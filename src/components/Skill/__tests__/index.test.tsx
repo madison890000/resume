@@ -1,7 +1,7 @@
 import React from 'react';
 import Skill from '../index';
 import renderer from 'react-test-renderer';
-import { Importance, SkillLevel } from '../../../lib/types';
+import DataModel from '../../../Model/types';
 
 describe('renders Skill ', () => {
 
@@ -10,8 +10,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="understand normal Skill"
                 ages={5}
-                level={SkillLevel.understand}
-                importance={Importance.normal}
+                level={DataModel.SkillLevel.understand}
+                importance={DataModel.Importance.normal}
             />
         )
             .toJSON();
@@ -21,8 +21,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="understand less Skill"
                 ages={5}
-                level={SkillLevel.understand}
-                importance={Importance.less}
+                level={DataModel.SkillLevel.understand}
+                importance={DataModel.Importance.less}
             />
         )
             .toJSON();
@@ -32,8 +32,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="understand important Skill"
                 ages={5}
-                level={SkillLevel.understand}
-                importance={Importance.important}
+                level={DataModel.SkillLevel.understand}
+                importance={DataModel.Importance.important}
             />
         )
             .toJSON();
@@ -46,8 +46,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="familiar normal Skill"
                 ages={5}
-                level={SkillLevel.familiar}
-                importance={Importance.normal}
+                level={DataModel.SkillLevel.familiar}
+                importance={DataModel.Importance.normal}
             />
         )
             .toJSON();
@@ -57,8 +57,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="familiar less Skill"
                 ages={5}
-                level={SkillLevel.familiar}
-                importance={Importance.less}
+                level={DataModel.SkillLevel.familiar}
+                importance={DataModel.Importance.less}
             />
         )
             .toJSON();
@@ -68,8 +68,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="familiar important Skill"
                 ages={5}
-                level={SkillLevel.familiar}
-                importance={Importance.important}
+                level={DataModel.SkillLevel.familiar}
+                importance={DataModel.Importance.important}
             />
         )
             .toJSON();
@@ -82,8 +82,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="proficient normal Skill"
                 ages={5}
-                level={SkillLevel.proficient}
-                importance={Importance.normal}
+                level={DataModel.SkillLevel.proficient}
+                importance={DataModel.Importance.normal}
             />
         )
             .toJSON();
@@ -93,8 +93,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="proficient less Skill"
                 ages={5}
-                level={SkillLevel.understand}
-                importance={Importance.less}
+                level={DataModel.SkillLevel.understand}
+                importance={DataModel.Importance.less}
             />
         )
             .toJSON();
@@ -104,8 +104,8 @@ describe('renders Skill ', () => {
             <Skill
                 name="proficient important Skill"
                 ages={5}
-                level={SkillLevel.understand}
-                importance={Importance.important}
+                level={DataModel.SkillLevel.understand}
+                importance={DataModel.Importance.important}
             />
         )
             .toJSON();

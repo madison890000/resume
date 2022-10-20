@@ -12,8 +12,13 @@ const MonthRect = ({
     gap?: number;
 }) => {
     return (
-        <rect width={width} height="10" x={index * (width + gap)} y="5"
-              fill={color}></rect>
+        <rect
+            width={width}
+            height="10"
+            x={index * (width + gap)}
+            y="5"
+            fill={color}
+        />
     )
 }
 

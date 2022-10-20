@@ -8,6 +8,14 @@ exports[`renders Tag 1`] = `
 </span>
 `;
 
+exports[`renders Tag default 1`] = `
+<span
+  className="normal"
+>
+  React
+</span>
+`;
+
 exports[`renders Tag filled 1`] = `
 <span
   className="filled"

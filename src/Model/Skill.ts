@@ -1,14 +1,14 @@
-import { Importance, SkillLevel } from './types';
+import DataModel from './types';
 import { v4 } from 'uuid';
 
 export default class Skill {
     public name: string;
-    public level: SkillLevel;
-    public importance: Importance;
+    public level: DataModel.SkillLevel;
+    public importance: DataModel.Importance;
     public ages: number;
     id: string;
 
-    constructor(name: string, level: SkillLevel, ages: number, importance: Importance) {
+    constructor(name: string, level: DataModel.SkillLevel, ages: number, importance: DataModel.Importance) {
         this.id = v4();
         this.name = name;
         this.level = level;

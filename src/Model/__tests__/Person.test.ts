@@ -1,5 +1,5 @@
 import Person from '../Person'
-import { Achievement, Degree, Importance, JobPositionLevel, Keyword, SkillLevel } from '../types';
+import DataModel from '../types';
 import Company from '../Company';
 import Education from '../Education';
 import Period from '../Period';
@@ -26,7 +26,7 @@ const madison = new Person({
 const masterEducation = new Education({
     major: 'Geographical Information System',
     college: 'China Agricultural University',
-    degree: Degree.Master,
+    degree: DataModel.Degree.Master,
     start: new Date('2012-09-01T00:00:00Z'),
     end: new Date('2015-07-01T00:00:00Z')
 })
@@ -41,9 +41,9 @@ const periodOne = new Period({
     start: new Date('2015-07-01T00:00:00Z'),
     end: new Date('2016-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery'] as Keyword[],
+    keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: JobPositionLevel.Junior,
+    jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'use Java to develop system on schedule',
@@ -54,15 +54,15 @@ const periodOne = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 const periodTwo = new Period({
     start: new Date('2016-07-01T00:00:00Z'),
     end: new Date('2017-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery'] as Keyword[],
+    keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: JobPositionLevel.Junior,
+    jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'use Java to develop system on schedule',
@@ -73,13 +73,13 @@ const periodTwo = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as Achievement[],
+    ] as DataModel.Achievement[],
 })
 madison.addPeriods([periodOne, periodTwo])
 
 const skills = [
-    new Skill('JavaScript', SkillLevel.proficient, 7, Importance.important),
-    new Skill('React', SkillLevel.proficient, 5, Importance.important),
+    new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.important),
+    new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.important),
 ]
 madison.addSkills(skills)
 
