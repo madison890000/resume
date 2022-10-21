@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import styles from './Name.module.scss';
-import DataModel from '../../Model/types';
+import DataModel from '../../models/types';
 
 const Name: React.FC<PropsWithChildren<{ level: DataModel.Importance }>> = ({ level, children }) => {
     switch (level) {

@@ -4,12 +4,12 @@ import Base from './Base';
 interface ICompany {
     name: string;
     location?: string;
-    type?: DataModel.CompanyType;
+    type: DataModel.CompanyType;
 }
 
 export default class Company extends Base {
     public name: string;
-    public type?: DataModel.CompanyType;
+    public type: DataModel.CompanyType;
     public location?: string;
 
     constructor({ name, location, type }: ICompany) {

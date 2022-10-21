@@ -1,10 +1,10 @@
-import Person from './Model/Person';
-import Education from './Model/Education';
-import DataModel from './Model/types';
-import Period from './Model/Period';
-import Company from './Model/Company';
-import Skill from './Model/Skill';
-import Capability from './Model/Capability';
+import Person from './models/Person';
+import Education from './models/Education';
+import DataModel from './models/types';
+import Period from './models/Period';
+import Company from './models/Company';
+import Skill from './models/Skill';
+import Capability from './models/Capability';
 
 const madison = new Person({
     firstName: 'Madison',
@@ -49,7 +49,7 @@ const periodOne = new Period({
     start: new Date('2015-07-01T00:00:00Z'),
     end: new Date('2016-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery', 'Waterfall'] as DataModel.Keyword[],
+    keywords: ['Java', 'jQuery', 'Waterfall'],
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
@@ -59,7 +59,7 @@ const periodOne = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as DataModel.Achievement[]
+    ]
 });
 const yinyuanCompany = new Company({
     name: 'Yinyuan Asia-pacific Technology Co. Ltd ',
@@ -70,7 +70,7 @@ const periodTwo = new Period({
     start: new Date('2016-07-01T00:00:00Z'),
     end: new Date('2018-03-01T00:00:00Z'),
     company: yinyuanCompany,
-    keywords: ['Java', 'jQuery', 'React', 'Waterfall'] as DataModel.Keyword[],
+    keywords: ['Java', 'jQuery', 'React', 'Waterfall'],
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
@@ -89,7 +89,7 @@ const periodTwo = new Period({
             text: "'implemented the rendering of list components and displaying data  in both horizontal and vertical",
             categories: ['UI']
         }
-    ] as DataModel.Achievement[]
+    ]
 });
 const baixinCompany = new Company({
     name: 'Citic Baixin Bank Co. Ltd',
@@ -100,7 +100,7 @@ const periodThree = new Period({
     start: new Date('2018-04-01T00:00:00Z'),
     end: new Date('2019-06-01T00:00:00Z'),
     company: baixinCompany,
-    keywords: ['Vue', 'React', 'Waterfall'] as DataModel.Keyword[],
+    keywords: ['Vue', 'React', 'Waterfall'],
     jobPosition: 'Front-End Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
@@ -114,7 +114,7 @@ const periodThree = new Period({
             text: "completed the design and development of company's front-end UI component library",
             categories: ['UI']
         }
-    ] as DataModel.Achievement[]
+    ]
 });
 const pccwCompany = new Company({
     name: 'PCCW GLOBAL',
@@ -125,7 +125,7 @@ const periodFour = new Period({
     start: new Date('2019-09-01T00:00:00Z'),
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
-    keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'] as DataModel.Keyword[],
+    keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'],
     jobPosition: 'Front-End Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
@@ -157,7 +157,7 @@ const periodFour = new Period({
             text: 'define the Best practices in FE project with React and Typescript.',
             categories: ['Architecture']
         }
-    ] as DataModel.Achievement[]
+    ]
 });
 const teslaCompany = new Company({
     name: 'Tesla',
@@ -167,7 +167,7 @@ const teslaCompany = new Company({
 const periodFive = new Period({
     start: new Date('2022-05-23T00:00:00Z'),
     company: teslaCompany,
-    keywords: ['React', 'Agile'] as DataModel.Keyword[],
+    keywords: ['React', 'Agile'],
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
@@ -191,7 +191,7 @@ const periodFive = new Period({
             text: 'improve the code quality',
             categories: ['Quality']
         }
-    ] as DataModel.Achievement[]
+    ]
 });
 madison.addPeriods([periodOne, periodTwo, periodThree, periodFour, periodFive]);
 

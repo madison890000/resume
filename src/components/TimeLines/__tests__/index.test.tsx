@@ -1,9 +1,9 @@
 import React from 'react';
 import TimeLines from '../index';
 import renderer from 'react-test-renderer';
-import DataModel from '../../../Model/types';
-import Company from '../../../Model/Company';
-import Period from '../../../Model/Period';
+import DataModel from '../../../models/types';
+import Company from '../../../models/Company';
+import Period from '../../../models/Period';
 
 let windowSpy: any;
 
@@ -17,14 +17,15 @@ afterEach(() => {
 describe('renders TimeLine ', () => {
     const testCompanyName = 'test company name';
     const testCompany = new Company({
-        name: testCompanyName
+        name: testCompanyName,
+        type: DataModel.CompanyType.Startup
     });
     const start = new Date('2012-01-01');
     const end = new Date('2013-01-01');
-    const keywords = ['React'] as DataModel.Keyword[];
+    const keywords = ['React'];
     const jobPositionLevel = DataModel.JobPositionLevel.Senior;
     const jobPosition = 'Software Engineer';
-    const achievements = [] as DataModel.Achievement[];
+    const achievements = [] as DataModel.IAchievement[];
     const jobSummaries = [] as string[];
     const testPeriod = new Period({
         solutionsOfHowToImplement: [],

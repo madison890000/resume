@@ -1,7 +1,7 @@
 import { findPeriodByDate, formatDate, getMonthCountFromStartAndEnd } from '../date';
-import Period from '../../Model/Period';
-import DataModel from '../../Model/types';
-import Company from '../../Model/Company';
+import Period from '../../models/Period';
+import DataModel from '../../models/types';
+import Company from '../../models/Company';
 
 describe('utils -----> date ', () => {
     test('formatDate: show format date correctly', () => {
@@ -21,13 +21,14 @@ describe('utils -----> date ', () => {
     test('findPeriodByDate : show return correct period', () => {
         const testCompany = new Company({
             name: 'Test Computer Corporation Limited',
-            location: 'Beijing, China'
+            location: 'Beijing, China',
+            type: DataModel.CompanyType.Startup
         });
         const testPeriod = new Period({
             start: new Date('2015-07-01T00:00:00Z'),
             end: new Date('2016-07-01T00:00:00Z'),
             company: testCompany,
-            keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
+            keywords: ['Java', 'jQuery'],
             jobPosition: 'Software Engineer',
             jobPositionLevel: DataModel.JobPositionLevel.Junior,
             solutionsOfHowToImplement: [],
@@ -37,7 +38,7 @@ describe('utils -----> date ', () => {
                     text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
                     categories: ['UI']
                 }
-            ] as DataModel.Achievement[]
+            ] as DataModel.IAchievement[]
         });
         expect(findPeriodByDate(new Date('2022-09-01T00:00:00'), [testPeriod])).toBe(undefined);
         expect(findPeriodByDate(new Date('2015-09-01T00:00:00'), [testPeriod])).toBe(testPeriod);

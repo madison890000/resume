@@ -1,15 +1,17 @@
 import Company from './Company';
 import DataModel from './types';
 import Base from './Base';
+import StringWithID from './StringWithID';
+import { v4 } from 'uuid';
 
 interface IPeriod {
     start: Date;
     end?: Date;
-    keywords: DataModel.Keyword[];
+    keywords: string[];
     company: Company;
     jobPositionLevel: DataModel.JobPositionLevel;
     jobPosition: DataModel.JobPosition;
-    achievements: DataModel.Achievement[];
+    achievements: DataModel.IAchievement[];
     jobSummaries: string[];
     solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 }
@@ -17,9 +19,9 @@ interface IPeriod {
 export default class Period extends Base {
     public start: Date;
     public end?: Date;
-    public keywords: DataModel.Keyword[];
+    public keywords: StringWithID[];
     public achievements: DataModel.Achievement[];
-    public jobSummaries: string[];
+    public jobSummaries: StringWithID[];
     public company: Company;
     public jobPositionLevel: DataModel.JobPositionLevel;
     public jobPosition: DataModel.JobPosition;
@@ -30,9 +32,13 @@ export default class Period extends Base {
         this.company = company;
         this.start = start;
         this.end = end;
-        this.achievements = achievements;
-        this.jobSummaries = jobSummaries;
-        this.keywords = keywords;
+        this.achievements = achievements.map(achievement => ({
+            id: v4(),
+            text: achievement.text,
+            categories: achievement.categories.map(e => new StringWithID(e))
+        }));
+        this.jobSummaries = jobSummaries.map(e => new StringWithID(e));
+        this.keywords = keywords.map(e => new StringWithID(e));
         this.jobPositionLevel = jobPositionLevel;
         this.jobPosition = jobPosition;
         this.solutionsOfHowToImplement = solutionsOfHowToImplement;

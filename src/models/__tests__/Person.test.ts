@@ -35,13 +35,14 @@ madison.addEducations([masterEducation]);
 
 const taijiCompany = new Company({
     name: 'Taiji Computer Corporation Limited',
-    location: 'Beijing, China'
+    location: 'Beijing, China',
+    type: DataModel.CompanyType.Startup
 });
 const periodOne = new Period({
     start: new Date('2015-07-01T00:00:00Z'),
     end: new Date('2016-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
+    keywords: ['Java', 'jQuery'],
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
@@ -51,13 +52,13 @@ const periodOne = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as DataModel.Achievement[]
+    ] as DataModel.IAchievement[]
 });
 const periodTwo = new Period({
     start: new Date('2016-07-01T00:00:00Z'),
     end: new Date('2017-07-01T00:00:00Z'),
     company: taijiCompany,
-    keywords: ['Java', 'jQuery'] as DataModel.Keyword[],
+    keywords: ['Java', 'jQuery'],
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
@@ -67,7 +68,7 @@ const periodTwo = new Period({
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
             categories: ['UI']
         }
-    ] as DataModel.Achievement[]
+    ] as DataModel.IAchievement[]
 });
 madison.addPeriods([periodOne, periodTwo]);
 
@@ -83,7 +84,7 @@ describe('Person class', () => {
         expect(madison.cellphone).toEqual('+8618510163161');
         expect(madison.country).toEqual('China');
         expect(madison.gender).toEqual('male');
-        expect(madison.description).toEqual([
+        expect(madison.description.map(e => e.toString())).toEqual([
             'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
             'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
                 'Application, Internet finance Web System, education application, Data Reporting Web Page, etc.',

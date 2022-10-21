@@ -5,7 +5,8 @@ describe('Company class', () => {
     test('company should have name', () => {
         const testCompanyName = 'test company name';
         const testCompany = new Company({
-            name: testCompanyName
+            name: testCompanyName,
+            type: DataModel.CompanyType.Startup
         });
         expect(testCompany.name).toEqual(testCompanyName);
     });

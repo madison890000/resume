@@ -1,7 +1,7 @@
 import React from 'react';
 import CompanyType from '../CompanyType';
 import renderer from 'react-test-renderer';
-import DataModel from '../../../Model/types';
+import DataModel from '../../../models/types';
 
 test('renders CompanyType is Enterprise', () => {
     const CompanyTypeDom = renderer.create(<CompanyType companyType={DataModel.CompanyType.Enterprise} />).toJSON();

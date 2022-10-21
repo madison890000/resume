@@ -1,6 +1,6 @@
 import Tag from '../Tag';
 import React from 'react';
-import DataModel from '../../Model/types';
+import DataModel from '../../models/types';
 
 interface CompanyTypeProps {
     companyType: DataModel.CompanyType;

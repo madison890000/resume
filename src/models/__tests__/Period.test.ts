@@ -6,14 +6,15 @@ describe('Period class', () => {
     test('period should have basic properties', () => {
         const testCompanyName = 'test company name';
         const testCompany = new Company({
-            name: testCompanyName
+            name: testCompanyName,
+            type: DataModel.CompanyType.Startup
         });
         const start = new Date('2012-01-01');
         const end = new Date('2013-01-01');
-        const keywords = ['React'] as DataModel.Keyword[];
+        const keywords = ['React'];
         const jobPositionLevel = DataModel.JobPositionLevel.Senior;
         const jobPosition = 'Software Engineer';
-        const achievements = [] as DataModel.Achievement[];
+        const achievements = [] as DataModel.IAchievement[];
         const jobSummaries = [] as string[];
         const testPeriod = new Period({
             solutionsOfHowToImplement: [],
@@ -29,7 +30,7 @@ describe('Period class', () => {
         expect(testPeriod.company).toEqual(testCompany);
         expect(testPeriod.start).toEqual(start);
         expect(testPeriod.end).toEqual(end);
-        expect(testPeriod.keywords).toEqual(keywords);
+        expect(testPeriod.keywords.map(e => e.toString())).toEqual(keywords);
         expect(testPeriod.achievements).toEqual(achievements);
         expect(testPeriod.jobPosition).toEqual(jobPosition);
         expect(testPeriod.jobPositionLevel).toEqual(jobPositionLevel);

@@ -42,7 +42,9 @@ function App() {
                 <div className={styles.profile}>
                     <div className={styles.description}>
                         {person.description?.map(d => (
-                            <div className={styles.descriptionItem}>{d}</div>
+                            <div className={styles.descriptionItem} key={d.id}>
+                                {d.toString()}
+                            </div>
                         ))}
                     </div>
                     <div className={styles.capability}>
@@ -65,7 +67,7 @@ function App() {
             <section>{getScreenDevice() !== ScreenDevice.PC ? <TimeLines width={timelineWidth - 20} periods={person.periods} periodColors={periodColors} barPosition="top" /> : null}</section>
             <section>
                 {person.reversedPeriods?.map(period => (
-                    <Period {...period} key={period.id} periodColor={periodColors[period?.id]} companyName={period?.company?.name} companyType={period?.company?.type} />
+                    <Period {...period} keywords={period.keywords} key={period.id} periodColor={periodColors[period?.id]} companyName={period?.company?.name} companyType={period.company.type} />
                 ))}
             </section>
             <Divider title={intl.formatMessage(messages.educationExperiences)} />

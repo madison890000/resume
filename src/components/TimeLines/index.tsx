@@ -1,12 +1,19 @@
 import React, { useMemo } from 'react';
 import styles from './index.module.scss';
-import Period from '../../Model/Period';
 import { findPeriodByDate, getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
+import DataModel from '../../models/types';
 
+interface PeriodData {
+    start: Date;
+    end?: Date;
+    id: string;
+    jobPositionLevel: DataModel.JobPositionLevel;
+    jobPosition: DataModel.JobPosition;
+}
 interface TimeLinesProps {
     width: number;
-    periods: Period[];
+    periods: PeriodData[];
     periodColors: { [key: string]: string };
     barPosition?: 'top' | 'bottom';
 }
@@ -21,7 +28,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
         let rects = new Array(totalRects).fill(0)?.map((_, index) => {
             const year = timeLinesStart.getFullYear() + Math.floor((timeLinesStart.getMonth() + index) / 12);
             const month = (timeLinesStart.getMonth() + index) % 12;
-            const period = findPeriodByDate(new Date(Number(year), month, 1), periods);
+            const period = findPeriodByDate<PeriodData>(new Date(Number(year), month, 1), periods);
             return {
                 index: index,
                 period: period,

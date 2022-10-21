@@ -1,7 +1,7 @@
 import React from 'react';
 import Name from '../Name';
 import renderer from 'react-test-renderer';
-import DataModel from '../../../Model/types';
+import DataModel from '../../../models/types';
 
 describe('renders Name ', () => {
     test('Name --->level = important', () => {
