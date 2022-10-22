@@ -1,15 +1,16 @@
 import Tag from '../Tag';
 import React from 'react';
-import DataModel from '../../Model/types';
+import DataModel from '../../models/types';
 import styles from './Header.module.scss';
 import CompanyType from './CompanyType';
+import StringWithID from '../../models/StringWithID';
 
 interface HeaderProps {
-    keywords: string[];
+    keywords: StringWithID[];
     jobPositionLevel: DataModel.JobPositionLevel;
     jobPosition: DataModel.JobPosition;
     companyName: string;
-    companyType?: DataModel.CompanyType;
+    companyType: DataModel.CompanyType;
 }
 
 const Header = ({ keywords, companyType, companyName, jobPosition, jobPositionLevel }: HeaderProps) => (
@@ -21,12 +22,14 @@ const Header = ({ keywords, companyType, companyName, jobPosition, jobPositionLe
         <span className={styles.companyName}>
             <span>
                 {companyName}
-                {companyType && <CompanyType companyType={companyType} />}
+                <CompanyType companyType={companyType} />
             </span>
         </span>
         <span>
             {keywords?.map(keyword => (
-                <Tag type="filled">{keyword}</Tag>
+                <Tag type="filled" key={keyword.id}>
+                    {keyword.toString()}
+                </Tag>
             ))}
         </span>
     </div>

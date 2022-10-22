@@ -1,7 +1,7 @@
 import React from 'react';
 import Skill from '../index';
 import renderer from 'react-test-renderer';
-import DataModel from '../../../Model/types';
+import DataModel from '../../../models/types';
 
 describe('renders Skill ', () => {
     test('Skill --->level = understand', () => {

@@ -1,23 +1,24 @@
 import React from 'react';
 import styles from './index.module.scss';
-import DataModel from '../../Model/types';
+import DataModel from '../../models/types';
 import Times from '../Times';
 import Achievement from './Achievement';
 import TimeLineItem from '../TimeLines/TimeLineItem';
 import { defineMessages, useIntl } from 'react-intl';
 import Header from './Header';
+import StringWithID from '../../models/StringWithID';
 
 interface PeriodProps {
     start: Date;
     periodColor: string;
     end?: Date;
-    keywords: string[];
+    keywords: StringWithID[];
     companyName: string;
-    companyType?: DataModel.CompanyType;
+    companyType: DataModel.CompanyType;
     jobPositionLevel: DataModel.JobPositionLevel;
     jobPosition: DataModel.JobPosition;
     achievements: DataModel.Achievement[];
-    jobSummaries: string[];
+    jobSummaries: StringWithID[];
 }
 
 const messages = defineMessages({
@@ -48,7 +49,7 @@ const Period = ({ start, periodColor, end, companyName, companyType, keywords, j
                 <h5>{intl.formatMessage(messages.jobSummaries)}:</h5>
                 <ul>
                     {jobSummaries?.map(summary => (
-                        <li>{summary}</li>
+                        <li key={summary.id}>{summary.toString()}</li>
                     ))}
                 </ul>
             </div>
@@ -56,7 +57,7 @@ const Period = ({ start, periodColor, end, companyName, companyType, keywords, j
                 <h5>{intl.formatMessage(messages.achievements)}:</h5>
                 <ul className={styles.achievements}>
                     {achievements?.map(achievement => (
-                        <Achievement title={achievement?.text} categories={achievement?.categories} />
+                        <Achievement key={achievement.id} title={achievement?.text} categories={achievement?.categories} />
                     ))}
                 </ul>
             </div>

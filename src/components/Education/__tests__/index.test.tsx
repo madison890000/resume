@@ -1,7 +1,7 @@
 import React from 'react';
 import Education from '../index';
 import renderer from 'react-test-renderer';
-import DataModel from '../../../Model/types';
+import DataModel from '../../../models/types';
 
 test('renders Education Bachelor', () => {
     const start = new Date('2012-01-01');

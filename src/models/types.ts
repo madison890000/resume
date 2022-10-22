@@ -1,3 +1,5 @@
+import StringWithID from './StringWithID';
+
 namespace DataModel {
     export enum Degree {
         Bachelor = 'Bachelor',
@@ -7,9 +9,14 @@ namespace DataModel {
 
     export type Gender = 'male' | 'female';
 
-    export type Achievement = {
+    export interface IAchievement {
         text: string;
         categories: string[];
+    }
+    export type Achievement = {
+        id: string;
+        text: string;
+        categories: StringWithID[];
     };
     export type SolutionsOfHowToImplement = string;
 
@@ -21,16 +28,6 @@ namespace DataModel {
     }
 
     export type JobPosition = 'Software Engineer' | 'Front-End Engineer' | 'Back-End Engineer' | 'Full-Stack Engineer';
-
-    export type JobResponsibility = string;
-    export type FEUILib = 'Material UI' | 'antd';
-    export type ReactFramework = 'NextJs' | 'Create React App' | 'umi';
-    export type Framework = 'React' | 'Vue' | 'Angular' | 'jQuery';
-    export type CodeLanguage = 'JAVA' | 'C#' | 'JavaScript';
-    export type OtherSkillLabels = 'NodeJs' | 'HTML5' | 'CSS3' | 'Webpack';
-    export type WayOfDevelopment = 'Agile' | 'Waterfall';
-
-    export type Keyword = Framework & CodeLanguage & OtherSkillLabels & FEUILib & ReactFramework & WayOfDevelopment;
 
     export enum SkillLevel {
         understand = 'understand',

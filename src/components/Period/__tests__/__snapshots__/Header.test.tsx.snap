@@ -19,6 +19,13 @@ exports[`renders Period Header 1`] = `
   >
     <span>
       test company name
+      <span>
+        <span
+          className="less"
+        >
+          Startup
+        </span>
+      </span>
     </span>
   </span>
   <span>

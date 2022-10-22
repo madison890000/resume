@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import DataModel from '../../Model/types';
+import DataModel from '../../models/types';
 import Name from './Name';
 import Level from './Level';
 import { defineMessages, useIntl } from 'react-intl';
