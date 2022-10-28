@@ -13,7 +13,7 @@ const madison = new Person({
     email: 'madison.sss.ma@gmail.com',
     cellphone: '+8618510163161',
     country: 'China',
-    gender: 'male',
+    gender: 'MALE',
     description: [
         'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
         'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
