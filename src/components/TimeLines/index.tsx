@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import { findPeriodByDate, getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 import DataModel from '../../models/types';
+import capitalize from '../../utils/capitalize';
 
 interface PeriodData {
     start: Date;
@@ -89,7 +90,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
                             }}
                             className={styles.jobName}
                         >
-                            {p?.job.level} {p?.job.position}
+                            {capitalize(p?.job.level.toLowerCase())} {p?.job.position}
                         </span>
                     );
                 })}

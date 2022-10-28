@@ -5,9 +5,9 @@ exports[`renders Header 1`] = `
   className="header"
 >
   <h1>
-    test firstName
+    Test firstName
      
-    test lastName
+    Test lastName
   </h1>
   <div
     className="basicInfo"

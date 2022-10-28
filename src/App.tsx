@@ -5,6 +5,7 @@ import { Capability, Divider, Education, Header, Period, Skill, TimeLines } from
 import { getScreenDevice, ScreenDevice } from './utils/device';
 import useTimelineWidth from './hooks/useTimelineWidth';
 import { defineMessages, useIntl } from 'react-intl';
+import capitalize from './utils/capitalize';
 
 const messages = defineMessages({
     profile: {
@@ -55,7 +56,7 @@ function App() {
                     <div className={styles.description}>
                         {person.description?.map(d => (
                             <div className={styles.descriptionItem} key={d.id}>
-                                {d.toString()}
+                                {capitalize(d.toString())}
                             </div>
                         ))}
                     </div>

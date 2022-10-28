@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
+import capitalize from '../../utils/capitalize';
 
 interface HeaderProps {
     firstName: string;
@@ -12,7 +13,7 @@ const Header = ({ firstName, lastName, email, cellphone }: HeaderProps) => {
     return (
         <header className={styles.header}>
             <h1>
-                {firstName} {lastName}
+                {capitalize(firstName)} {capitalize(lastName)}
             </h1>
             <div className={styles.basicInfo}>
                 <div>
