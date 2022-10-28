@@ -23,11 +23,28 @@ export default class Period extends Base {
     public achievements: DataModel.Achievement[];
     public jobSummaries: StringWithID[];
     public company: Company;
+    /**
+     * @deprecated please use Job.level
+     */
     public jobPositionLevel: DataModel.JobPositionLevel;
+    /**
+     * @deprecated please use Job.position
+     */
     public jobPosition: DataModel.JobPosition;
+    public job: DataModel.Job;
     public solutionsOfHowToImplement: DataModel.SolutionsOfHowToImplement[];
 
-    constructor({ solutionsOfHowToImplement, company, jobSummaries, jobPosition, jobPositionLevel, achievements, keywords, start, end }: IPeriod) {
+    constructor({
+        solutionsOfHowToImplement,
+        company,
+        jobSummaries,
+        jobPosition,
+        jobPositionLevel,
+        achievements,
+        keywords,
+        start,
+        end
+    }: IPeriod) {
         super();
         this.company = company;
         this.start = start;
@@ -41,6 +58,10 @@ export default class Period extends Base {
         this.keywords = keywords.map(e => new StringWithID(e));
         this.jobPositionLevel = jobPositionLevel;
         this.jobPosition = jobPosition;
+        this.job = {
+            position: jobPosition,
+            level: jobPositionLevel
+        };
         this.solutionsOfHowToImplement = solutionsOfHowToImplement;
     }
 }

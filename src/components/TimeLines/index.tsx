@@ -8,8 +8,10 @@ interface PeriodData {
     start: Date;
     end?: Date;
     id: string;
-    jobPositionLevel: DataModel.JobPositionLevel;
-    jobPosition: DataModel.JobPosition;
+    job: {
+        level: DataModel.JobPositionLevel;
+        position: DataModel.JobPosition;
+    };
 }
 interface TimeLinesProps {
     width: number;
@@ -87,7 +89,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
                             }}
                             className={styles.jobName}
                         >
-                            {p?.jobPositionLevel} {p?.jobPosition}
+                            {p?.job.level} {p?.job.position}
                         </span>
                     );
                 })}

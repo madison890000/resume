@@ -24,7 +24,14 @@ const messages = defineMessages({
     }
 });
 
-const COLORS = ['var(--color-red)', 'var(--color-yellow)', 'var(--color-dark-yellow)', 'var(--color-dark-red)', 'var(--color-green)', '#FF66B2'];
+const COLORS = [
+    'var(--color-red)',
+    'var(--color-yellow)',
+    'var(--color-dark-yellow)',
+    'var(--color-dark-red)',
+    'var(--color-green)',
+    '#FF66B2'
+];
 
 function App() {
     const intl = useIntl();
@@ -36,7 +43,12 @@ function App() {
     });
     return (
         <div className={styles.main}>
-            <Header firstName={person.firstName} lastName={person.lastName} email={person.email} cellphone={person.cellphone} />
+            <Header
+                firstName={person.firstName}
+                lastName={person.lastName}
+                email={person.email}
+                cellphone={person.cellphone}
+            />
             <Divider title={intl.formatMessage(messages.profile)} />
             <section>
                 <div className={styles.profile}>
@@ -62,12 +74,42 @@ function App() {
             </section>
             <Divider
                 title={intl.formatMessage(messages.professionalExperiences)}
-                extra={getScreenDevice() === ScreenDevice.PC ? <TimeLines width={timelineWidth - 300} periods={person.periods} periodColors={periodColors} barPosition="bottom" /> : null}
+                extra={
+                    getScreenDevice() === ScreenDevice.PC ? (
+                        <TimeLines
+                            width={timelineWidth - 300}
+                            periods={person.periods}
+                            periodColors={periodColors}
+                            barPosition="bottom"
+                        />
+                    ) : null
+                }
             />
-            <section>{getScreenDevice() !== ScreenDevice.PC ? <TimeLines width={timelineWidth - 20} periods={person.periods} periodColors={periodColors} barPosition="top" /> : null}</section>
+            <section>
+                {getScreenDevice() !== ScreenDevice.PC ? (
+                    <TimeLines
+                        width={timelineWidth - 20}
+                        periods={person.periods}
+                        periodColors={periodColors}
+                        barPosition="top"
+                    />
+                ) : null}
+            </section>
             <section>
                 {person.reversedPeriods?.map(period => (
-                    <Period {...period} keywords={period.keywords} key={period.id} periodColor={periodColors[period?.id]} companyName={period?.company?.name} companyType={period.company.type} />
+                    <Period
+                        jobPositionLevel={period.job.level}
+                        jobPosition={period.job.position}
+                        keywords={period.keywords}
+                        key={period.id}
+                        periodColor={periodColors[period?.id]}
+                        companyName={period?.company?.name}
+                        companyType={period.company.type}
+                        achievements={period.achievements}
+                        start={period.start}
+                        end={period.end}
+                        jobSummaries={period.jobSummaries}
+                    />
                 ))}
             </section>
             <Divider title={intl.formatMessage(messages.educationExperiences)} />
