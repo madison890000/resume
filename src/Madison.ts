@@ -178,7 +178,7 @@ const periodFive = new Period({
         'make the architecture design in Front-End project',
         'improve the code quality and performance in FE',
         'improve the FE team efficiency',
-        'communicate with product manager and UI designer to understand project requirements every 2 week (one sprint),',
+        'communicate with product manager and UI designer to understand project requirements every 2 week (one sprint)',
         'provide training and guidance on technical'
     ],
     achievements: [

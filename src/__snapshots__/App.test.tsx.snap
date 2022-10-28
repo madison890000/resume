@@ -1529,19 +1529,19 @@ Application, Internet finance Web System, education application, Data Reporting 
         </h5>
         <ul>
           <li>
-            Make the architecture design in Front-End project
+            Make the architecture design in Front-End project.
           </li>
           <li>
-            Improve the code quality and performance in FE
+            Improve the code quality and performance in FE.
           </li>
           <li>
-            Improve the FE team efficiency
+            Improve the FE team efficiency.
           </li>
           <li>
-            Communicate with product manager and UI designer to understand project requirements every 2 week (one sprint),
+            Communicate with product manager and UI designer to understand project requirements every 2 week (one sprint).
           </li>
           <li>
-            Provide training and guidance on technical
+            Provide training and guidance on technical.
           </li>
         </ul>
       </div>
@@ -1554,7 +1554,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           className="achievements"
         >
           <li>
-            Completed the design and development of common utils and Hooks in React project
+            Completed the design and development of common utils and Hooks in React project.
             <span>
               <span
                 className="normal"
@@ -1564,7 +1564,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Optimized the front-end code
+            Optimized the front-end code.
             <span>
               <span
                 className="normal"
@@ -1574,7 +1574,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Improve the code quality
+            Improve the code quality.
             <span>
               <span
                 className="normal"
@@ -1917,19 +1917,19 @@ Application, Internet finance Web System, education application, Data Reporting 
         </h5>
         <ul>
           <li>
-            Make the architecture design in Front-End project
+            Make the architecture design in Front-End project.
           </li>
           <li>
-            Communicate with product manager and UI designer to understand project requirements every week (one sprint),
+            Communicate with product manager and UI designer to understand project requirements every week (one sprint),.
           </li>
           <li>
             Conduct functional research and validation based on business requirements, evaluate requirements implementation feasibility and propose solutions.
           </li>
           <li>
-            Responsible for task assignment and project requirement explanation to 5 external team members
+            Responsible for task assignment and project requirement explanation to 5 external team members.
           </li>
           <li>
-            Provide training and guidance on technical to junior engineer
+            Provide training and guidance on technical to junior engineer.
           </li>
         </ul>
       </div>
@@ -1942,7 +1942,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           className="achievements"
         >
           <li>
-            Design and developed our company's front-end UI component library
+            Design and developed our company's front-end UI component library.
             <span>
               <span
                 className="normal"
@@ -1952,7 +1952,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process
+            Setup the Front-End CI/CD with system Engineers, including the Docker building and the jest process.
             <span>
               <span
                 className="normal"
@@ -1967,7 +1967,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Setup the utils library in FE
+            Setup the utils library in FE.
             <span>
               <span
                 className="normal"
@@ -1977,7 +1977,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Using Micro Front-End Service to split code and improve the performance in FE
+            Using Micro Front-End Service to split code and improve the performance in FE.
             <span>
               <span
                 className="normal"
@@ -2196,13 +2196,13 @@ Application, Internet finance Web System, education application, Data Reporting 
         </h5>
         <ul>
           <li>
-            Communicate with product manager and UI designer partner through meeting to understand project requirements
+            Communicate with product manager and UI designer partner through meeting to understand project requirements.
           </li>
           <li>
-            Responsible for task assignment and project requirement explanation to 5 team members
+            Responsible for task assignment and project requirement explanation to 5 team members.
           </li>
           <li>
-            Provide training and guidance on technical to junior engineer
+            Provide training and guidance on technical to junior engineer.
           </li>
         </ul>
       </div>
@@ -2215,7 +2215,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           className="achievements"
         >
           <li>
-            Completed the design and development of company's front-end UI component library
+            Completed the design and development of company's front-end UI component library.
             <span>
               <span
                 className="normal"
@@ -2466,13 +2466,13 @@ Application, Internet finance Web System, education application, Data Reporting 
         </h5>
         <ul>
           <li>
-            Participate in the design and development of all projects 
+            Participate in the design and development of all projects .
           </li>
           <li>
-            Responsible for the release quality of all system. 
+            Responsible for the release quality of all system. .
           </li>
           <li>
-            Responsible for team's recruitment, technical training(ES6), etc. 
+            Responsible for team's recruitment, technical training(ES6), etc. .
           </li>
           <li>
             Take charge of annual feature planning and appraise performance of each team member.
@@ -2488,7 +2488,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           className="achievements"
         >
           <li>
-            Completed the design and development of the company's front-end UI component library
+            Completed the design and development of the company's front-end UI component library.
             <span>
               <span
                 className="normal"
@@ -2498,7 +2498,7 @@ Application, Internet finance Web System, education application, Data Reporting 
             </span>
           </li>
           <li>
-            Implemented the rendering of list components and displaying data  in both horizontal and vertical
+            Implemented the rendering of list components and displaying data  in both horizontal and vertical.
             <span>
               <span
                 className="normal"
@@ -2691,7 +2691,7 @@ Application, Internet finance Web System, education application, Data Reporting 
         </h5>
         <ul>
           <li>
-            Use Java to develop system on schedule
+            Use Java to develop system on schedule.
           </li>
           <li>
             Participate in the design and development of one economic-data-report project.
@@ -2707,7 +2707,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           className="achievements"
         >
           <li>
-            Abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc
+            Abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc.
             <span>
               <span
                 className="normal"

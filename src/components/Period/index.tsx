@@ -8,6 +8,8 @@ import { defineMessages, useIntl } from 'react-intl';
 import Header from './Header';
 import StringWithID from '../../models/StringWithID';
 import capitalize from '../../utils/capitalize';
+import pipe from '../../utils/pipe';
+import { addPeriodSuffix } from '../../utils/suffix';
 
 interface PeriodProps {
     start: Date;
@@ -67,7 +69,7 @@ const Period = ({
                 <h5>{intl.formatMessage(messages.jobSummaries)}:</h5>
                 <ul>
                     {jobSummaries?.map(summary => (
-                        <li key={summary.id}>{capitalize(summary.toString())}</li>
+                        <li key={summary.id}>{pipe<string>(capitalize, addPeriodSuffix)(summary.toString())}</li>
                     ))}
                 </ul>
             </div>

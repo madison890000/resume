@@ -2,7 +2,7 @@
 
 exports[`renders Achievement 1`] = `
 <li>
-  Test Achievement
+  Test Achievement.
   <span>
     <span
       className="normal"
