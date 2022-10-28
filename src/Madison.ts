@@ -53,7 +53,10 @@ const periodOne = new Period({
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
-    jobSummaries: ['use Java to develop system on schedule', 'participate in the design and development of one economic-data-report project.'],
+    jobSummaries: [
+        'use Java to develop system on schedule',
+        'participate in the design and development of one economic-data-report project.'
+    ],
     achievements: [
         {
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
@@ -86,7 +89,7 @@ const periodTwo = new Period({
             categories: ['UI']
         },
         {
-            text: "'implemented the rendering of list components and displaying data  in both horizontal and vertical",
+            text: 'implemented the rendering of list components and displaying data  in both horizontal and vertical',
             categories: ['UI']
         }
     ]
