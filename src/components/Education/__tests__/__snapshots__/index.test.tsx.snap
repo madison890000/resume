@@ -17,7 +17,7 @@ exports[`renders Education Bachelor 1`] = `
       className="major"
     >
       (
-      Bachelor
+      BACHELOR
       )
     </span>
   </div>
@@ -54,7 +54,7 @@ exports[`renders Education Master 1`] = `
       className="major"
     >
       (
-      Master
+      MASTER
       )
     </span>
   </div>
@@ -91,7 +91,7 @@ exports[`renders Education PhD 1`] = `
       className="major"
     >
       (
-      PhD
+      PHD
       )
     </span>
   </div>

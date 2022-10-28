@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
+import capitalize from '../../utils/capitalize';
 
 interface DividerProps {
     title?: string;
@@ -11,7 +12,7 @@ const Divider = ({ title, extra }: DividerProps) => {
         <div className={styles.divider}>
             <div className={styles.title}>
                 <div>
-                    <h3>{title}</h3>
+                    <h3>{capitalize(title)}</h3>
                 </div>
                 <div>{extra}</div>
             </div>

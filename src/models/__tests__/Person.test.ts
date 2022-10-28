@@ -13,7 +13,7 @@ const madison = new Person({
     email: 'madison.sss.ma@gmail.com',
     cellphone: '+8618510163161',
     country: 'China',
-    gender: 'male',
+    gender: 'MALE',
     description: [
         'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
         'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
@@ -46,7 +46,10 @@ const periodOne = new Period({
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
-    jobSummaries: ['use Java to develop system on schedule', 'participate in the design and development of one economic-data-report project.'],
+    jobSummaries: [
+        'use Java to develop system on schedule',
+        'participate in the design and development of one economic-data-report project.'
+    ],
     achievements: [
         {
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
@@ -62,7 +65,10 @@ const periodTwo = new Period({
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
-    jobSummaries: ['use Java to develop system on schedule', 'participate in the design and development of one economic-data-report project.'],
+    jobSummaries: [
+        'use Java to develop system on schedule',
+        'participate in the design and development of one economic-data-report project.'
+    ],
     achievements: [
         {
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
@@ -72,7 +78,10 @@ const periodTwo = new Period({
 });
 madison.addPeriods([periodOne, periodTwo]);
 
-const skills = [new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.important), new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.important)];
+const skills = [
+    new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.important),
+    new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.important)
+];
 madison.addSkills(skills);
 
 describe('Person class', () => {
@@ -83,7 +92,7 @@ describe('Person class', () => {
         expect(madison.email).toEqual('madison.sss.ma@gmail.com');
         expect(madison.cellphone).toEqual('+8618510163161');
         expect(madison.country).toEqual('China');
-        expect(madison.gender).toEqual('male');
+        expect(madison.gender).toEqual('MALE');
         expect(madison.description.map(e => e.toString())).toEqual([
             'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
             'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +

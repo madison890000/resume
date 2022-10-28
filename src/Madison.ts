@@ -13,7 +13,7 @@ const madison = new Person({
     email: 'madison.sss.ma@gmail.com',
     cellphone: '+8618510163161',
     country: 'China',
-    gender: 'male',
+    gender: 'MALE',
     description: [
         'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
         'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
@@ -53,7 +53,10 @@ const periodOne = new Period({
     jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Junior,
     solutionsOfHowToImplement: [],
-    jobSummaries: ['use Java to develop system on schedule', 'participate in the design and development of one economic-data-report project.'],
+    jobSummaries: [
+        'use Java to develop system on schedule',
+        'participate in the design and development of one economic-data-report project.'
+    ],
     achievements: [
         {
             text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
@@ -86,7 +89,7 @@ const periodTwo = new Period({
             categories: ['UI']
         },
         {
-            text: "'implemented the rendering of list components and displaying data  in both horizontal and vertical",
+            text: 'implemented the rendering of list components and displaying data  in both horizontal and vertical',
             categories: ['UI']
         }
     ]
@@ -175,7 +178,7 @@ const periodFive = new Period({
         'make the architecture design in Front-End project',
         'improve the code quality and performance in FE',
         'improve the FE team efficiency',
-        'communicate with product manager and UI designer to understand project requirements every 2 week (one sprint),',
+        'communicate with product manager and UI designer to understand project requirements every 2 week (one sprint)',
         'provide training and guidance on technical'
     ],
     achievements: [

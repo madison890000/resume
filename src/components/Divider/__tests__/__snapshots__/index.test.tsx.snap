@@ -9,7 +9,7 @@ exports[`renders Divider 1`] = `
   >
     <div>
       <h3>
-        test Divider
+        Test Divider
       </h3>
     </div>
     <div />
@@ -29,7 +29,7 @@ exports[`renders Divider with extra 1`] = `
   >
     <div>
       <h3>
-        test Divider
+        Test Divider
       </h3>
     </div>
     <div>

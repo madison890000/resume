@@ -2,12 +2,12 @@ import StringWithID from './StringWithID';
 
 namespace DataModel {
     export enum Degree {
-        Bachelor = 'Bachelor',
-        Master = 'Master',
-        PhD = 'PhD'
+        Bachelor = 'BACHELOR',
+        Master = 'MASTER',
+        PhD = 'PHD'
     }
 
-    export type Gender = 'male' | 'female';
+    export type Gender = 'MALE' | 'FEMALE';
 
     export interface IAchievement {
         text: string;
@@ -21,18 +21,22 @@ namespace DataModel {
     export type SolutionsOfHowToImplement = string;
 
     export enum JobPositionLevel {
-        Staff = 'Staff',
-        Senior = 'Senior',
+        Staff = 'STAFF',
+        Senior = 'SENIOR',
         Middle = '',
-        Junior = 'Junior'
+        Junior = 'JUNIOR'
     }
 
     export type JobPosition = 'Software Engineer' | 'Front-End Engineer' | 'Back-End Engineer' | 'Full-Stack Engineer';
 
+    export type Job = {
+        position: JobPosition;
+        level: JobPositionLevel;
+    };
     export enum SkillLevel {
-        understand = 'understand',
-        familiar = 'familiar',
-        proficient = 'proficient'
+        understand = 'UNDERSTAND',
+        familiar = 'FAMILIAR',
+        proficient = 'PROFICIENT'
     }
 
     export enum Importance {

@@ -3,13 +3,16 @@ import styles from './index.module.scss';
 import { findPeriodByDate, getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 import DataModel from '../../models/types';
+import capitalize from '../../utils/capitalize';
 
 interface PeriodData {
     start: Date;
     end?: Date;
     id: string;
-    jobPositionLevel: DataModel.JobPositionLevel;
-    jobPosition: DataModel.JobPosition;
+    job: {
+        level: DataModel.JobPositionLevel;
+        position: DataModel.JobPosition;
+    };
 }
 interface TimeLinesProps {
     width: number;
@@ -87,7 +90,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
                             }}
                             className={styles.jobName}
                         >
-                            {p?.jobPositionLevel} {p?.jobPosition}
+                            {capitalize(p?.job.level.toLowerCase())} {p?.job.position}
                         </span>
                     );
                 })}
