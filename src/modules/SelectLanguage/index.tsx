@@ -5,11 +5,12 @@ import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import { LocalesKey } from '../../i18n/languages';
 
 interface SelectLanguageProps {
-    value?: string;
-    onChange?: (e: string) => void;
-    options: { label: string; value: string }[];
+    value?: LocalesKey;
+    onChange?: (e: LocalesKey) => void;
+    options: { label: string; value: LocalesKey }[];
 }
 
 const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
@@ -18,7 +19,7 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
     const handleToggle = () => {
         setOpen(prevOpen => !prevOpen);
     };
-    const handleClose = (e: string) => {
+    const handleClose = (e: LocalesKey) => {
         onChange?.(e);
         setOpen(false);
     };
@@ -35,7 +36,14 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
             >
                 {options?.find((l: any) => l.value === value)?.label}
             </Button>
-            <Popper open={open} anchorEl={anchorRef.current} role={undefined} placement="bottom-start" transition disablePortal>
+            <Popper
+                open={open}
+                anchorEl={anchorRef.current}
+                role={undefined}
+                placement="bottom-start"
+                transition
+                disablePortal
+            >
                 {({ TransitionProps, placement }) => (
                     <Grow
                         {...TransitionProps}
@@ -44,9 +52,15 @@ const SelectLanguage = ({ onChange, value, options }: SelectLanguageProps) => {
                         }}
                     >
                         <Paper>
-                            <MenuList autoFocusItem={open} id="composition-menu" data-testid="select-language-menu-pop" aria-labelledby="composition-button">
-                                {options?.map((l: any) => (
+                            <MenuList
+                                autoFocusItem={open}
+                                id="composition-menu"
+                                data-testid="select-language-menu-pop"
+                                aria-labelledby="composition-button"
+                            >
+                                {options?.map(l => (
                                     <MenuItem
+                                        key={l.value}
                                         onClick={() => {
                                             handleClose(l?.value);
                                         }}

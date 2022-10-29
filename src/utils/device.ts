@@ -1,5 +1,7 @@
-const isMobilePhone = () => window.innerWidth < 500;
-const isA4 = () => window.innerWidth > 500 && window.innerWidth < 1150;
+import { MAX_A4_WIDTH, MAX_PHONE_WIDTH, PAGE_PADDING } from '../constants/widths';
+
+const isMobilePhone = () => window.innerWidth < MAX_PHONE_WIDTH;
+const isA4 = () => window.innerWidth > MAX_PHONE_WIDTH && window.innerWidth < MAX_A4_WIDTH;
 
 export enum ScreenDevice {
     Mobile,
@@ -15,8 +17,6 @@ export const getScreenDevice = () => {
     }
     return ScreenDevice.PC;
 };
-
-const PAGE_PADDING = 12;
 
 export const getPageContentWidth = () => {
     return Math.min(window?.outerWidth, window?.innerWidth) - PAGE_PADDING * 2;

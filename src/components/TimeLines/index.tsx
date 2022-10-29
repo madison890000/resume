@@ -4,8 +4,11 @@ import { findPeriodByDate, getMonthCountFromStartAndEnd } from '../../utils/date
 import MonthRect from './MonthRect';
 import DataModel from '../../models/types';
 import capitalize from '../../utils/capitalize';
+import { BASE_MONTH_SVG_HEIGHT, RECT_GAP } from '../../constants/widths';
+import { BACKGROUND_OF_MOUNT_RECT } from '../../constants/colors';
+import { MONTH_NUMBER_OF_ONE_YEAR } from '../../constants/date';
 
-interface PeriodData {
+type PeriodData = {
     start: Date;
     end?: Date;
     id: string;
@@ -13,14 +16,14 @@ interface PeriodData {
         level: DataModel.JobPositionLevel;
         position: DataModel.JobPosition;
     };
-}
+};
 interface TimeLinesProps {
     width: number;
     periods: PeriodData[];
     periodColors: { [key: string]: string };
     barPosition?: 'top' | 'bottom';
 }
-const RECT_GAP = 1;
+
 const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLinesProps) => {
     const { timeLinesStart, totalRects, rects } = useMemo(() => {
         const firstPeriod = periods?.[0];
@@ -29,8 +32,10 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
         const timeLinesEnd = endPeriod?.end;
         const totalRects = getMonthCountFromStartAndEnd(timeLinesStart, timeLinesEnd ?? new Date()) + 1;
         let rects = new Array(totalRects).fill(0)?.map((_, index) => {
-            const year = timeLinesStart.getFullYear() + Math.floor((timeLinesStart.getMonth() + index) / 12);
-            const month = (timeLinesStart.getMonth() + index) % 12;
+            const year =
+                timeLinesStart.getFullYear() +
+                Math.floor((timeLinesStart.getMonth() + index) / MONTH_NUMBER_OF_ONE_YEAR);
+            const month = (timeLinesStart.getMonth() + index) % MONTH_NUMBER_OF_ONE_YEAR;
             const period = findPeriodByDate<PeriodData>(new Date(Number(year), month, 1), periods);
             return {
                 index: index,
@@ -56,7 +61,7 @@ const TimeLines = ({ barPosition = 'top', width, periods, periodColors }: TimeLi
 
     const Chart = (
         <div>
-            <svg width={width} height="20" style={{ backgroundColor: 'E0E0E0' }}>
+            <svg width={width} height={BASE_MONTH_SVG_HEIGHT} style={{ backgroundColor: BACKGROUND_OF_MOUNT_RECT }}>
                 <g>
                     {rects?.map((e, index) => (
                         <MonthRect key={e.index} width={rectWidth} gap={RECT_GAP} color={e?.color} index={e?.index} />

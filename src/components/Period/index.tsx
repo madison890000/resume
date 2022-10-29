@@ -10,10 +10,11 @@ import StringWithID from '../../models/StringWithID';
 import capitalize from '../../utils/capitalize';
 import pipe from '../../utils/pipe';
 import { addPeriodSuffix } from '../../utils/suffix';
+import { ColorItem } from '../../constants/colors';
 
 interface PeriodProps {
     start: Date;
-    periodColor: string;
+    periodColor: ColorItem;
     end?: Date;
     keywords: StringWithID[];
     companyName: string;

@@ -6,6 +6,7 @@ import { getScreenDevice, ScreenDevice } from './utils/device';
 import useTimelineWidth from './hooks/useTimelineWidth';
 import { defineMessages, useIntl } from 'react-intl';
 import capitalize from './utils/capitalize';
+import COLORS, { ColorItem } from './constants/colors';
 
 const messages = defineMessages({
     profile: {
@@ -25,20 +26,11 @@ const messages = defineMessages({
     }
 });
 
-const COLORS = [
-    'var(--color-red)',
-    'var(--color-yellow)',
-    'var(--color-dark-yellow)',
-    'var(--color-dark-red)',
-    'var(--color-green)',
-    '#FF66B2'
-];
-
 function App() {
     const intl = useIntl();
-    const { timelineWidth = 1000 } = useTimelineWidth();
+    const { timelineWidth } = useTimelineWidth();
     const { current: person } = useRef(madison);
-    const periodColors: { [key: string]: string } = {};
+    const periodColors: { [key: string]: ColorItem } = {};
     person?.periods?.forEach((p, index) => {
         periodColors[p.id] = COLORS[index];
     });
@@ -54,7 +46,7 @@ function App() {
             <section>
                 <div className={styles.profile}>
                     <div className={styles.description}>
-                        {person.description?.map(d => (
+                        {person.descriptions?.map(d => (
                             <div className={styles.descriptionItem} key={d.id}>
                                 {capitalize(d.toString())}
                             </div>

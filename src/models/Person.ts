@@ -14,7 +14,7 @@ interface IPerson {
     gender: DataModel.Gender;
     cellphone: string;
     country: string;
-    description: string[];
+    descriptions: string[];
     educations?: Education[];
     periods?: Period[];
 }
@@ -30,10 +30,10 @@ export default class Person extends Base {
     public educations: Education[];
     public periods: Period[];
     public skills: Skill[];
-    public description: StringWithID[];
+    public descriptions: StringWithID[];
     public capability!: Capability;
 
-    constructor({ firstName, description, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
+    constructor({ firstName, descriptions, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
         super();
         this.educations = [];
         this.periods = [];
@@ -45,7 +45,7 @@ export default class Person extends Base {
         this.country = country;
         this.gender = gender;
         this.skills = [];
-        this.description = description.map(e => new StringWithID(e));
+        this.descriptions = descriptions.map(e => new StringWithID(e));
     }
 
     addEducations(educations: Education[]) {
