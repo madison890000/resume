@@ -74,6 +74,7 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts",
       "!src/i18n/**.*",
+      "!src/constants/**.*",
       "!src/index.tsx",
       "!src/components/index.ts",
       "!src/components/Capability/index.tsx",

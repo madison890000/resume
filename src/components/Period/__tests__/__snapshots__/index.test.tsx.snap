@@ -48,7 +48,7 @@ exports[`renders Period 1`] = `
       className="timeline"
     >
       <svg
-        height="20"
+        height={20}
         style={
           Object {
             "backgroundColor": "",

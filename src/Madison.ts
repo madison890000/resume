@@ -14,7 +14,7 @@ const madison = new Person({
     cellphone: '+8618510163161',
     country: 'China',
     gender: 'MALE',
-    description: [
+    descriptions: [
         'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
         'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
             'Application, Internet finance Web System, education application, Data Reporting Web Page, etc.',

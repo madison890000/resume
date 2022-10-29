@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 import { getScreenDevice, ScreenDevice } from '../../utils/device';
-
-const BASE_RECT_WIDTH = 8;
+import { BASE_MONTH_SVG_HEIGHT, BASE_RECT_WIDTH, RECT_GAP } from '../../constants/widths';
+import { BACKGROUND_OF_MOUNT_RECT } from '../../constants/colors';
 
 export const getBaseRectFull = (device: ScreenDevice) => {
     switch (device) {
@@ -17,7 +17,6 @@ export const getBaseRectFull = (device: ScreenDevice) => {
             return BASE_RECT_WIDTH;
     }
 };
-const RECT_GAP = 1;
 
 const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; periodColor: string }) => {
     const { rectFullWidth, totalRects, rects, rectWidth } = useMemo(() => {
@@ -33,7 +32,11 @@ const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; pe
         };
     }, [start, end]);
     return (
-        <svg width={rectFullWidth * totalRects} height="20" style={{ backgroundColor: getScreenDevice() !== ScreenDevice.PC ? '' : 'E0E0E0' }}>
+        <svg
+            width={rectFullWidth * totalRects}
+            height={BASE_MONTH_SVG_HEIGHT}
+            style={{ backgroundColor: getScreenDevice() !== ScreenDevice.PC ? '' : BACKGROUND_OF_MOUNT_RECT }}
+        >
             <g>
                 {rects?.map((e, index) => (
                     <MonthRect key={index} width={rectWidth} gap={RECT_GAP} color={periodColor} index={index} />

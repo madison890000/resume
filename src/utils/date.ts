@@ -1,4 +1,5 @@
-const READABLE_MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+import { MONTH_NUMBER_OF_ONE_YEAR, READABLE_MONTHS } from '../constants/date';
+
 const translateToReadableMonth = (month: number) => READABLE_MONTHS[month]?.slice(0, 3);
 
 export const formatDate = (time: Date) => {
@@ -6,7 +7,7 @@ export const formatDate = (time: Date) => {
 };
 
 const getFullMonth = (time: Date) => {
-    return time.getFullYear() * 12 + time.getMonth();
+    return time.getFullYear() * MONTH_NUMBER_OF_ONE_YEAR + time.getMonth();
 };
 
 export function findPeriodByDate<T>(time: Date, periods: (T & { start: Date; end?: Date })[]) {
@@ -20,7 +21,7 @@ export function findPeriodByDate<T>(time: Date, periods: (T & { start: Date; end
 export const getMonthCountFromStartAndEnd = (start: Date, end: Date) => {
     const years = end.getFullYear() - start.getFullYear();
     if (years) {
-        return 12 - start.getMonth() + (years - 1) * 12 + end.getMonth();
+        return MONTH_NUMBER_OF_ONE_YEAR - start.getMonth() + (years - 1) * MONTH_NUMBER_OF_ONE_YEAR + end.getMonth();
     }
     return end.getMonth() - start.getMonth();
 };

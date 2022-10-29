@@ -9,10 +9,10 @@ namespace DataModel {
 
     export type Gender = 'MALE' | 'FEMALE';
 
-    export interface IAchievement {
+    export type IAchievement = {
         text: string;
         categories: string[];
-    }
+    };
     export type Achievement = {
         id: string;
         text: string;

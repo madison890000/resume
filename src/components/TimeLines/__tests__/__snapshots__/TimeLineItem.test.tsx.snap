@@ -2,7 +2,7 @@
 
 exports[`renders TimeLineItem with  end 1`] = `
 <svg
-  height="20"
+  height={20}
   style={
     Object {
       "backgroundColor": "",
@@ -59,7 +59,7 @@ exports[`renders TimeLineItem with  end 1`] = `
 
 exports[`renders TimeLineItem with no end 1`] = `
 <svg
-  height="20"
+  height={20}
   style={
     Object {
       "backgroundColor": "",
