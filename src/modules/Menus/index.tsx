@@ -17,7 +17,13 @@ const Menus = () => {
             <MenuItem>
                 <SelectLanguage value={locale} onChange={updateLocale} options={languages} />
             </MenuItem>
-            <MenuItem disabled>Download PDF</MenuItem>
+            <MenuItem
+                onClick={() => {
+                    window.print();
+                }}
+            >
+                Download PDF
+            </MenuItem>
             <MenuItem disabled>Import From LinkedIn</MenuItem>
             <MenuItem disabled>Themes</MenuItem>
         </MenuList>
