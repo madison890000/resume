@@ -65,7 +65,7 @@ exports[`renders TimeLineItem with no end 1`] = `
       "backgroundColor": "",
     }
   }
-  width={36}
+  width={42}
 >
   <g>
     <rect
@@ -108,6 +108,13 @@ exports[`renders TimeLineItem with no end 1`] = `
       height="10"
       width={5}
       x={30}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={36}
       y="5"
     />
   </g>

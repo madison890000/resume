@@ -221,7 +221,7 @@ madison.addSkills(skills);
 const capabilities = new Capability({
     coding: 8.8,
     leaning: 9,
-    algorithm: 6,
+    algorithm: 8,
     communicate: 8,
     engineer: 7,
     passion: 9
