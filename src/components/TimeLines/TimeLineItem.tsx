@@ -3,7 +3,6 @@ import { getMonthCountFromStartAndEnd } from '../../utils/date';
 import MonthRect from './MonthRect';
 import { getScreenDevice, ScreenDevice } from '../../utils/device';
 import { BASE_MONTH_SVG_HEIGHT, BASE_RECT_WIDTH, RECT_GAP } from '../../constants/widths';
-import { BACKGROUND_OF_MOUNT_RECT } from '../../constants/colors';
 
 export const getBaseRectFull = (device: ScreenDevice) => {
     switch (device) {
@@ -32,11 +31,7 @@ const TimeLineItem = ({ start, end, periodColor }: { start: Date; end?: Date; pe
         };
     }, [start, end]);
     return (
-        <svg
-            width={rectFullWidth * totalRects}
-            height={BASE_MONTH_SVG_HEIGHT}
-            style={{ backgroundColor: getScreenDevice() !== ScreenDevice.PC ? '' : BACKGROUND_OF_MOUNT_RECT }}
-        >
+        <svg width={rectFullWidth * totalRects} height={BASE_MONTH_SVG_HEIGHT}>
             <g>
                 {rects?.map((e, index) => (
                     <MonthRect key={index} width={rectWidth} gap={RECT_GAP} color={periodColor} index={index} />

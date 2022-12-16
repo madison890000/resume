@@ -6,7 +6,7 @@ import { getScreenDevice, ScreenDevice } from './utils/device';
 import useTimelineWidth from './hooks/useTimelineWidth';
 import { defineMessages, useIntl } from 'react-intl';
 import capitalize from './utils/capitalize';
-import COLORS, { ColorItem } from './constants/colors';
+import DataModel from './models/types';
 
 const messages = defineMessages({
     profile: {
@@ -30,9 +30,9 @@ function App() {
     const intl = useIntl();
     const { timelineWidth } = useTimelineWidth();
     const { current: person } = useRef(madison);
-    const periodColors: { [key: string]: ColorItem } = {};
+    const periodColors: { [key: string]: string } = {};
     person?.periods?.forEach((p, index) => {
-        periodColors[p.id] = COLORS[index];
+        periodColors[p.id] = index % 2 === 0 ? 'black' : '#1976d2';
     });
     return (
         <div className={styles.main}>
@@ -60,32 +60,33 @@ function App() {
             <Divider title={intl.formatMessage(messages.skills)} />
             <section>
                 <div className={styles.skills}>
-                    {person.skills?.map(skill => (
-                        <Skill {...skill} key={skill.id} />
-                    ))}
+                    {person.skills
+                        ?.filter(s => s?.importance === DataModel.Importance.Essential)
+                        ?.map(skill => (
+                            <Skill {...skill} key={skill.id} />
+                        ))}
+                </div>
+            </section>
+            <section>
+                <div className={styles.skills}>
+                    {person.skills
+                        ?.filter(s => s?.importance === DataModel.Importance.Advanced)
+                        ?.map(skill => (
+                            <Skill {...skill} key={skill.id} />
+                        ))}
                 </div>
             </section>
             <Divider
                 title={intl.formatMessage(messages.professionalExperiences)}
                 extra={
                     getScreenDevice() === ScreenDevice.PC ? (
-                        <TimeLines
-                            width={timelineWidth - 300}
-                            periods={person.periods}
-                            periodColors={periodColors}
-                            barPosition="bottom"
-                        />
+                        <TimeLines width={timelineWidth - 300} periods={person.periods} periodColors={periodColors} />
                     ) : null
                 }
             />
             <section>
                 {getScreenDevice() !== ScreenDevice.PC ? (
-                    <TimeLines
-                        width={timelineWidth - 20}
-                        periods={person.periods}
-                        periodColors={periodColors}
-                        barPosition="top"
-                    />
+                    <TimeLines width={timelineWidth - 20} periods={person.periods} periodColors={periodColors} />
                 ) : null}
             </section>
             <section>
