@@ -4,12 +4,10 @@ import DataModel from '../../models/types';
 
 const Name: React.FC<PropsWithChildren<{ level: DataModel.Importance }>> = ({ level, children }) => {
     switch (level) {
-        case DataModel.Importance.important:
+        case DataModel.Importance.Essential:
             return <div className={styles.important}>{children}</div>;
-        case DataModel.Importance.normal:
+        case DataModel.Importance.Advanced:
             return <div className={styles.normal}>{children}</div>;
-        case DataModel.Importance.less:
-            return <div className={styles.less}>{children}</div>;
         default:
             return null;
     }

@@ -12,11 +12,6 @@ exports[`renders TimeLine  TimeLine one period 1`] = `
   <div>
     <svg
       height={20}
-      style={
-        Object {
-          "backgroundColor": "#E0E0E0",
-        }
-      }
       width={1000}
     >
       <g>
@@ -113,27 +108,6 @@ exports[`renders TimeLine  TimeLine one period 1`] = `
         />
       </g>
     </svg>
-  </div>
-  <div
-    style={
-      Object {
-        "height": 48,
-      }
-    }
-  >
-    <span
-      className="jobName"
-      style={
-        Object {
-          "position": "absolute",
-          "transform": "translateX(76.92307692307692px)",
-        }
-      }
-    >
-      Senior
-       
-      Software Engineer
-    </span>
   </div>
 </div>
 `;

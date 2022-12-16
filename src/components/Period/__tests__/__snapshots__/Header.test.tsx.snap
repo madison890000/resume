@@ -14,25 +14,18 @@ exports[`renders Period Header 1`] = `
       Software Engineer
     </span>
   </span>
-  <span
-    className="companyName"
-  >
-    <span>
-      test company name
-      <span>
-        <span
-          className="less"
-        >
-          Startup
-        </span>
-      </span>
-    </span>
-  </span>
   <span>
     <span
       className="filled"
     >
       React
+    </span>
+  </span>
+  <span
+    className="companyName"
+  >
+    <span>
+      test company name
     </span>
   </span>
 </div>

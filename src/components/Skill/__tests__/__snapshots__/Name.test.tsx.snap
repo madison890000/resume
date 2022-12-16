@@ -1,25 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Name  Name --->level = important 1`] = `
-<div
-  className="important"
->
-  understand normal Skill
-</div>
-`;
+exports[`renders Name  Name --->level = important 1`] = `null`;
 
-exports[`renders Name  Name --->level = less 1`] = `
-<div
-  className="less"
->
-  understand normal Skill
-</div>
-`;
+exports[`renders Name  Name --->level = less 1`] = `null`;
 
-exports[`renders Name  Name --->level = normal 1`] = `
-<div
-  className="normal"
->
-  understand normal Skill
-</div>
-`;
+exports[`renders Name  Name --->level = normal 1`] = `null`;

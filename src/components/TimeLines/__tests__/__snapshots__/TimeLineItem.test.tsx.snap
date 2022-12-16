@@ -3,11 +3,6 @@
 exports[`renders TimeLineItem with  end 1`] = `
 <svg
   height={20}
-  style={
-    Object {
-      "backgroundColor": "",
-    }
-  }
   width={36}
 >
   <g>
@@ -60,12 +55,7 @@ exports[`renders TimeLineItem with  end 1`] = `
 exports[`renders TimeLineItem with no end 1`] = `
 <svg
   height={20}
-  style={
-    Object {
-      "backgroundColor": "",
-    }
-  }
-  width={42}
+  width={48}
 >
   <g>
     <rect
@@ -115,6 +105,13 @@ exports[`renders TimeLineItem with no end 1`] = `
       height="10"
       width={5}
       x={36}
+      y="5"
+    />
+    <rect
+      fill="#FF6666"
+      height="10"
+      width={5}
+      x={42}
       y="5"
     />
   </g>

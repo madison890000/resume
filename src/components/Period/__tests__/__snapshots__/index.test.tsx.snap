@@ -21,25 +21,18 @@ exports[`renders Period 1`] = `
             Software Engineer
           </span>
         </span>
-        <span
-          className="companyName"
-        >
-          <span>
-            test company name
-            <span>
-              <span
-                className="less"
-              >
-                Startup
-              </span>
-            </span>
-          </span>
-        </span>
         <span>
           <span
             className="filled"
           >
             React
+          </span>
+        </span>
+        <span
+          className="companyName"
+        >
+          <span>
+            test company name
           </span>
         </span>
       </div>
@@ -49,11 +42,6 @@ exports[`renders Period 1`] = `
     >
       <svg
         height={20}
-        style={
-          Object {
-            "backgroundColor": "",
-          }
-        }
         width={78}
       >
         <g>

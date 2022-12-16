@@ -2,7 +2,6 @@ import Tag from '../Tag';
 import React from 'react';
 import DataModel from '../../models/types';
 import styles from './Header.module.scss';
-import CompanyType from './CompanyType';
 import StringWithID from '../../models/StringWithID';
 import capitalize from '../../utils/capitalize';
 
@@ -14,17 +13,11 @@ interface HeaderProps {
     companyType: DataModel.CompanyType;
 }
 
-const Header = ({ keywords, companyType, companyName, jobPosition, jobPositionLevel }: HeaderProps) => (
+const Header = ({ keywords, companyName, jobPosition, jobPositionLevel }: HeaderProps) => (
     <div className={styles.header}>
         <span className={styles.job}>
             {jobPositionLevel && <span>{capitalize(jobPositionLevel.toLowerCase())}</span>}
             <span>{jobPosition}</span>
-        </span>
-        <span className={styles.companyName}>
-            <span>
-                {companyName}
-                <CompanyType companyType={companyType} />
-            </span>
         </span>
         <span>
             {keywords?.map(keyword => (
@@ -32,6 +25,9 @@ const Header = ({ keywords, companyType, companyName, jobPosition, jobPositionLe
                     {keyword.toString()}
                 </Tag>
             ))}
+        </span>
+        <span className={styles.companyName}>
+            <span>{companyName}</span>
         </span>
     </div>
 );

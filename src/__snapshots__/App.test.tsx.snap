@@ -105,40 +105,6 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="important"
           >
-            JavaScript
-          </div>
-          <div
-            className="subTitle"
-          >
-            7
-             
-            years
-          </div>
-        </div>
-        <div
-          className="level"
-        >
-          <span />
-          <span />
-          <span />
-          <span />
-          <span
-            className="empty"
-          />
-          <div
-            className="levelName"
-          >
-            Proficient
-          </div>
-        </div>
-      </div>
-      <div
-        className="skill"
-      >
-        <div>
-          <div
-            className="important"
-          >
             React
           </div>
           <div
@@ -207,7 +173,41 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="important"
           >
-            React hooks
+            JavaScript
+          </div>
+          <div
+            className="subTitle"
+          >
+            7
+             
+            years
+          </div>
+        </div>
+        <div
+          className="level"
+        >
+          <span />
+          <span />
+          <span />
+          <span />
+          <span
+            className="empty"
+          />
+          <div
+            className="levelName"
+          >
+            Proficient
+          </div>
+        </div>
+      </div>
+      <div
+        className="skill"
+      >
+        <div>
+          <div
+            className="important"
+          >
+            Redux/MobX
           </div>
           <div
             className="subTitle"
@@ -241,41 +241,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="important"
           >
-            React-Redux
-          </div>
-          <div
-            className="subTitle"
-          >
-            3
-             
-            years
-          </div>
-        </div>
-        <div
-          className="level"
-        >
-          <span />
-          <span />
-          <span />
-          <span />
-          <span
-            className="empty"
-          />
-          <div
-            className="levelName"
-          >
-            Proficient
-          </div>
-        </div>
-      </div>
-      <div
-        className="skill"
-      >
-        <div>
-          <div
-            className="important"
-          >
-            HTML
+            HTML & CSS
           </div>
           <div
             className="subTitle"
@@ -309,7 +275,7 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="important"
           >
-            CSS
+            GIT
           </div>
           <div
             className="subTitle"
@@ -336,6 +302,12 @@ Application, Internet finance Web System, education application, Data Reporting 
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div
+      className="skills"
+    >
       <div
         className="skill"
       >
@@ -343,46 +315,12 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="normal"
           >
-            MobX
+            Node
           </div>
           <div
             className="subTitle"
           >
-            1
-             
-            years
-          </div>
-        </div>
-        <div
-          className="level"
-        >
-          <span />
-          <span />
-          <span />
-          <span />
-          <span
-            className="empty"
-          />
-          <div
-            className="levelName"
-          >
-            Proficient
-          </div>
-        </div>
-      </div>
-      <div
-        className="skill"
-      >
-        <div>
-          <div
-            className="normal"
-          >
-            Electron
-          </div>
-          <div
-            className="subTitle"
-          >
-            1
+            2
              
             years
           </div>
@@ -415,12 +353,12 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="normal"
           >
-            Node
+            Java
           </div>
           <div
             className="subTitle"
           >
-            2
+            3
              
             years
           </div>
@@ -487,12 +425,12 @@ Application, Internet finance Web System, education application, Data Reporting 
           <div
             className="normal"
           >
-            Java
+            Database/SQL
           </div>
           <div
             className="subTitle"
           >
-            3
+            2
              
             years
           </div>
@@ -523,7 +461,45 @@ Application, Internet finance Web System, education application, Data Reporting 
       >
         <div>
           <div
-            className="less"
+            className="normal"
+          >
+            Electron
+          </div>
+          <div
+            className="subTitle"
+          >
+            1
+             
+            years
+          </div>
+        </div>
+        <div
+          className="level"
+        >
+          <span />
+          <span />
+          <span
+            className="empty"
+          />
+          <span
+            className="empty"
+          />
+          <span
+            className="empty"
+          />
+          <div
+            className="levelName"
+          >
+            Familiar
+          </div>
+        </div>
+      </div>
+      <div
+        className="skill"
+      >
+        <div>
+          <div
+            className="normal"
           >
             Docker
           </div>
@@ -563,7 +539,7 @@ Application, Internet finance Web System, education application, Data Reporting 
       >
         <div>
           <div
-            className="less"
+            className="normal"
           >
             C#
           </div>
@@ -598,78 +574,6 @@ Application, Internet finance Web System, education application, Data Reporting 
           </div>
         </div>
       </div>
-      <div
-        className="skill"
-      >
-        <div>
-          <div
-            className="normal"
-          >
-            Database
-          </div>
-          <div
-            className="subTitle"
-          >
-            2
-             
-            years
-          </div>
-        </div>
-        <div
-          className="level"
-        >
-          <span />
-          <span />
-          <span
-            className="empty"
-          />
-          <span
-            className="empty"
-          />
-          <span
-            className="empty"
-          />
-          <div
-            className="levelName"
-          >
-            Familiar
-          </div>
-        </div>
-      </div>
-      <div
-        className="skill"
-      >
-        <div>
-          <div
-            className="important"
-          >
-            Git
-          </div>
-          <div
-            className="subTitle"
-          >
-            6
-             
-            years
-          </div>
-        </div>
-        <div
-          className="level"
-        >
-          <span />
-          <span />
-          <span />
-          <span />
-          <span
-            className="empty"
-          />
-          <div
-            className="levelName"
-          >
-            Proficient
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <div
@@ -701,710 +605,641 @@ Application, Internet finance Web System, education application, Data Reporting 
       <div>
         <svg
           height={20}
-          style={
-            Object {
-              "backgroundColor": "#E0E0E0",
-            }
-          }
           width={980}
         >
           <g>
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
+              width={9.88888888888889}
               x={0}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={11.01123595505618}
+              width={9.88888888888889}
+              x={10.88888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={22.02247191011236}
+              width={9.88888888888889}
+              x={21.77777777777778}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={33.03370786516854}
+              width={9.88888888888889}
+              x={32.66666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={44.04494382022472}
+              width={9.88888888888889}
+              x={43.55555555555556}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={55.056179775280896}
+              width={9.88888888888889}
+              x={54.44444444444444}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={66.06741573033707}
+              width={9.88888888888889}
+              x={65.33333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={77.07865168539325}
+              width={9.88888888888889}
+              x={76.22222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={88.08988764044943}
+              width={9.88888888888889}
+              x={87.11111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={99.10112359550561}
+              width={9.88888888888889}
+              x={98}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={110.11235955056179}
+              width={9.88888888888889}
+              x={108.88888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={121.12359550561797}
+              width={9.88888888888889}
+              x={119.77777777777779}
               y="5"
             />
             <rect
-              fill="var(--color-red)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={132.13483146067415}
+              width={9.88888888888889}
+              x={130.66666666666669}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={143.14606741573033}
+              width={9.88888888888889}
+              x={141.55555555555557}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={154.1573033707865}
+              width={9.88888888888889}
+              x={152.44444444444446}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={165.1685393258427}
+              width={9.88888888888889}
+              x={163.33333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={176.17977528089887}
+              width={9.88888888888889}
+              x={174.22222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={187.19101123595505}
+              width={9.88888888888889}
+              x={185.11111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={198.20224719101122}
+              width={9.88888888888889}
+              x={196}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={209.2134831460674}
+              width={9.88888888888889}
+              x={206.88888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={220.22471910112358}
+              width={9.88888888888889}
+              x={217.77777777777777}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={231.23595505617976}
+              width={9.88888888888889}
+              x={228.66666666666669}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={242.24719101123594}
+              width={9.88888888888889}
+              x={239.55555555555557}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={253.25842696629212}
+              width={9.88888888888889}
+              x={250.44444444444446}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={264.2696629213483}
+              width={9.88888888888889}
+              x={261.33333333333337}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={275.2808988764045}
+              width={9.88888888888889}
+              x={272.22222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={286.29213483146066}
+              width={9.88888888888889}
+              x={283.11111111111114}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={297.30337078651684}
+              width={9.88888888888889}
+              x={294}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={308.314606741573}
+              width={9.88888888888889}
+              x={304.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={319.3258426966292}
+              width={9.88888888888889}
+              x={315.77777777777777}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={330.3370786516854}
+              width={9.88888888888889}
+              x={326.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={341.34831460674155}
+              width={9.88888888888889}
+              x={337.55555555555554}
               y="5"
             />
             <rect
-              fill="var(--color-yellow)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={352.35955056179773}
+              width={9.88888888888889}
+              x={348.44444444444446}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={363.3707865168539}
+              width={9.88888888888889}
+              x={359.33333333333337}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={374.3820224719101}
+              width={9.88888888888889}
+              x={370.22222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={385.39325842696627}
+              width={9.88888888888889}
+              x={381.11111111111114}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={396.40449438202245}
+              width={9.88888888888889}
+              x={392}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={407.4157303370786}
+              width={9.88888888888889}
+              x={402.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={418.4269662921348}
+              width={9.88888888888889}
+              x={413.77777777777777}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={429.438202247191}
+              width={9.88888888888889}
+              x={424.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={440.44943820224717}
+              width={9.88888888888889}
+              x={435.55555555555554}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={451.46067415730334}
+              width={9.88888888888889}
+              x={446.44444444444446}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={462.4719101123595}
+              width={9.88888888888889}
+              x={457.33333333333337}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={473.4831460674157}
+              width={9.88888888888889}
+              x={468.22222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={484.4943820224719}
+              width={9.88888888888889}
+              x={479.11111111111114}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={495.50561797752806}
+              width={9.88888888888889}
+              x={490}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={506.51685393258424}
+              width={9.88888888888889}
+              x={500.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-dark-yellow)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={517.5280898876404}
-              y="5"
-            />
-            <rect
-              fill=""
-              height="10"
-              width={10.01123595505618}
-              x={528.5393258426966}
+              width={9.88888888888889}
+              x={511.77777777777777}
               y="5"
             />
             <rect
               fill=""
               height="10"
-              width={10.01123595505618}
-              x={539.5505617977528}
+              width={9.88888888888889}
+              x={522.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill=""
               height="10"
-              width={10.01123595505618}
-              x={550.561797752809}
+              width={9.88888888888889}
+              x={533.5555555555555}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={561.5730337078651}
+              width={9.88888888888889}
+              x={544.4444444444445}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={572.5842696629213}
+              width={9.88888888888889}
+              x={555.3333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={583.5955056179776}
+              width={9.88888888888889}
+              x={566.2222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={594.6067415730337}
+              width={9.88888888888889}
+              x={577.1111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={605.6179775280898}
+              width={9.88888888888889}
+              x={588}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={616.629213483146}
+              width={9.88888888888889}
+              x={598.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={627.6404494382023}
+              width={9.88888888888889}
+              x={609.7777777777778}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={638.6516853932584}
+              width={9.88888888888889}
+              x={620.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={649.6629213483145}
+              width={9.88888888888889}
+              x={631.5555555555555}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={660.6741573033707}
+              width={9.88888888888889}
+              x={642.4444444444445}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={671.685393258427}
+              width={9.88888888888889}
+              x={653.3333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={682.6966292134831}
+              width={9.88888888888889}
+              x={664.2222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={693.7078651685392}
+              width={9.88888888888889}
+              x={675.1111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={704.7191011235955}
+              width={9.88888888888889}
+              x={686}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={715.7303370786517}
+              width={9.88888888888889}
+              x={696.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={726.7415730337078}
+              width={9.88888888888889}
+              x={707.7777777777778}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={737.752808988764}
+              width={9.88888888888889}
+              x={718.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={748.7640449438202}
+              width={9.88888888888889}
+              x={729.5555555555555}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={759.7752808988764}
+              width={9.88888888888889}
+              x={740.4444444444445}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={770.7865168539325}
+              width={9.88888888888889}
+              x={751.3333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={781.7977528089887}
+              width={9.88888888888889}
+              x={762.2222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={792.8089887640449}
+              width={9.88888888888889}
+              x={773.1111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={803.8202247191011}
+              width={9.88888888888889}
+              x={784}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={814.8314606741573}
+              width={9.88888888888889}
+              x={794.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={825.8426966292134}
+              width={9.88888888888889}
+              x={805.7777777777778}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={836.8539325842696}
+              width={9.88888888888889}
+              x={816.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={847.8651685393259}
+              width={9.88888888888889}
+              x={827.5555555555555}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={858.876404494382}
+              width={9.88888888888889}
+              x={838.4444444444445}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={869.8876404494381}
+              width={9.88888888888889}
+              x={849.3333333333334}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={880.8988764044943}
+              width={9.88888888888889}
+              x={860.2222222222223}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={891.9101123595506}
+              width={9.88888888888889}
+              x={871.1111111111111}
               y="5"
             />
             <rect
-              fill="var(--color-dark-red)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={902.9213483146067}
+              width={9.88888888888889}
+              x={882}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="#1976d2"
               height="10"
-              width={10.01123595505618}
-              x={913.9325842696628}
+              width={9.88888888888889}
+              x={892.8888888888889}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={924.943820224719}
+              width={9.88888888888889}
+              x={903.7777777777778}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={935.9550561797753}
+              width={9.88888888888889}
+              x={914.6666666666667}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={946.9662921348314}
+              width={9.88888888888889}
+              x={925.5555555555555}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={957.9775280898875}
+              width={9.88888888888889}
+              x={936.4444444444445}
               y="5"
             />
             <rect
-              fill="var(--color-green)"
+              fill="black"
               height="10"
-              width={10.01123595505618}
-              x={968.9887640449438}
+              width={9.88888888888889}
+              x={947.3333333333334}
+              y="5"
+            />
+            <rect
+              fill="black"
+              height="10"
+              width={9.88888888888889}
+              x={958.2222222222223}
+              y="5"
+            />
+            <rect
+              fill="black"
+              height="10"
+              width={9.88888888888889}
+              x={969.1111111111112}
               y="5"
             />
           </g>
         </svg>
-      </div>
-      <div
-        style={
-          Object {
-            "height": 48,
-          }
-        }
-      >
-        <span
-          className="jobName"
-          style={
-            Object {
-              "position": "absolute",
-              "transform": "translateX(11.01123595505618px)",
-            }
-          }
-        >
-          Junior
-           
-          Software Engineer
-        </span>
-        <span
-          className="jobName"
-          style={
-            Object {
-              "position": "absolute",
-              "transform": "translateX(143.14606741573033px)",
-            }
-          }
-        >
-           
-          Software Engineer
-        </span>
-        <span
-          className="jobName"
-          style={
-            Object {
-              "position": "absolute",
-              "transform": "translateX(374.3820224719101px)",
-            }
-          }
-        >
-           
-          Front-End Engineer
-        </span>
-        <span
-          className="jobName"
-          style={
-            Object {
-              "position": "absolute",
-              "transform": "translateX(561.5730337078651px)",
-            }
-          }
-        >
-          Senior
-           
-          Front-End Engineer
-        </span>
-        <span
-          className="jobName"
-          style={
-            Object {
-              "position": "absolute",
-              "transform": "translateX(913.9325842696628px)",
-            }
-          }
-        >
-          Senior
-           
-          Software Engineer
-        </span>
       </div>
     </div>
   </section>
@@ -1429,20 +1264,6 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Software Engineer
               </span>
             </span>
-            <span
-              className="companyName"
-            >
-              <span>
-                Tesla
-                <span>
-                  <span
-                    className="less"
-                  >
-                    Enterprise
-                  </span>
-                </span>
-              </span>
-            </span>
             <span>
               <span
                 className="filled"
@@ -1455,6 +1276,13 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Agile
               </span>
             </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Tesla
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -1462,61 +1290,63 @@ Application, Internet finance Web System, education application, Data Reporting 
         >
           <svg
             height={20}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
-            width={42}
+            width={48}
           >
             <g>
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={0}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={6}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={12}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={18}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={24}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={30}
                 y="5"
               />
               <rect
-                fill="var(--color-green)"
+                fill="black"
                 height="10"
                 width={5}
                 x={36}
+                y="5"
+              />
+              <rect
+                fill="black"
+                height="10"
+                width={5}
+                x={42}
                 y="5"
               />
             </g>
@@ -1620,20 +1450,6 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Front-End Engineer
               </span>
             </span>
-            <span
-              className="companyName"
-            >
-              <span>
-                PCCW GLOBAL
-                <span>
-                  <span
-                    className="less"
-                  >
-                    Enterprise
-                  </span>
-                </span>
-              </span>
-            </span>
             <span>
               <span
                 className="filled"
@@ -1661,6 +1477,13 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Agile
               </span>
             </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                PCCW GLOBAL
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -1668,240 +1491,235 @@ Application, Internet finance Web System, education application, Data Reporting 
         >
           <svg
             height={20}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
             width={198}
           >
             <g>
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={0}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={6}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={12}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={18}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={24}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={30}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={36}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={42}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={48}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={54}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={60}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={66}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={72}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={78}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={84}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={90}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={96}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={102}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={108}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={114}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={120}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={126}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={132}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={138}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={144}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={150}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={156}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={162}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={168}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={174}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={180}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={186}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-red)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={192}
@@ -2035,20 +1853,6 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Front-End Engineer
               </span>
             </span>
-            <span
-              className="companyName"
-            >
-              <span>
-                Citic Baixin Bank Co. Ltd
-                <span>
-                  <span
-                    className="less"
-                  >
-                    Enterprise
-                  </span>
-                </span>
-              </span>
-            </span>
             <span>
               <span
                 className="filled"
@@ -2066,6 +1870,13 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Waterfall
               </span>
             </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Citic Baixin Bank Co. Ltd
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -2073,114 +1884,109 @@ Application, Internet finance Web System, education application, Data Reporting 
         >
           <svg
             height={20}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
             width={90}
           >
             <g>
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={0}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={6}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={12}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={18}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={24}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={30}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={36}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={42}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={48}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={54}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={60}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={66}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={72}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={78}
                 y="5"
               />
               <rect
-                fill="var(--color-dark-yellow)"
+                fill="black"
                 height="10"
                 width={5}
                 x={84}
@@ -2258,20 +2064,6 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Software Engineer
               </span>
             </span>
-            <span
-              className="companyName"
-            >
-              <span>
-                Yinyuan Asia-pacific Technology Co. Ltd 
-                <span>
-                  <span
-                    className="less"
-                  >
-                    Startup
-                  </span>
-                </span>
-              </span>
-            </span>
             <span>
               <span
                 className="filled"
@@ -2294,6 +2086,13 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Waterfall
               </span>
             </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Yinyuan Asia-pacific Technology Co. Ltd 
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -2301,156 +2100,151 @@ Application, Internet finance Web System, education application, Data Reporting 
         >
           <svg
             height={20}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
             width={126}
           >
             <g>
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={0}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={6}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={12}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={18}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={24}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={30}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={36}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={42}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={48}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={54}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={60}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={66}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={72}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={78}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={84}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={90}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={96}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={102}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={108}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={114}
                 y="5"
               />
               <rect
-                fill="var(--color-yellow)"
+                fill="#1976d2"
                 height="10"
                 width={5}
                 x={120}
@@ -2544,20 +2338,6 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Software Engineer
               </span>
             </span>
-            <span
-              className="companyName"
-            >
-              <span>
-                Taiji Computer Corporation. Ltd
-                <span>
-                  <span
-                    className="less"
-                  >
-                    Enterprise
-                  </span>
-                </span>
-              </span>
-            </span>
             <span>
               <span
                 className="filled"
@@ -2575,6 +2355,13 @@ Application, Internet finance Web System, education application, Data Reporting 
                 Waterfall
               </span>
             </span>
+            <span
+              className="companyName"
+            >
+              <span>
+                Taiji Computer Corporation. Ltd
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -2582,100 +2369,95 @@ Application, Internet finance Web System, education application, Data Reporting 
         >
           <svg
             height={20}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
             width={78}
           >
             <g>
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={0}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={6}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={12}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={18}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={24}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={30}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={36}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={42}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={48}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={54}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={60}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={66}
                 y="5"
               />
               <rect
-                fill="var(--color-red)"
+                fill="black"
                 height="10"
                 width={5}
                 x={72}

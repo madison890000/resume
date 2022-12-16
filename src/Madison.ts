@@ -199,22 +199,19 @@ const periodFive = new Period({
 madison.addPeriods([periodOne, periodTwo, periodThree, periodFour, periodFive]);
 
 const skills = [
-    new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.important),
-    new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.important),
-    new Skill('TypeScript', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
-    new Skill('React hooks', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
-    new Skill('React-Redux', DataModel.SkillLevel.proficient, 3, DataModel.Importance.important),
-    new Skill('HTML', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important),
-    new Skill('CSS', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important),
-    new Skill('MobX', DataModel.SkillLevel.proficient, 1, DataModel.Importance.normal),
-    new Skill('Electron', DataModel.SkillLevel.familiar, 1, DataModel.Importance.normal),
-    new Skill('Node', DataModel.SkillLevel.familiar, 2, DataModel.Importance.normal),
-    new Skill('Vue', DataModel.SkillLevel.proficient, 1.5, DataModel.Importance.normal),
-    new Skill('Java', DataModel.SkillLevel.familiar, 3, DataModel.Importance.normal),
-    new Skill('Docker', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.less),
-    new Skill('C#', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.less),
-    new Skill('Database', DataModel.SkillLevel.familiar, 2, DataModel.Importance.normal),
-    new Skill('Git', DataModel.SkillLevel.proficient, 6, DataModel.Importance.important)
+    new Skill('React', DataModel.SkillLevel.proficient, 5, DataModel.Importance.Essential),
+    new Skill('TypeScript', DataModel.SkillLevel.proficient, 3, DataModel.Importance.Essential),
+    new Skill('JavaScript', DataModel.SkillLevel.proficient, 7, DataModel.Importance.Essential),
+    new Skill('Redux/MobX', DataModel.SkillLevel.proficient, 3, DataModel.Importance.Essential),
+    new Skill('HTML & CSS', DataModel.SkillLevel.proficient, 6, DataModel.Importance.Essential),
+    new Skill('GIT', DataModel.SkillLevel.proficient, 6, DataModel.Importance.Essential),
+    new Skill('Node', DataModel.SkillLevel.familiar, 2, DataModel.Importance.Advanced),
+    new Skill('Java', DataModel.SkillLevel.familiar, 3, DataModel.Importance.Advanced),
+    new Skill('Vue', DataModel.SkillLevel.proficient, 1.5, DataModel.Importance.Advanced),
+    new Skill('Database/SQL', DataModel.SkillLevel.familiar, 2, DataModel.Importance.Advanced),
+    new Skill('Electron', DataModel.SkillLevel.familiar, 1, DataModel.Importance.Advanced),
+    new Skill('Docker', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.Advanced),
+    new Skill('C#', DataModel.SkillLevel.understand, 0.5, DataModel.Importance.Advanced)
 ];
 madison.addSkills(skills);
 

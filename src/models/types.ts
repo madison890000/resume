@@ -40,9 +40,8 @@ namespace DataModel {
     }
 
     export enum Importance {
-        important,
-        normal,
-        less
+        Essential,
+        Advanced
     }
 
     export enum CompanyType {

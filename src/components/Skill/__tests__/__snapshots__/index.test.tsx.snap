@@ -6,11 +6,6 @@ exports[`renders Skill  Skill --->level = familiar 1`] = `
 >
   <div>
     <div
-      className="normal"
-    >
-      familiar normal Skill
-    </div>
-    <div
       className="subTitle"
     >
       5
@@ -46,11 +41,6 @@ exports[`renders Skill  Skill --->level = familiar 2`] = `
   className="skill"
 >
   <div>
-    <div
-      className="less"
-    >
-      familiar less Skill
-    </div>
     <div
       className="subTitle"
     >
@@ -88,11 +78,6 @@ exports[`renders Skill  Skill --->level = familiar 3`] = `
 >
   <div>
     <div
-      className="important"
-    >
-      familiar important Skill
-    </div>
-    <div
       className="subTitle"
     >
       5
@@ -129,11 +114,6 @@ exports[`renders Skill  Skill --->level = proficient 1`] = `
 >
   <div>
     <div
-      className="normal"
-    >
-      proficient normal Skill
-    </div>
-    <div
       className="subTitle"
     >
       5
@@ -165,11 +145,6 @@ exports[`renders Skill  Skill --->level = proficient 2`] = `
   className="skill"
 >
   <div>
-    <div
-      className="less"
-    >
-      proficient less Skill
-    </div>
     <div
       className="subTitle"
     >
@@ -209,11 +184,6 @@ exports[`renders Skill  Skill --->level = proficient 3`] = `
 >
   <div>
     <div
-      className="important"
-    >
-      proficient important Skill
-    </div>
-    <div
       className="subTitle"
     >
       5
@@ -251,11 +221,6 @@ exports[`renders Skill  Skill --->level = understand 1`] = `
   className="skill"
 >
   <div>
-    <div
-      className="normal"
-    >
-      understand normal Skill
-    </div>
     <div
       className="subTitle"
     >
@@ -295,11 +260,6 @@ exports[`renders Skill  Skill --->level = understand 2`] = `
 >
   <div>
     <div
-      className="less"
-    >
-      understand less Skill
-    </div>
-    <div
       className="subTitle"
     >
       5
@@ -337,11 +297,6 @@ exports[`renders Skill  Skill --->level = understand 3`] = `
   className="skill"
 >
   <div>
-    <div
-      className="important"
-    >
-      understand important Skill
-    </div>
     <div
       className="subTitle"
     >
