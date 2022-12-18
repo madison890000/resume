@@ -216,11 +216,11 @@ const skills = [
 madison.addSkills(skills);
 
 const capabilities = new Capability({
-    coding: 8.8,
-    leaning: 9,
+    problemSolving: 8.8,
+    dataStructure: 9,
     algorithm: 8,
-    communicate: 8,
-    engineer: 7,
+    communicate: 9.5,
+    engineer: 8,
     passion: 9
 });
 madison.addCapability(capabilities);

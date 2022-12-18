@@ -5,31 +5,30 @@ const LINE_STYLE = {
     opacity: 0.5
 };
 const getOptions = (capabilities: any) => ({
-    backgroundColor: 'rgba(0,0,0,0.1)',
     radar: {
         indicator: [
             {
-                name: 'coding',
+                name: 'Problem Solving',
                 max: 10
             },
             {
-                name: 'leaning',
+                name: 'Data\n Structure',
                 max: 10
             },
             {
-                name: 'algorithm',
+                name: 'Algorithm',
                 max: 10
             },
             {
-                name: 'communicating',
+                name: 'Communicating',
                 max: 10
             },
             {
-                name: 'engineer',
+                name: 'Engineering',
                 max: 10
             },
             {
-                name: 'passion',
+                name: 'Passion',
                 max: 10
             }
         ],
@@ -40,7 +39,14 @@ const getOptions = (capabilities: any) => ({
         },
         splitLine: {
             lineStyle: {
-                color: ['rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)', 'rgba(238, 197, 102, 0.4)', 'rgba(238, 197, 102, 0.6)', 'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'].reverse()
+                color: [
+                    'rgba(238, 197, 102, 0.1)',
+                    'rgba(238, 197, 102, 0.2)',
+                    'rgba(238, 197, 102, 0.4)',
+                    'rgba(238, 197, 102, 0.6)',
+                    'rgba(238, 197, 102, 0.8)',
+                    'rgba(238, 197, 102, 1)'
+                ].reverse()
             }
         },
         splitArea: {
@@ -57,7 +63,16 @@ const getOptions = (capabilities: any) => ({
             name: 'Madison',
             type: 'radar',
             lineStyle: LINE_STYLE,
-            data: [[capabilities.coding, capabilities.leaning, capabilities.algorithm, capabilities.communicate, capabilities.engineer, capabilities.passion]],
+            data: [
+                [
+                    capabilities.coding,
+                    capabilities.leaning,
+                    capabilities.algorithm,
+                    capabilities.communicate,
+                    capabilities.engineer,
+                    capabilities.passion
+                ]
+            ],
             symbol: 'none',
             itemStyle: {
                 color: '#F9713C'
