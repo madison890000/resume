@@ -116,6 +116,7 @@ const periodThree = new Period({
     jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
     jobSummaries: [
+        'become the core developer in Front-End team',
         'communicate with product manager and UI designer partner through meeting to understand project requirements',
         'responsible for task assignment and project requirement explanation to 5 team members',
         'provide training and guidance on technical to junior engineer'
@@ -141,6 +142,7 @@ const periodFour = new Period({
     jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
+        'become the core developer in Front-End team',
         'make the architecture design in Front-End project',
         'communicate with product manager and UI designer to understand project requirements every week (one sprint),',
         'conduct functional research and validation based on business requirements, evaluate requirements implementation feasibility and propose solutions.',
@@ -187,6 +189,7 @@ const periodFive = new Period({
     jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
+        'become the core developer in Front-End team',
         'make the architecture design in Front-End project',
         'improve the code quality and performance',
         'improve the FE team efficiency',
