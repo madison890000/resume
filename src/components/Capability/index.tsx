@@ -65,8 +65,8 @@ const getOptions = (capabilities: any) => ({
             lineStyle: LINE_STYLE,
             data: [
                 [
-                    capabilities.coding,
-                    capabilities.leaning,
+                    capabilities.problemSolving,
+                    capabilities.dataStructure,
                     capabilities.algorithm,
                     capabilities.communicate,
                     capabilities.engineer,
