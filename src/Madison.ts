@@ -24,7 +24,7 @@ const madison = new Person({
 });
 
 const masterEducation = new Education({
-    major: 'Geographical Information System',
+    major: 'Land Utilization and Information Technology',
     college: 'China Agricultural University',
     degree: DataModel.Degree.Master,
     start: new Date('2012-09-01T00:00:00Z'),
@@ -51,7 +51,7 @@ const periodOne = new Period({
     company: taijiCompany,
     keywords: ['Java', 'jQuery', 'Waterfall'],
     jobPosition: 'Software Engineer',
-    jobPositionLevel: DataModel.JobPositionLevel.Junior,
+    jobPositionLevel: DataModel.JobPositionLevel.Middle,
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'use Java to develop system on schedule',
@@ -129,7 +129,7 @@ const periodFour = new Period({
     end: new Date('2022-05-01T00:00:00Z'),
     company: pccwCompany,
     keywords: ['React', 'NextJs', 'umi', 'TDD', 'Agile'],
-    jobPosition: 'Front-End Engineer',
+    jobPosition: 'Software Engineer',
     jobPositionLevel: DataModel.JobPositionLevel.Senior,
     solutionsOfHowToImplement: [],
     jobSummaries: [
