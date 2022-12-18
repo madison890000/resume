@@ -24,7 +24,6 @@ const Menus = () => {
             >
                 Download PDF
             </MenuItem>
-            <MenuItem disabled>Import From LinkedIn</MenuItem>
             <MenuItem disabled>Themes</MenuItem>
         </MenuList>
     );

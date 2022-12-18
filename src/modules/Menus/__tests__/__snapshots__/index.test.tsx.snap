@@ -91,26 +91,6 @@ exports[`renders Menus 1`] = `
     role="menuitem"
     tabIndex={-1}
   >
-    Import From LinkedIn
-  </li>
-  <li
-    aria-disabled={true}
-    className="MuiButtonBase-root MuiMenuItem-root Mui-disabled MuiMenuItem-gutters Mui-disabled MuiMenuItem-root Mui-disabled MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root"
-    onBlur={[Function]}
-    onContextMenu={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    role="menuitem"
-    tabIndex={-1}
-  >
     Themes
   </li>
 </ul>

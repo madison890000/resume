@@ -7,7 +7,7 @@ import Skill from './models/Skill';
 import Capability from './models/Capability';
 
 const madison = new Person({
-    firstName: 'Madison',
+    firstName: 'Madison(Zusheng)',
     lastName: 'Ma',
     birthDay: new Date('1989-10-25T00:00:00Z'),
     email: 'madison.sss.ma@gmail.com',
@@ -15,11 +15,11 @@ const madison = new Person({
     country: 'China',
     gender: 'MALE',
     descriptions: [
-        'I have 7 years of working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
-        'I Have rich experience in Front-End and Back-End development including Admin Portal and Customer Portal in Online Sale Web\n' +
-            'Application, Internet finance Web System, education application, Data Reporting Web Page, etc.',
+        'I have 7 years working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
+        'I Have rich development experience both in Front-End and Back-End, including Admin Portal and Customer Portal in E-commerce\n' +
+            'System, Web Finance(Invoice) System, Supporting System, SPA, etc.',
         'I am both a good team leader and team member. ' +
-            'I am a person who is passionate about life, friendly to people, willing to share, and like to work with colleagues to make the world to be a better place.'
+            'I am passionate about life, friendly to people, willing to share, and wish to work with colleagues whom want to make the world to be a better place.'
     ]
 });
 
@@ -59,7 +59,11 @@ const periodOne = new Period({
     ],
     achievements: [
         {
-            text: 'abstract 10+ components to unify UI style of most company projects, including table, form input, file upload, etc',
+            text: 'used Spring-boot and Kendo-UI to build the the basic configuration of common project',
+            categories: ['Java']
+        },
+        {
+            text: 'abstracted 10+ components to unify UI style, including table, form input, file upload, etc',
             categories: ['UI']
         }
     ]
@@ -79,17 +83,21 @@ const periodTwo = new Period({
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'participate in the design and development of all projects ',
-        'responsible for the release quality of all system. ',
-        "responsible for team's recruitment, technical training(ES6), etc. ",
-        'take charge of annual feature planning and appraise performance of each team member.'
+        'responsible for the release quality of all system',
+        "responsible for team's recruitment, technical training(ES6), etc",
+        'take charge of annual feature planning and appraise performance of each team member'
     ],
     achievements: [
         {
-            text: "completed the design and development of the company's front-end UI component library",
-            categories: ['UI']
+            text: 'Used different technologies to start new project, like React, React-Native, Vue',
+            categories: ['FE']
         },
         {
-            text: 'implemented the rendering of list components and displaying data  in both horizontal and vertical',
+            text: 'Used shell scripts to improve the development efficiency of CRUD classes',
+            categories: ['Java']
+        },
+        {
+            text: "completed the design and development of the company's Front-End UI component library",
             categories: ['UI']
         }
     ]
@@ -114,7 +122,7 @@ const periodThree = new Period({
     ],
     achievements: [
         {
-            text: "completed the design and development of company's front-end UI component library",
+            text: "completed the design and development of company's Front-End UI component library",
             categories: ['UI']
         }
     ]
@@ -141,7 +149,19 @@ const periodFour = new Period({
     ],
     achievements: [
         {
-            text: "design and developed our company's front-end UI component library",
+            text: "Designed and developed low-code form modules to improve the company's efficiency in custom dynamic form releases",
+            categories: ['low-code']
+        },
+        {
+            text: 'defined the Best practices in FE project with React and Typescript.',
+            categories: ['Architecture']
+        },
+        {
+            text: 'used Micro Front-End Service to split code and improve the performance in FE',
+            categories: ['Performance', 'Engineering']
+        },
+        {
+            text: "designed and developed the company's Front-End UI component library",
             categories: ['UI']
         },
         {
@@ -151,14 +171,6 @@ const periodFour = new Period({
         {
             text: 'setup the utils library in FE',
             categories: ['Engineering']
-        },
-        {
-            text: 'using Micro Front-End Service to split code and improve the performance in FE',
-            categories: ['Performance', 'Engineering']
-        },
-        {
-            text: 'define the Best practices in FE project with React and Typescript.',
-            categories: ['Architecture']
         }
     ]
 });
@@ -176,9 +188,9 @@ const periodFive = new Period({
     solutionsOfHowToImplement: [],
     jobSummaries: [
         'make the architecture design in Front-End project',
-        'improve the code quality and performance in FE',
+        'improve the code quality and performance',
         'improve the FE team efficiency',
-        'communicate with product manager and UI designer to understand project requirements every 2 week (one sprint)',
+        'communicate with product manager and UI designer to understand project requirements every 2 weeks (one sprint)',
         'provide training and guidance on technical'
     ],
     achievements: [
@@ -187,11 +199,11 @@ const periodFive = new Period({
             categories: ['Engineering']
         },
         {
-            text: 'optimized the front-end code',
+            text: 'optimized the Front-End code',
             categories: ['Performance']
         },
         {
-            text: 'improve the code quality',
+            text: 'improved the code quality',
             categories: ['Quality']
         }
     ]
@@ -205,6 +217,7 @@ const skills = [
     new Skill('Redux/MobX', DataModel.SkillLevel.proficient, 3, DataModel.Importance.Essential),
     new Skill('HTML & CSS', DataModel.SkillLevel.proficient, 6, DataModel.Importance.Essential),
     new Skill('GIT', DataModel.SkillLevel.proficient, 6, DataModel.Importance.Essential),
+    new Skill('Jest', DataModel.SkillLevel.familiar, 3, DataModel.Importance.Essential),
     new Skill('Node', DataModel.SkillLevel.familiar, 2, DataModel.Importance.Advanced),
     new Skill('Java', DataModel.SkillLevel.familiar, 3, DataModel.Importance.Advanced),
     new Skill('Vue', DataModel.SkillLevel.proficient, 1.5, DataModel.Importance.Advanced),
