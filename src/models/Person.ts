@@ -8,6 +8,7 @@ import StringWithID from './StringWithID';
 
 interface IPerson {
     firstName: string;
+    links?: { name: string; value: string }[];
     lastName: string;
     email: string;
     birthDay: Date;
@@ -21,6 +22,7 @@ interface IPerson {
 
 export default class Person extends Base {
     public firstName: string;
+    public links?: DataModel.RelatedLink[];
     public lastName: string;
     public email: string;
     public gender: DataModel.Gender;
@@ -33,7 +35,7 @@ export default class Person extends Base {
     public descriptions: StringWithID[];
     public capability!: Capability;
 
-    constructor({ firstName, descriptions, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
+    constructor({ links, firstName, descriptions, birthDay, lastName, email, cellphone, country, gender }: IPerson) {
         super();
         this.educations = [];
         this.periods = [];
@@ -44,6 +46,7 @@ export default class Person extends Base {
         this.birthDay = birthDay;
         this.country = country;
         this.gender = gender;
+        this.links = links;
         this.skills = [];
         this.descriptions = descriptions.map(e => new StringWithID(e));
     }

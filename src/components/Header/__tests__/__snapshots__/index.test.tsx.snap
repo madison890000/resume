@@ -12,19 +12,25 @@ exports[`renders Header 1`] = `
   <div
     className="basicInfo"
   >
-    <div>
-      <span
-        className="email"
-      >
+    <div
+      className="basicInfoItem"
+    >
+      <div>
+        Email:
+      </div>
+      <div>
         test@gmail.com
-      </span>
+      </div>
     </div>
-    <div>
-      <span
-        className="cellphone"
-      >
+    <div
+      className="basicInfoItem"
+    >
+      <div>
+        Cellphone:
+      </div>
+      <div>
         101101101
-      </span>
+      </div>
     </div>
   </div>
 </header>

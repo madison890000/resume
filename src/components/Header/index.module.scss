@@ -5,21 +5,27 @@
 }
 
 .basicInfo {
-    text-align: right;
+    text-align: left;
+    max-width: 370px;
+    margin-right: 6px;
 }
 
-.email {
-    font-style: italic;
+.basicInfoItem {
+    display: flex;
     font-size: var(--base-font-size-middle);
 
-    @media screen and (max-width: 414px) {
-        font-size: var(--base-font-size-small);
+    & > div:nth-child(1) {
+        margin: 6px;
+        font-weight: bold;
+        min-width: 70px;
     }
-}
 
-.cellphone {
-    font-style: italic;
-    font-size: var(--base-font-size-middle);
+    & > div:nth-child(2) {
+        margin: 6px;
+        font-style: italic;
+        max-width: 300px;
+        word-break: break-all;
+    }
 
     @media screen and (max-width: 414px) {
         font-size: var(--base-font-size-small);

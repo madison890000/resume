@@ -40,6 +40,7 @@ function App() {
                 firstName={person.firstName}
                 lastName={person.lastName}
                 email={person.email}
+                links={person.links}
                 cellphone={person.cellphone}
             />
             <Divider title={intl.formatMessage(messages.profile)} />
