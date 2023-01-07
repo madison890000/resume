@@ -28,7 +28,7 @@ const Header = ({ links, firstName, lastName, email, cellphone }: HeaderProps) =
                 </div>
                 <>
                     {links?.map(link => (
-                        <div className={styles.basicInfoItem}>
+                        <div key={link?.value} className={styles.basicInfoItem}>
                             <div>{link?.name}:</div>
                             <div>
                                 <a href={link?.value} target="_blank">
