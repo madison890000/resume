@@ -14,6 +14,16 @@ const madison = new Person({
     cellphone: '+8618510163161',
     country: 'China',
     gender: 'MALE',
+    links: [
+        {
+            name: 'Github',
+            value: 'https://github.com/madison890000'
+        },
+        {
+            name: 'LinkedIn',
+            value: 'https://www.linkedin.com/in/madison-ma-800657237/'
+        }
+    ],
     descriptions: [
         'I have 7 years working experience in IT with solid technical background, proficient in modern JavaScript/TypeScript programming frameworks, tools, and libraries. ',
         'I Have rich development experience both in Front-End and Back-End, including Admin Portal and Customer Portal in E-commerce\n' +

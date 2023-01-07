@@ -48,5 +48,10 @@ namespace DataModel {
         Enterprise,
         Startup
     }
+
+    export type RelatedLink = {
+        name: string;
+        value: string;
+    };
 }
 export default DataModel;
